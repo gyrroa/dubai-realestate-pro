@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FBFBF2;
+  --foreground: #231D20;
+  --accent: #897444;
+  --muted-accent: #B6AA8A;
+  --highlight: #EFCB68;
+  --muted-border: #D0D5DD;
+  --glow: #FFFFFE;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-muted-accent: var(--muted-accent);
+  --color-highlight: var(--highlight);
+  --color-muted-border: var(--muted-border);
+  --color-glow: var(--glow);
+
+  /* Responsive text size */
+  --text-title-100: clamp(3.86rem, 2.34rem + 6.22vw, 6.25rem);
+  --text-title-64: clamp(2.47rem, 1.5rem + 3.98vw, 4rem);
+  --text-title-8xl: clamp(3.71rem, 2.25rem + 5.97vw, 6rem);
+  --text-title-2xl: clamp(0.93rem, 0.56rem + 1.5vw, 1.5rem);
+  --text-title-6xl: clamp(2.32rem, 1.4rem + 3.73vw, 3.75rem);
+  --text-desc-xl: clamp(0.77rem, 0.47rem + 1.24vw, 1.25rem);
+  --text-desc-lg: clamp(0.69rem, 0.42rem + 1.12vw, 1.125rem);
+  --text-desc-3xl: clamp(1.16rem, 0.7rem + 1.88vw, 1.875rem);
+  --text-title-4xl: clamp(1.39rem, 0.84rem + 2.25vw, 2.25rem);
+  --text-desc-14: clamp(0.54rem, 0.33rem + 0.87vw, 0.875rem);
+  --text-label-base: clamp(0.62rem, 0.37rem + 1vw, 1rem);
+  --text-desc-xs: clamp(0.46rem, 0.28rem + 0.75vw, 0.75rem);
+  --text-title-32: clamp(1.23rem, 0.75rem + 1.99vw, 2rem);
+  --text-title-30: clamp(1.16rem, 0.81rem + 1.41vw, 1.875rem);
+}
+
+@utility text-glow {
+  color: var(--color-glow);
+}
+
+.font-serif {
+  font-family: var(--font-crimson-text), "Times New Roman", serif;
+}
+
+.font-sans {
+  font-family: var(--font-work-sans), sans-serif;
+}
+
+h1 {
+  -webkit-text-stroke: 16px #FBFBF2;
+  paint-order: stroke fill;
+  filter: drop-shadow(0 -3px 4px rgba(0, 0, 0, 0.1));
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+h3 {
+  -webkit-text-stroke: 16px var(--color-accent);
+  paint-order: stroke fill;
+  filter: drop-shadow(0 -3px 4px rgba(0, 0, 0, 0.1));
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-work-sans), sans-serif;
+}
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) transparent;
+  }
+}
