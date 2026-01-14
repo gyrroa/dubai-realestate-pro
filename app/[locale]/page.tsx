@@ -1,5 +1,6 @@
 import AboutSection from "@/components/home/aboutSection";
 import ArticleSection from "@/components/home/articleSection";
+import BrokerSection from "@/components/home/brokerSection";
 import ContactSection from "@/components/home/contactSection";
 import HeroSection from "@/components/home/heroSection";
 import WhyBlock from "@/components/home/whyBlock";
@@ -24,7 +25,9 @@ export default async function Home({ params }: Props) {
       <FadeUp>
         <AboutSection />
       </FadeUp>
-
+      <FadeUp>
+        <BrokerSection />
+      </FadeUp>
       <FadeUp>
         <WhyBlock />
       </FadeUp>

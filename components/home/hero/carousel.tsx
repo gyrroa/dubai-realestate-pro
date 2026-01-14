@@ -22,6 +22,7 @@ export default function PanoramaCarousel() {
         "/home/hero/1.png",
         "/home/hero/2.png",
         "/home/hero/3.png",
+        "/home/hero/4.png",
     ];
 
     const carouselItems = [...developerImages, ...developerImages, ...developerImages, ...developerImages];
@@ -144,11 +145,6 @@ export default function PanoramaCarousel() {
                 "mask-[radial-gradient(ellipse_120%_25%_at_50%_0%,transparent_45%,#000_45.5%),radial-gradient(ellipse_120%_25%_at_50%_100%,transparent_45%,#000_45.5%)] mask-intersect",
                 "transform-gpu"
             )}
-            style={{
-                WebkitMaskComposite: "source-in",
-                maskComposite: "intersect",
-                transform: "translateZ(0)"
-            }}
         >
             <motion.div
                 ref={containerRef}
@@ -164,10 +160,10 @@ export default function PanoramaCarousel() {
                         key={index}
                         className="h-full pr-4 lg:pr-14 shrink-0 hover:opacity-90 text-glow hover:text-highlight transition-all duration-300 flex items-center"
                     >
-                        <div className="relative h-full w-auto aspect-[2/3] lg:aspect-[4/3] rounded-2xl overflow-hidden select-none pointer-events-none">
+                        <div className="relative h-full w-auto aspect-2/3 lg:aspect-4/3 rounded-2xl overflow-hidden select-none pointer-events-none">
                             <div className="absolute inset-0 z-10 flex items-center justify-center">
                                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.6)_0%,transparent_20%)]" />
-                                <h2 className="relative z-20 font-semibold text-title-32 drop-shadow-[0_4px_4px_rgba(0,0,0,0.80)]">
+                                <h2 className="relative z-20 font-semibold text-title-32 drop-shadow-[0_4px_4px_rgba(0,0,0,0.80)] tracking-[11.84px]">
                                     DUGASTA
                                 </h2>
                             </div>

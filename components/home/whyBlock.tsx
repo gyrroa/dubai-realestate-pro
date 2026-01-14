@@ -18,7 +18,7 @@ export default function WhyBlock() {
                 priority={false}
             />
             {/* Section title */}
-            <h3 className="px-8 lg:px-25 w-full text-start text-title-100 text-glow absolute flex flex-col left-0 -top-5.5 font-serif italic font-bold leading-16.5 tracking-[-6px] z-50">
+            <h3 className="px-8 lg:px-25 w-full text-center lg:text-start text-title-100 text-glow absolute flex flex-col left-0 -top-5.5 font-serif italic font-bold leading-16.5 tracking-[-6px] z-50">
                 {t('title')}
             </h3>
             {/* Content */}
@@ -35,7 +35,23 @@ export default function WhyBlock() {
                 ))}
             </div>
             {/* Shadow */}
-            <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="645" viewBox="0 0 1440 645" fill="none" className="absolute -top-1/3 lg:-top-1/2 w-full -z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" width="833" height="312" viewBox="0 0 833 312" fill="none" className="absolute left-1/2 -translate-x-1/2 lg:-left-3/11 -top-2/11 lg:-top-3/7 w-full -z-10">
+                <g opacity="0.8" filter="url(#filter0_f_273_909)">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M344.285 100.004C504.311 99.7577 670.094 110.737 719.65 135.413C769.287 160.13 673.715 184.499 545.151 200.025C410.599 216.273 272.783 215.708 135.704 200.025C-5.86326 183.828 -69.1486 162.93 -9.76412 136.536C43.243 112.977 189.643 100.242 344.285 100.004Z" fill="url(#paint0_linear_273_909)" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_273_909" x="-132" y="0" width="965" height="312" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_273_909" />
+                    </filter>
+                    <linearGradient id="paint0_linear_273_909" x1="-54.0759" y1="188.061" x2="81.5994" y2="-150.521" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#EFCB68" />
+                        <stop offset="1" stopColor="#EFCB68" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            {/* <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="645" viewBox="0 0 1440 645" fill="none" className="absolute -top-1/3 lg:-top-1/2 w-full -z-10">
                 <g filter="url(#filter0_f_273_909)">
                     <path fillRule="evenodd" clipRule="evenodd" d="M727.08 200.009C1043.62 199.471 1371.54 223.437 1469.56 277.304C1567.75 331.258 1378.7 384.455 1124.4 418.346C858.251 453.815 585.646 452.581 314.5 418.346C34.475 382.989 -90.7054 337.371 26.759 279.755C131.609 228.327 421.194 200.529 727.08 200.009Z" fill="url(#paint0_linear_273_909)" />
                 </g>
@@ -50,7 +66,7 @@ export default function WhyBlock() {
                         <stop offset="1" stopColor="#EFCB68" />
                     </linearGradient>
                 </defs>
-            </svg>
+            </svg> */}
         </section>
     );
 }

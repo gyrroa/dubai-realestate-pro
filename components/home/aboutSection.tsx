@@ -29,7 +29,7 @@ export default function AboutSection() {
     } as const;
 
     return (
-        <section id="about" className="relative flex flex-col lg:flex-row py-30 px-8 lg:px-46.5 h-full min-h-screen gap-5 ">
+        <section id="about" className="relative flex flex-col lg:flex-row py-10 lg:py-30 px-8 lg:px-46.5 h-full min-h-screen gap-5 ">
             <LayoutGroup>
                 <div className="flex flex-col lg:flex-row w-full gap-5 grow">
                     {/* Column */}
@@ -74,7 +74,7 @@ export default function AboutSection() {
                                     )}
                                 >
                                     {item.type === "image" ? (
-                                        <AboutImageCard src={item.image} location={item.location || "Dubai"} />
+                                        <AboutImageCard src={item.image} location={item.location} />
                                     ) : (
                                         <AboutTextCard
                                             titleKey={`pages.${currentPage}.items.${columnKey}.${itemIndex}.title`}

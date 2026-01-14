@@ -11,7 +11,7 @@ export default function ContactSection() {
             {/* Contact Info */}
             <div className="relative flex flex-col justify-start items-center">
                 {/* Section Title */}
-                <h1 className="flex text-start flex-col font-serif italic font-bold leading-16.75 z-50 tracking-[-6px] text-title-100 max-w-144.25 w-full px-15.5">
+                <h1 className="flex text-start flex-col font-serif italic font-bold leading-14 lg:leading-16.75 z-50 tracking-[-6px] text-title-100 max-w-144.25 w-full px-15.5">
                     {t.rich('contact_info.title', {
                         gold: (chunks) => <span className="text-end text-accent">{chunks}</span>
                     })}

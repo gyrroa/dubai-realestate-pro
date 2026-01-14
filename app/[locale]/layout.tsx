@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Work_Sans, Crimson_Text } from "next/font/google";
+import { Work_Sans, Crimson_Text, Crimson_Pro } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -13,6 +13,13 @@ const workSans = Work_Sans({
   variable: "--font-work-sans",
   subsets: ["latin"],
 });
+
+const crimsonPro = Crimson_Pro({
+  variable: "--font-crimson-pro",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  style: ["normal", "italic"],
+})
 
 const crimsonText = Crimson_Text({
   variable: "--font-crimson-text",
@@ -46,7 +53,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body
-        className={`${workSans.variable} ${crimsonText.variable} antialiased`}
+        className={`${workSans.variable} ${crimsonText.variable} ${crimsonPro.variable} antialiased`}
       >
         {/* Translation Provider */}
 

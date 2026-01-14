@@ -34,6 +34,7 @@
   --text-desc-xs: clamp(0.46rem, 0.28rem + 0.75vw, 0.75rem);
   --text-title-32: clamp(1.23rem, 0.75rem + 1.99vw, 2rem);
   --text-title-30: clamp(1.16rem, 0.81rem + 1.41vw, 1.875rem);
+  --text-title-48: clamp(1.85rem, 1.12rem + 2.99vw, 3rem);
 }
 
 @utility text-glow {
@@ -42,6 +43,10 @@
 
 .font-serif {
   font-family: var(--font-crimson-text), "Times New Roman", serif;
+}
+
+.font-pro {
+  font-family: var(--font-crimson-pro), "Times New Roman", serif;
 }
 
 .font-sans {
