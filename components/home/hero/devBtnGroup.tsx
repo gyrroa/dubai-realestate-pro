@@ -27,9 +27,9 @@ export default function DevBtnGroup() {
             </h2>
             <div className="flex flex-wrap w-full h-full gap-2.5 lg:gap-y-5.5 lg:gap-x-8 justify-center">
                 {developerImages.map((src, index) => (
-                    <Button variant={"hero_dev"} size={"hero_dev"} key={index} className="w-1/4 h-12 xl:w-fit xl:h-fit">
+                    <Button variant={"hero_dev"} size={"hero_dev"} key={index} className="w-[28%] h-12 xl:w-fit xl:h-fit">
                         <div
-                            className="h-12 w-32 bg-accent group-hover:bg-glow transition-colors duration-600"
+                            className="h-full w-full md:w-32 md:h-12 bg-accent group-hover:bg-glow transition-colors duration-600 transform-gpu"
                             style={{
                                 maskImage: `url(${src})`,
                                 maskSize: "contain",

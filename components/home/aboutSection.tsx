@@ -29,7 +29,7 @@ export default function AboutSection() {
     } as const;
 
     return (
-        <section className="relative flex flex-col lg:flex-row py-30 px-8 lg:px-46.5 h-full min-h-screen gap-5 ">
+        <section id="about" className="relative flex flex-col lg:flex-row py-30 px-8 lg:px-46.5 h-full min-h-screen gap-5 ">
             <LayoutGroup>
                 <div className="flex flex-col lg:flex-row w-full gap-5 grow">
                     {/* Column */}
@@ -52,8 +52,8 @@ export default function AboutSection() {
                                     className="flex flex-col font-serif italic font-bold z-50 gap-6 w-full max-w-50 md:max-w-88.75 self-center mt-4 py-1.75 text-title-64"
                                 >
                                     {t.rich('title', {
-                                        gold: (chunks) => <h1 className="tracking-[-3.84px] leading-5.75 self-start text-accent">{chunks}</h1>,
-                                        black: (chunks) => <h1 className="tracking-[-3.84px] leading-5.75 self-end whitespace-nowrap">{chunks}</h1>
+                                        gold: (chunks) => <h1 className="tracking-[-3.84px] leading-3.75 md:leading-5.75 self-start text-accent">{chunks}</h1>,
+                                        black: (chunks) => <h1 className="tracking-[-3.84px] leading-3.75 md:leading-5.75 self-end whitespace-nowrap">{chunks}</h1>
                                     })}
                                 </motion.div>
                             )}

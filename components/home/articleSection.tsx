@@ -12,7 +12,7 @@ export default function ArticleSection() {
             <h1 className="absolute w-full flex flex-col left-1/2 -translate-x-1/2 top-43 font-serif italic font-bold leading-16 z-50">
                 {t.rich('title', {
                     black: (chunks) => <span className="text-title-64 tracking-[-3.84px] leading-16.75">{chunks}</span>,
-                    gold: (chunks) => <span className="text-title-8xl text-accent -mt-2 tracking-[-5.76px] leading-16.75">{chunks}</span>
+                    gold: (chunks) => <span className="text-title-8xl text-accent -mt-7 md:-mt-2 tracking-[-5.76px] leading-16.75">{chunks}</span>
                 })}
             </h1>
 

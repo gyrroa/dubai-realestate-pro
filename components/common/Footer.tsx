@@ -11,7 +11,7 @@ export default function Footer() {
     const n = useTranslations('Navigation');
     const scrollTo = useSmartScroll();
     return (
-        <footer className="w-full flex flex-1 flex-col gap-10 items-center md:items-stretch lg:flex-row justify-between text-glow py-10 px-20 bg-[url(/footer/background.png)] bg-cover bg-no-repeat bg-center bg-accent">
+        <footer className="w-full flex flex-1 flex-col gap-10 items-center md:items-stretch lg:flex-row justify-between text-glow py-10 px-10 md:px-20 bg-[url(/footer/background.png)] bg-cover bg-no-repeat bg-center bg-accent">
             {/* Start footer */}
             <div className="flex items-center lg:items-start flex-col gap-2.25 w-full lg:w-fit">
                 {/* Logo */}

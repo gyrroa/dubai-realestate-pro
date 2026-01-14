@@ -3,6 +3,7 @@ import ArticleSection from "@/components/home/articleSection";
 import ContactSection from "@/components/home/contactSection";
 import HeroSection from "@/components/home/heroSection";
 import WhyBlock from "@/components/home/whyBlock";
+import FadeUp from "@/components/ui/fadeUp";
 import { setRequestLocale } from "next-intl/server";
 
 type Props = {
@@ -17,11 +18,24 @@ export default async function Home({ params }: Props) {
   return (
     <>
       <HeroSection />
+
       <hr className="border-0 h-px bg-accent opacity-20 mx-30" />
-      <AboutSection />
-      <WhyBlock />
-      <ArticleSection />
-      <ContactSection />
+
+      <FadeUp>
+        <AboutSection />
+      </FadeUp>
+
+      <FadeUp>
+        <WhyBlock />
+      </FadeUp>
+
+      <FadeUp>
+        <ArticleSection />
+      </FadeUp>
+
+      <FadeUp>
+        <ContactSection />
+      </FadeUp>
     </>
   );
 }

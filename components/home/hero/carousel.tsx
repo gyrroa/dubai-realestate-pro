@@ -127,9 +127,9 @@ export default function PanoramaCarousel() {
         let newIndex = currentIndex;
 
         if (offset.x > DRAG_BUFFER || velocity.x > 500) {
-            newIndex = currentIndex - 1; 
+            newIndex = currentIndex - 1;
         } else if (offset.x < -DRAG_BUFFER || velocity.x < -500) {
-            newIndex = currentIndex + 1; 
+            newIndex = currentIndex + 1;
         }
 
         snapToIndex(newIndex);
@@ -141,8 +141,15 @@ export default function PanoramaCarousel() {
             dir="ltr"
             className={cn(
                 "flex w-full h-full overflow-hidden cursor-grab active:cursor-grabbing",
-                "mask-[radial-gradient(ellipse_120%_25%_at_50%_0%,transparent_45%,#000_45.5%),radial-gradient(ellipse_120%_25%_at_50%_100%,transparent_45%,#000_45.5%)] mask-intersect"
-            )}>
+                "mask-[radial-gradient(ellipse_120%_25%_at_50%_0%,transparent_45%,#000_45.5%),radial-gradient(ellipse_120%_25%_at_50%_100%,transparent_45%,#000_45.5%)] mask-intersect",
+                "transform-gpu"
+            )}
+            style={{
+                WebkitMaskComposite: "source-in",
+                maskComposite: "intersect",
+                transform: "translateZ(0)"
+            }}
+        >
             <motion.div
                 ref={containerRef}
                 className="flex w-max h-full items-center"
@@ -157,7 +164,7 @@ export default function PanoramaCarousel() {
                         key={index}
                         className="h-full pr-4 lg:pr-14 shrink-0 hover:opacity-90 text-glow hover:text-highlight transition-all duration-300 flex items-center"
                     >
-                        <div className="relative h-full w-auto aspect-2/3 lg:aspect-4/3 rounded-2xl overflow-hidden select-none pointer-events-none">
+                        <div className="relative h-full w-auto aspect-[2/3] lg:aspect-[4/3] rounded-2xl overflow-hidden select-none pointer-events-none">
                             <div className="absolute inset-0 z-10 flex items-center justify-center">
                                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.6)_0%,transparent_20%)]" />
                                 <h2 className="relative z-20 font-semibold text-title-32 drop-shadow-[0_4px_4px_rgba(0,0,0,0.80)]">

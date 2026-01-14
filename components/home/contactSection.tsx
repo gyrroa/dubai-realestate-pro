@@ -28,7 +28,7 @@ export default function ContactSection() {
                     <div className="z-10 lg:absolute inset-0 rounded-3xl overflow-hidden border-2 border-accent">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3034.101870778258!2d55.32188165050842!3d25.264679970843027!3m2!1i1024!2i768!4f13.1!2m1!1sDubai%20Real%20Estate%20Pro%2C%20Office%20No.%2098%2C%203rd%20Floor%2C%20Al%20Rigga%20Business%20Center%20Dubai%2C%20UAE!5e0!3m2!1sen!2sph!4v1768400250351!5m2!1sen!2sph"
-                            loading="lazy" className="w-full h-125 lg:h-full clip pointer-events-none"
+                            loading="eager" className="w-full h-125 lg:h-full clip pointer-events-none"
                         />
                         <Link
                             href={"https://maps.app.goo.gl/uSTRj2yq9MEmQcNm9"}
