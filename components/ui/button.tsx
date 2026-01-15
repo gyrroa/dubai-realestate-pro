@@ -8,8 +8,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        nav: "w-32 text-desc-3xl font-light hover:text-accent hover:font-bold hover:underline",
+        default: "",
+        nav: "w-32 text-desc-3xl font-light hover:text-accent active:font-bold hover:underline",
         hero_dev: "bg-glow border border-accent hover:border-glow rounded-[26px] shadow-[0_0_4.7px_0_#231D20] hover:bg-accent transition-all duration-300 group",
         cta1: "text-title-2xl tracking-[-1.2px] font-light bg-highlight border-foreground border-2 hover:-translate-y-0.5 active:translate-0 shadow-[0_4px_4px_rgba(0,0,0,0.25)] active:shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_8px_rgba(0,0,0,0.25)]",
         cta2: "text-desc-3xl tracking-[-1.2px] [color:var(--glow)] font-light bg-accent border-glow border-2 hover:-translate-y-0.5 active:translate-0 shadow-[0_4px_4px_rgba(0,0,0,0.25)] active:shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_8px_rgba(0,0,0,0.25)]",

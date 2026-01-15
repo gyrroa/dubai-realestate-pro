@@ -4,19 +4,18 @@ import TextRibbon from "./hero/textRibbon";
 import DevBtnGroup from "./hero/devBtnGroup";
 
 export default function HeroSection() {
-
     const t = useTranslations('Hero');
     return (
         <section id="hero" className="relative text-center flex flex-col flex-1 min-h-screen pt-30 md:pt-45">
             {/* Section title */}
             <div className="w-full">
-                <h1 className="text-title-6xl font-serif italic text-black font-bold leading-8.5 md:leading-6 tracking-[-3.84px]">
+                <h1 className="text-title-6xl font-serif italic text-black font-bold leading-8 md:leading-7 lg:leading-6 tracking-[-3.84px]">
                     {t.rich("title", {
                         gold: (chunks) => <span className="text-accent">{chunks}</span>,
                         br: () => <br className="block md:hidden" />
                     })}
                 </h1>
-                <p className="text-title-2xl my-6 leading-6 tracking-[-1.44px]">
+                <p className="text-title-2xl my-6 leading-8 md:leading-7 lg:leading-6  tracking-[-1.44px]">
                     {t.rich("description", {
                         black: (chunks) => <span className="font-semibold">{chunks}</span>,
                         gold: (chunks) => <span className="text-accent">{chunks}</span>

@@ -10,7 +10,7 @@
     "title": "<gold>Dubai’s Top</gold><br></br> Real Estate Developers",
     "description": "Curating the best of <black>Dubai’s</black> <gold>skyline</gold>, just for you.",
     "ribbon": "DUBAI REAL ESTATE PRO",
-    "dev_title": "<gold>Discover Properties</gold> by Developer"
+    "dev_title": "Discover <black>properties</black> by <gold>developer:</gold>"
   },
   "About": {
     "title": "<gold>Why Invest </gold><black>In Dubai?</black>",
@@ -95,7 +95,7 @@
             {
               "id": "p2c2-2",
               "type": "text",
-              "title": "5 <gold>Attractive</gold> Rental Returns",
+              "title": "5. <gold>Attractive</gold> Rental Returns",
               "description": "Investors can expect rental yields ranging from 6% to 10% annually, significantly higher than many global cities, ensuring strong passive income potential."
             }
           ],
@@ -130,7 +130,7 @@
             {
               "id": "p3c2-1",
               "type": "text",
-              "title": "6 <gold>Gateway</gold> Between East & West",
+              "title": "6. <gold>Gateway</gold> Between East & West",
               "description": "Situated at the crossroads of Europe, Asia, and Africa, Dubai serves as a global business and travel hub, with world-class airports connecting to over 250 destinations worldwide."
             },
             {
@@ -169,7 +169,7 @@
             {
               "id": "p4c1-1",
               "type": "text",
-              "title": "8 <gold>Transparent</gold> Regulatory Environment",
+              "title": "8. <gold>Transparent</gold> Regulatory Environment",
               "description": "The Dubai Land Department (DLD) and the Real Estate Regulatory Agency (RERA) ensure transparency, protect investor rights, and maintain high standards in the real estate sector."
             },
             {
@@ -189,7 +189,7 @@
             {
               "id": "p4c2-2",
               "type": "text",
-              "title": "9 <gold>Long-Term</gold> Residency Opportunities",
+              "title": "9. <gold>Long-Term</gold> Residency Opportunities",
               "description": "Investors purchasing property valued at AED 2 million or more are eligible for a 10-year Golden Visa, offering extended residency rights and access to UAE's thriving economy."
             }
           ],

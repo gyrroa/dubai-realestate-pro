@@ -29,7 +29,12 @@ export default function AboutSection() {
     } as const;
 
     return (
-        <section id="about" className="relative flex flex-col lg:flex-row py-10 lg:py-30 px-8 lg:px-46.5 h-full min-h-screen gap-5 ">
+        <section id="about" className={cn(
+            "py-10 md:py-20 lg:py-30",
+            "px-8 lg:px-46.5",
+            "relative flex flex-col lg:flex-row h-full min-h-screen gap-5 "
+
+        )}>
             <LayoutGroup>
                 <div className="flex flex-col lg:flex-row w-full gap-5 grow">
                     {/* Column */}
@@ -49,11 +54,13 @@ export default function AboutSection() {
                                     layout
                                     layoutId="about-main-title"
                                     transition={bounceTransition}
-                                    className="flex flex-col font-serif italic font-bold z-50 gap-6 w-full max-w-50 md:max-w-88.75 self-center mt-4 py-1.75 text-title-64"
+                                    className={cn(
+                                        "max-w-50 md:max-w-88.75 lg:max-w-full",
+                                        "flex flex-col font-serif italic font-bold z-50 gap-6 w-full self-center lg:mt-4 text-title-64")}
                                 >
                                     {t.rich('title', {
-                                        gold: (chunks) => <h1 className="tracking-[-3.84px] leading-3.75 md:leading-5.75 self-start text-accent">{chunks}</h1>,
-                                        black: (chunks) => <h1 className="tracking-[-3.84px] leading-3.75 md:leading-5.75 self-end whitespace-nowrap">{chunks}</h1>
+                                        gold: (chunks) => <h1 className="tracking-[-3.84px] leading-3.75 md:leading-4.75 lg:leading-5.75 self-start text-accent">{chunks}</h1>,
+                                        black: (chunks) => <h1 className="tracking-[-3.84px] leading-3.75 md:leading-4.75 lg:leading-5.75 self-end whitespace-nowrap">{chunks}</h1>
                                     })}
                                 </motion.div>
                             )}
@@ -69,7 +76,7 @@ export default function AboutSection() {
                                     className={cn(
                                         "w-full",
                                         item.type === "image"
-                                            ? "relative h-80 lg:h-auto lg:flex-1"
+                                            ? "relative h-30 lg:h-auto lg:flex-1"
                                             : "flex-none z-10"
                                     )}
                                 >

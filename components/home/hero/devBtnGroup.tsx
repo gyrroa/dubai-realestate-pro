@@ -1,8 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Link } from "@/i18n/routing";
+import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
-
 
 export default function DevBtnGroup() {
     const t = useTranslations('Hero');
@@ -22,25 +23,31 @@ export default function DevBtnGroup() {
             {/* Title */}
             <h2 className="font-medium text text-title-2xl">
                 {t.rich("dev_title", {
-                    gold: (chunk) => <span className="text-accent">{chunk}</span>
+                    black: (chunk) => <span className="font-semibold">{chunk}</span>,
+                    gold: (chunk) => <span className="font-semibold text-accent italic">{chunk}</span>
                 })}
             </h2>
-            <div className="flex flex-wrap w-full h-full gap-2.5 lg:gap-y-5.5 lg:gap-x-8 justify-center">
+            <div className={cn(
+                "gap-2.5 lg:gap-y-5.5 lg:gap-x-8",
+                "flex flex-wrap w-full h-full justify-center"
+            )}>
                 {developerImages.map((src, index) => (
-                    <Button variant={"hero_dev"} size={"hero_dev"} key={index} className="w-[28%] h-12 xl:w-fit xl:h-fit">
-                        <div
-                            className="h-full w-full md:w-32 md:h-12 bg-accent group-hover:bg-glow transition-colors duration-600"
-                            style={{
-                                maskImage: `url(${src})`,
-                                maskSize: "contain",
-                                maskRepeat: "no-repeat",
-                                maskPosition: "center",
-                                WebkitMaskImage: `url(${src})`,
-                                WebkitMaskSize: "contain",
-                                WebkitMaskRepeat: "no-repeat",
-                                WebkitMaskPosition: "center",
-                            }}
-                        />
+                    <Button asChild variant={"hero_dev"} size={"hero_dev"} key={index} className="w-[28%] h-12 xl:w-fit xl:h-fit">
+                        <Link href={"/503"}>
+                            <div
+                                className="h-full w-full md:w-32 md:h-12 bg-accent group-hover:bg-glow transition-colors duration-600"
+                                style={{
+                                    maskImage: `url(${src})`,
+                                    maskSize: "contain",
+                                    maskRepeat: "no-repeat",
+                                    maskPosition: "center",
+                                    WebkitMaskImage: `url(${src})`,
+                                    WebkitMaskSize: "contain",
+                                    WebkitMaskRepeat: "no-repeat",
+                                    WebkitMaskPosition: "center",
+                                }}
+                            />
+                        </Link>
                     </Button>
                 ))}
             </div>

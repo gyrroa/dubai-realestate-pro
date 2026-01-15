@@ -20,7 +20,7 @@ export default async function Home({ params }: Props) {
     <>
       <HeroSection />
 
-      <hr className="border-0 h-px bg-accent opacity-20 mx-30" />
+      <hr className="border-0 h-px bg-accent opacity-20 mx-10 md:mx-20 lg:mx-30" />
 
       <FadeUp>
         <AboutSection />

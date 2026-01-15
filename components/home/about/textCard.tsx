@@ -11,7 +11,7 @@ export default function AboutTextCard({ titleKey, descriptionKey }: TextCardProp
     const t = useTranslations("About");
 
     return (
-        <div className="p-6.25 bg-glow border border-accent rounded-[30px] shadow-[0_0_10px_rgba(0,0,0,0.25)]">
+        <div className="flex flex-col lg:gap-2.5 p-5.25 lg:p-6.25 bg-glow border border-accent rounded-[30px] shadow-[0_0_10px_rgba(0,0,0,0.25)]">
             {/* Title */}
             <h2 className="text-title-32 font-bold font-serif italic leading-6 tracking-[-1.92px]">
                 {t.rich(titleKey, {
@@ -21,7 +21,7 @@ export default function AboutTextCard({ titleKey, descriptionKey }: TextCardProp
             </h2>
 
             {/* Description */}
-            <p className="text-desc-xl font-light leading-5 tracking-[-1.2px] mt-4">
+            <p className="text-desc-xl font-light leading-5 tracking-[-1.2px]">
                 {t.rich(descriptionKey, {
                     semi: (chunks) => <span className="font-semibold">{chunks}</span>,
                 })}

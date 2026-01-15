@@ -143,7 +143,6 @@ export default function PanoramaCarousel() {
         <div
             dir="ltr"
             className={cn(
-                "min-h-[38dvh]",
                 "flex w-full h-full overflow-hidden cursor-grab active:cursor-grabbing",
                 "mask-[radial-gradient(ellipse_120%_25%_at_50%_0%,transparent_45%,#000_45.5%),radial-gradient(ellipse_120%_25%_at_50%_100%,transparent_45%,#000_45.5%)] mask-intersect",
             )}
@@ -160,7 +159,12 @@ export default function PanoramaCarousel() {
                 {carouselItems.map((src, index) => (
                     <div
                         key={index}
-                        className="group h-full px-3 lg:px-7 shrink-0 hover:opacity-90 text-glow hover:text-highlight transition-all duration-300 flex items-center"
+                        className={cn(
+                            "group px-3 lg:px-7 shrink-0",
+                            "h-full w-auto aspect-2/3 lg:aspect-4/3",
+                            "hover:opacity-90 text-glow hover:text-highlight transition-all duration-300 flex items-center"
+
+                        )}
                     >
                         <div className="relative h-full w-full aspect-2/3 lg:aspect-4/3 rounded-2xl overflow-hidden select-none pointer-events-none">
                             <div className="absolute inset-0 z-10 flex items-center justify-center">

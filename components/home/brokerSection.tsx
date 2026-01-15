@@ -1,10 +1,15 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 export default function BrokerSection() {
     return (
-        <section id="broker" className="flex flex-col pb-30 lg:pb-6 px-8 gap-10 lg:gap-9.5 items-center overflow-x-clip">
+        <section id="broker" className={cn(
+            "pb-30 lg:pb-6", // distinct from desktop
+            "gap-7.5 md:8.5 lg:gap-9.5",
+            "flex flex-col px-8 items-center overflow-x-clip"
+        )}>
             {/* President Group */}
-            <div className="flex flex-col lg:flex-row gap-6.5 justify-center items-center w-fit">
+            <div className="flex flex-col lg:flex-row gap-6.5 justify-center items-center">
 
                 {/* President Profile */}
                 <div className="flex flex-col size-fit items-center lg:-mt-35 -z-10 lg:z-10">
@@ -14,11 +19,22 @@ export default function BrokerSection() {
                         height={600}
                         quality={90}
                         alt="pres"
-                        className="w-75 md:w-100 lg:w-127.75 h-auto-mb-20 lg:-mb-34 hidden lg:block"
+                        className="w-127.75 h-auto -mb-34 hidden lg:block"
+                        draggable={false}
                     />
-                    <div className="relative flex flex-col py-6.75 px-8 bg-glow rounded-[30px] shadow-[0_0_10px_0_rgba(0,0,0,0.25)] lg:gap-6.5 border border-accent">
+                    {/* Content */}
+                    <div className={cn(
+                        "py-4.25 md:py-5.25 lg:py-6.75",
+                        "px-6 md:px-7 lg:px-8 ",
+                        "gap-4.5 md:gap-5.5 lg:gap-6.5 ",
+                        "relative flex flex-col bg-glow rounded-[30px] shadow-[0_0_10px_0_rgba(0,0,0,0.25)] border border-accent",
+                    )}>
                         {/* Name */}
-                        <h2 className="text-title-48 font-pro italic font-semibold leading-tight lg:leading-3 tracking-[-2.88px] text-center lg:text-left">
+                        <h2 className={cn(
+                            "leading-1 md:leading-2 lg:leading-3",
+                            "tracking-[-1.44px]",
+                            "text-title-48 font-serif italic font-semibold text-center"
+                        )}>
                             <span className="text-accent">Anthony Gerard </span>
                             O. Leuterio
                         </h2>
@@ -44,20 +60,31 @@ export default function BrokerSection() {
                         </svg>
                     </div>
                 </div>
+                {/* Pres Mobile Image */}
                 <Image
                     src="/home/broker/pres.png"
                     width={600}
                     height={600}
                     quality={90}
                     alt="pres"
-                    className="w-75 md:w-100 lg:w-127.75 h-auto -mb-20 -mt-15 lg:-mb-34 lg:hidden"
+                    className="w-auto -mb-20 -mt-15 lg:hidden"
+                    draggable={false}
                 />
                 {/* President Bio */}
-                <div className="relative size-fit flex flex-col py-10 px-8 bg-glow rounded-[30px] shadow-[0_0_10px_0_rgba(0,0,0,0.25)] gap-6.5 border border-accent mt-10 lg:mt-0">
-                    <h1 className="absolute -top-12 lg:-left-24 text-title-100 font-serif italic font-bold leading-tight lg:leading-16.75 tracking-[-6px] whitespace-nowrap text-center lg:text-left self-center">
+                <div className={cn(
+                    "py-8 md:py-9 lg:py-10",
+                    "px-6 md:px-7 lg:px-8",
+                    "lg:bottom-16",
+                    "relative size-fit flex flex-col bg-glow rounded-[30px] shadow-[0_0_10px_0_rgba(0,0,0,0.25)] border border-accent"
+                )}>
+                    <h1 className={cn(
+                        "lg:-left-24",
+                        "leading-16.75",
+                        "absolute text-title-100 font-serif italic font-bold -top-12 tracking-[-6px] whitespace-nowrap text-center lg:text-left self-center"
+                    )}>
                         Meet your <span className="text-accent">Broker</span>
                     </h1>
-                    <p className="font-light text-title-2xl leading-7.5 tracking-[-1.44px] max-w-119">
+                    <p className="font-light text-title-2xl leading-6.5 lg:leading-7.5 tracking-[-1.44px] max-w-119">
                         <span className="italic font-medium">Anthony Gerard O. Leuterio</span> is the <span className="font-medium"><span className="text-accent">Founder and President</span> of Filipino Homes</span>, recognized
                         as the second Filipino ever named <span className="font-medium">International <span className="text-accent">REALTOR® of the Year 2024 </span></span>
                         by the National Association of REALTORS® (USA).
@@ -80,12 +107,17 @@ export default function BrokerSection() {
             </div>
             {/* Separator */}
             <hr className="border-0 h-px bg-accent opacity-20 w-full lg:hidden block" />
+
             {/* Vice President Group */}
             <div className="flex flex-col-reverse lg:flex-row gap-6.5 justify-center items-center lg:items-start w-fit">
 
                 {/* Vice President Bio */}
-                <div className="relative size-fit flex flex-col py-10 px-8 bg-glow rounded-[30px] shadow-[0_0_10px_0_rgba(0,0,0,0.25)] border border-accent">
-                    <p className="font-light text-title-2xl leading-7.5 tracking-[-1.44px] max-w-119">
+                <div className={cn(
+                    "py-8 md:py-9 lg:py-10",
+                    "px-6 md:px-7 lg:px-8",
+                    "relative size-fit flex flex-col bg-glow rounded-[30px] shadow-[0_0_10px_0_rgba(0,0,0,0.25)] border border-accent"
+                )}>
+                    <p className="font-light text-title-2xl leading-6.5 lg:leading-7.5 tracking-[-1.44px] max-w-119">
                         <span className="italic font-medium">Gilbert Monecillo</span> is the <span className="font-medium"><span className="text-accent">Vice President</span> for Global Expansion of Filipino Homes</span> a proven authority
                         in Philippine real estate with over <span className="font-medium"><span className="text-accent">15 years </span>of experience</span>, leading Filipino Homes VIP as
                         the <span className="font-medium">nationwide <span className="text-accent">Top 1 </span></span>team leader.
@@ -108,6 +140,7 @@ export default function BrokerSection() {
                 </div>
 
                 {/* Vice President Profile */}
+                {/* Vice Pres Mobile Image */}
                 <Image
                     src="/home/broker/vicePres.png"
                     width={600}
@@ -115,19 +148,33 @@ export default function BrokerSection() {
                     quality={90}
                     alt="vice-pres"
                     className="w-50 md:w-70 lg:w-85.75 h-auto -mb-20 -mt-15 lg:-mb-34 block lg:hidden"
+                    draggable={false}
                 />
-                <div className="flex flex-col size-fit items-center lg:-mt-35 -z-10 lg:z-10">
+                <div className={cn(
+                    "lg:-mt-35 lg:z-10",
+                    "flex flex-col size-fit items-center -z-10")}>
                     <Image
                         src="/home/broker/vicePres.png"
                         width={600}
                         height={600}
                         quality={90}
                         alt="vice-pres"
-                        className="w-50 md:w-70 lg:w-85.75 h-auto -mb-20 lg:-mb-34 hidden lg:block"
+                        className="w-95.75 h-auto -mb-34 -mt-15 hidden lg:block"
+                        draggable={false}
                     />
-                    <div className="relative w-full flex flex-col py-6.75 px-8 bg-glow rounded-[30px] shadow-[0_0_10px_0_rgba(0,0,0,0.25)] lg:gap-6.5 border border-accent ">
+                    {/* Content */}
+                    <div className={cn(
+                        "py-4.25 md:py-5.25 lg:py-6.75",
+                        "px-6 md:px-7 lg:px-8 ",
+                        "gap-4.5 md:gap-5.5 lg:gap-6.5 ",
+                        "relative flex flex-col bg-glow rounded-[30px] shadow-[0_0_10px_0_rgba(0,0,0,0.25)] border border-accent",
+                    )}>
                         {/* Name */}
-                        <h2 className="text-title-48 font-pro italic font-semibold leading-tight lg:leading-3 tracking-[-2.88px] text-center">
+                        <h2 className={cn(
+                            "leading-1 md:leading-2 lg:leading-3",
+                            "tracking-[-1.44px]",
+                            "text-title-48 font-serif italic font-semibold text-center"
+                        )}>
                             <span className="text-accent">Gilbert </span>
                             Monecillo
                         </h2>
