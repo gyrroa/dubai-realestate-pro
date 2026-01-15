@@ -3,7 +3,7 @@
 import { usePageStore } from "@/store/useAboutStore";
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
-import { motion, LayoutGroup } from "framer-motion";
+import { motion, LayoutGroup, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 import AboutImageCard from "./about/imageCard";
@@ -37,71 +37,73 @@ export default function AboutSection() {
 
         )}>
             <LayoutGroup>
-                <div className="flex flex-col lg:flex-row w-full gap-5 grow">
-                    {/* Column */}
-                    {Object.entries(activePage.items).map(([columnKey, columnItems]: any, colIndex) => (
-                        <motion.div
-                            layout
-                            key={columnKey}
-                            transition={bounceTransition}
-                            className={cn(
-                                "flex flex-col w-full h-full gap-5",
-                                colIndex === 0 ? "text-end" : colIndex === 1 ? "text-center" : "text-start"
-                            )}
-                        >
-                            {/* Title Header */}
-                            {colIndex === 0 && (
-                                <motion.div
-                                    layout
-                                    layoutId="about-main-title"
-                                    transition={bounceTransition}
-                                    className={cn(
-                                        "max-w-50 md:max-w-88.75",
-                                        "flex flex-col font-serif italic font-bold z-50 gap-6 w-full self-center my-4 text-title-64 ")}
-                                >
-                                    {t.rich('title', {
-                                        gold: (chunks) => <h1 className="tracking-[-3.84px] leading-3.75 md:leading-4.75 lg:leading-5.75 self-start text-accent">{chunks}</h1>,
-                                        black: (chunks) => <h1 className="tracking-[-3.84px] leading-3.75 md:leading-4.75 lg:leading-5.75 self-end whitespace-nowrap">{chunks}</h1>
-                                    })}
-                                </motion.div>
-                            )}
-
-                            {/* Itemss */}
-                            {columnItems.map((item: any, itemIndex: number) => {
-                                const localData = about.find((a) => a.id === item.id);
-                                const itemPath = `pages.${currentPage}.items.${columnKey}.${itemIndex}`;
-                                return (
+                <AnimatePresence mode="wait">
+                    <motion.div className="flex flex-col lg:flex-row w-full gap-5 grow">
+                        {/* Column */}
+                        {Object.entries(activePage.items).map(([columnKey, columnItems]: any, colIndex) => (
+                            <motion.div
+                                layout
+                                key={columnKey}
+                                transition={bounceTransition}
+                                className={cn(
+                                    "flex flex-col w-full h-full gap-5",
+                                    colIndex === 0 ? "text-end" : colIndex === 1 ? "text-center" : "text-start"
+                                )}
+                            >
+                                {/* Title Header */}
+                                {colIndex === 0 && (
                                     <motion.div
-                                        key={`${columnKey}-${itemIndex}`}
                                         layout
-                                        initial={{ opacity: 0, scale: 0.95, filter: "blur(4px)" }}
-                                        animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                                        layoutId="about-main-title"
                                         transition={bounceTransition}
                                         className={cn(
-                                            "w-full",
-                                            item.type === "image"
-                                                ? "relative h-30 lg:h-full lg:flex-1"
-                                                : "flex-none z-10"
-                                        )}
+                                            "max-w-50 md:max-w-88.75",
+                                            "flex flex-col font-serif italic font-bold z-50 gap-6 w-full self-center my-4 text-title-64 ")}
                                     >
-                                        {item.type === "image" ? (
-                                            <AboutImageCard
-                                                src={localData?.src}
-                                                location={item.location}
-                                                position={localData?.position}
-                                            />
-                                        ) : (
-                                            <AboutTextCard
-                                                titleKey={`${itemPath}.title`}
-                                                descriptionKey={`${itemPath}.description`}
-                                            />
-                                        )}
+                                        {t.rich('title', {
+                                            gold: (chunks) => <h1 className="tracking-[-3.84px] leading-3.75 md:leading-4.75 lg:leading-5.75 self-start text-accent">{chunks}</h1>,
+                                            black: (chunks) => <h1 className="tracking-[-3.84px] leading-3.75 md:leading-4.75 lg:leading-5.75 self-end whitespace-nowrap">{chunks}</h1>
+                                        })}
                                     </motion.div>
-                                )
-                            })}
-                        </motion.div>
-                    ))}
-                </div>
+                                )}
+
+                                {/* Itemss */}
+                                {columnItems.map((item: any, itemIndex: number) => {
+                                    const localData = about.find((a) => a.id === item.id);
+                                    const itemPath = `pages.${currentPage}.items.${columnKey}.${itemIndex}`;
+                                    return (
+                                        <motion.div
+                                            key={`${columnKey}-${itemIndex}`}
+                                            layout
+                                            initial={{ opacity: 0, scale: 0.95, filter: "blur(4px)" }}
+                                            animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                                            transition={bounceTransition}
+                                            className={cn(
+                                                "w-full",
+                                                item.type === "image"
+                                                    ? "relative h-30 lg:h-full lg:flex-1"
+                                                    : "flex-none z-10"
+                                            )}
+                                        >
+                                            {item.type === "image" ? (
+                                                <AboutImageCard
+                                                    src={localData?.src}
+                                                    location={item.location}
+                                                    position={localData?.position}
+                                                />
+                                            ) : (
+                                                <AboutTextCard
+                                                    titleKey={`${itemPath}.title`}
+                                                    descriptionKey={`${itemPath}.description`}
+                                                />
+                                            )}
+                                        </motion.div>
+                                    )
+                                })}
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                </AnimatePresence>
             </LayoutGroup>
             <Pagination />
             <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
