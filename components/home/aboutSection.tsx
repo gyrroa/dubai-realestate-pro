@@ -24,7 +24,7 @@ export default function AboutSection() {
 
     const bounceTransition = {
         type: "spring",
-        stiffness: 260,
+        stiffness: 100,
         damping: 25,
         mass: 1,
     } as const;
@@ -80,7 +80,7 @@ export default function AboutSection() {
                                         className={cn(
                                             "w-full",
                                             item.type === "image"
-                                                ? "relative h-30 lg:h-full lg:flex-1 z-50"
+                                                ? "relative h-30 lg:h-full lg:flex-1"
                                                 : "flex-none z-10"
                                         )}
                                     >

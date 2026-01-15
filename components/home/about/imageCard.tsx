@@ -44,7 +44,7 @@ export default function AboutImageCard({ src, location, position }: { src: any; 
                     className="object-cover transition-all duration-500 ease-out"
                     draggable={false}
                     quality={75}
-                    sizes="(max-width: 768px)"
+                    priority
                 />
             </div>
             {/* Inner shadow */}
