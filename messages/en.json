@@ -318,5 +318,15 @@
     "copyright": "2025 Dubai Real Estate Pro. All rights reserved.",
     "quick_links": "Quick Links",
     "our_developers": "Our Developers"
+  },
+  "503": {
+    "title": "Coming <gold>Soon!</gold>",
+    "description": "This page is currently <black>under construction</black>. While we build this experience for you, feel free to explore the rest of our site or reach out with any questions.",
+    "button": "Return to Home"
+  },
+  "404": {
+    "title": "<gold>Page </gold>Not Found",
+    "description": "The page you are looking for might have been removed had its name changed or is temporarily unavailable.",
+    "button": "Return to Home"
   }
 }
