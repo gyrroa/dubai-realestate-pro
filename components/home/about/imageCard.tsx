@@ -56,7 +56,7 @@ export default function AboutImageCard({ src, location, position }: { src: any; 
                 className={cn(
                     "absolute flex items-center gap-1 w-max py-1.5 px-2.5",
                     position.endsWith("left") ? "start-1/2 -translate-x-1/2" : "end-1/2 translate-x-1/2",
-                    "hover:bg-glow hover:shadow-[0_0_9.2px_var(--accent)] active:translate-x-0.5 rtl:active:-translate-x-0.5 transition-all duration-300",
+                    "hover:bg-glow hover:shadow-[0_0_9.2px_var(--accent)] active:scale-95 transition-all duration-300",
                     "cursor-pointer",
                     vertical,
                     horizontal,
