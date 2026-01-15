@@ -1,13 +1,13 @@
 export const developers = [
-    { id: "emaar", imgSrc: "/home/hero/emaar.png" },
-    { id: "sobha", imgSrc: "/home/hero/sobha.png" },
-    { id: "dugasta", imgSrc: "/home/hero/dugasta.png" },
-    { id: "azizi", imgSrc: "/home/hero/azizi.png" },
-    { id: "binghatti", imgSrc: "/home/hero/binghatti.png" },
-    { id: "damac", imgSrc: "/home/hero/damac.png" },
-    { id: "nakheel", imgSrc: "/home/hero/nakheel.png" },
-    { id: "samana", imgSrc: "/home/hero/samana.png" },
-    { id: "danube", imgSrc: "/home/hero/danube.png" },
+    { id: "emaar", imgSrc: "/home/hero/emaar.webp" },
+    { id: "sobha", imgSrc: "/home/hero/sobha.webp" },
+    { id: "dugasta", imgSrc: "/home/hero/dugasta.webp" },
+    { id: "azizi", imgSrc: "/home/hero/azizi.webp" },
+    { id: "binghatti", imgSrc: "/home/hero/binghatti.webp" },
+    { id: "damac", imgSrc: "/home/hero/damac.webp" },
+    { id: "nakheel", imgSrc: "/home/hero/nakheel.webp" },
+    { id: "samana", imgSrc: "/home/hero/samana.webp" },
+    { id: "danube", imgSrc: "/home/hero/danube.webp" },
 ];
 
 export const about = [
