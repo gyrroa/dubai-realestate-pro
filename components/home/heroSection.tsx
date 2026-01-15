@@ -6,7 +6,7 @@ import DevBtnGroup from "./hero/devBtnGroup";
 export default function HeroSection() {
     const t = useTranslations('Hero');
     return (
-        <section id="hero" className="relative text-center flex flex-col flex-1 min-h-screen pt-30 md:pt-45">
+        <section id="home" className="relative text-center flex flex-col flex-1 min-h-screen pt-30 md:pt-45">
             {/* Section title */}
             <div className="w-full">
                 <h1 className="text-title-6xl font-serif italic text-black font-bold leading-8 md:leading-7 lg:leading-6 tracking-[-3.84px]">

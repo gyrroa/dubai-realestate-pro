@@ -90,7 +90,6 @@ export default function TextRibbon() {
               </svg>
             </div>
           ))}
-
         </motion.div>
       </div>
     </div>

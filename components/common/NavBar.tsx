@@ -51,7 +51,7 @@ export default function NavBar() {
                 !isAtTop && "xl:scale-85 xl:px-12.5 xl:py-5 bg-glow/80 backdrop-blur-[10px] xl:rounded-[60px] xl:border-3",
             )}>
                 {/* Logo Section */}
-                <Button size={"flat"} className="flex items-center gap-1.5 select-none" onClick={() => scrollTo("#hero")}>
+                <Button size={"flat"} className="flex items-center gap-1.5 select-none" onClick={() => scrollTo("#home")}>
                     <Image width={60} height={90} alt="Logo" src="/logo.png" className="w-10 h-14 xl:w-15 xl:h-22.5" />
                     <div className="
                         text-start font-bold flex flex-col font-serif 
@@ -75,7 +75,7 @@ export default function NavBar() {
                             onClick={(e) => {
                                 if (pathname === `/`) {
                                     e.preventDefault();
-                                    scrollTo("#hero");
+                                    scrollTo("#home");
                                 }
                             }}>
                             {t('home')}
@@ -137,7 +137,7 @@ export default function NavBar() {
                         onClick={(e) => {
                             if (pathname === `/`) {
                                 e.preventDefault();
-                                scrollTo("#hero");
+                                scrollTo("#home");
                             }
                         }}>
                         {t('home')}

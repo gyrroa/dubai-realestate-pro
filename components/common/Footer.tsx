@@ -73,7 +73,7 @@ export default function Footer() {
                     <h2 className="font-semibold leading-5.75 text-title-2xl tracking-[-1.44px] drop-shadow-[0_0_9.2px_var(--highlight)]">{t('quick_links')}</h2>
                     {/* Submenu */}
                     <div className="grid grid-cols-1 grid-rows-5 flex-1 text-desc-14">
-                        <Button variant="footer_submenu" size="flat" onClick={() => scrollTo("#hero")}>{n('home')}</Button>
+                        <Button variant="footer_submenu" size="flat" onClick={() => scrollTo("#home")}>{n('home')}</Button>
                         <Button variant="footer_submenu" size="flat">{n('developers')}</Button>
                         <Button variant="footer_submenu" size="flat" onClick={() => scrollTo("#articles")}>{n('articles')}</Button>
                         <Button variant="footer_submenu" size="flat" onClick={() => scrollTo("#contact")}>{n('contact_us')}</Button>

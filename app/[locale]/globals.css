@@ -61,6 +61,10 @@ h1 {
   user-select: none;
 }
 
+p {
+  user-select: none;
+}
+
 h3 {
   -webkit-text-stroke: 16px var(--color-accent);
   paint-order: stroke fill;
