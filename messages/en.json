@@ -1,8 +1,8 @@
 {
   "Navigation": {
+    "logo": "<black>DUBAI</black> <gold>REAL ESTATE <i>PRO</i></gold>",
     "home": "Home",
     "developers": "Developers",
-    "logo": "<black>DUBAI</black> <gold>REAL ESTATE <i>PRO</i></gold>",
     "articles": "Articles",
     "contact_us": "Contact Us"
   },
@@ -10,7 +10,36 @@
     "title": "<gold>Dubai’s Top</gold><br></br> Real Estate Developers",
     "description": "Curating the best of <black>Dubai’s</black> <gold>skyline</gold>, just for you.",
     "ribbon": "DUBAI REAL ESTATE PRO",
-    "dev_title": "Discover <black>properties</black> by <gold>developer:</gold>"
+    "dev_title": "Discover <black>properties</black> by <gold>developer:</gold>",
+    "carousel": {
+      "emaar": {
+        "developer": "EMAAR"
+      },
+      "sobha": {
+        "developer": "SOBHA"
+      },
+      "dugasta": {
+        "developer": "DUGASTA"
+      },
+      "azizi": {
+        "developer": "AZIZI"
+      },
+      "binghatti": {
+        "developer": "BINGHATTI"
+      },
+      "damac": {
+        "developer": "DAMAC"
+      },
+      "nakheel": {
+        "developer": "NAKHEEL"
+      },
+      "samana": {
+        "developer": "SAMANA"
+      },
+      "danube": {
+        "developer": "DANUBE"
+      }
+    }
   },
   "About": {
     "title": "<gold>Why Invest </gold><black>In Dubai?</black>",
@@ -22,8 +51,7 @@
             {
               "id": "p1c1-1",
               "type": "image",
-              "image": "/home/hero/1.png",
-              "location": "Danube Breez"
+              "location": "Creek Bay at Dubai Creek Harbour"
             },
             {
               "id": "p1c1-2",
@@ -42,16 +70,14 @@
             {
               "id": "p1c2-2",
               "type": "image",
-              "image": "/home/hero/2.png",
-              "location": "Danube Breez"
+              "location": "Creek Haven at Dubai Creek Harbour"
             }
           ],
           "column_3": [
             {
               "id": "p1c3-1",
               "type": "image",
-              "image": "/home/hero/3.png",
-              "location": "Danube Breez"
+              "location": "Sobha SkyParks"
             },
             {
               "id": "p1c3-2",
@@ -62,8 +88,7 @@
             {
               "id": "p1c3-3",
               "type": "image",
-              "image": "/home/hero/3.png",
-              "location": "Danube Breez"
+              "location": "Sobha Central"
             }
           ]
         }
@@ -81,16 +106,14 @@
             {
               "id": "p2c1-2",
               "type": "image",
-              "image": "/home/hero/1.png",
-              "location": "Danube Breez"
+              "location": "Al Haseen Residences"
             }
           ],
           "column_2": [
             {
               "id": "p2c2-1",
               "type": "image",
-              "image": "/home/hero/2.png",
-              "location": "Danube Breez"
+              "location": "AZIZI Rose"
             },
             {
               "id": "p2c2-2",
@@ -103,14 +126,12 @@
             {
               "id": "p2c3-1",
               "type": "image",
-              "image": "/home/hero/3.png",
-              "location": "Danube Breez"
+              "location": "Al Haseen Residences 3"
             },
             {
               "id": "p2c3-2",
               "type": "image",
-              "image": "/home/hero/4.png",
-              "location": "Danube Breez"
+              "location": "AZIZI Farishta II"
             }
           ]
         }
@@ -122,8 +143,7 @@
             {
               "id": "p3c1-1",
               "type": "image",
-              "image": "/home/hero/1.png",
-              "location": "Danube Breez"
+              "location": "DAMAC Islands 2 Dubai"
             }
           ],
           "column_2": [
@@ -136,16 +156,14 @@
             {
               "id": "p3c2-2",
               "type": "image",
-              "image": "/home/hero/1.png",
-              "location": "Danube Breez"
+              "location": "DAMAC Riverside Views"
             }
           ],
           "column_3": [
             {
               "id": "p3c3-1",
               "type": "image",
-              "image": "/home/hero/3.png",
-              "location": "Danube Breez"
+              "location": "Binghatti Cullinan"
             },
             {
               "id": "p3c3-2",
@@ -156,8 +174,7 @@
             {
               "id": "p3c3-3",
               "type": "image",
-              "image": "/home/hero/4.png",
-              "location": "Danube Breez"
+              "location": "Binghatti Hillcrest"
             }
           ]
         }
@@ -175,16 +192,14 @@
             {
               "id": "p4c1-2",
               "type": "image",
-              "image": "/home/hero/1.png",
-              "location": "Danube Breez"
+              "location": "Palm Central"
             }
           ],
           "column_2": [
             {
               "id": "p4c2-1",
               "type": "image",
-              "image": "/home/hero/1.png",
-              "location": "Danube Breez"
+              "location": "Bay Grove"
             },
             {
               "id": "p4c2-2",
@@ -197,8 +212,7 @@
             {
               "id": "p4c3-1",
               "type": "image",
-              "image": "/home/hero/3.png",
-              "location": "Danube Breez"
+              "location": "SAMANA Boulevard Heights"
             },
             {
               "id": "p4c3-2",
@@ -209,8 +223,7 @@
             {
               "id": "p4c3-3",
               "type": "image",
-              "image": "/home/hero/4.png",
-              "location": "Danube Breez"
+              "location": "Shahrukhz"
             }
           ]
         }
@@ -277,7 +290,7 @@
       "Item4": [
         {
           "id": "b4",
-          "src": "/home/article/article-4.webp",
+          "src": "/home/article/article-4.png",
           "title": "🌵 Desert Escapes: Adventure & Heritage",
           "description": "From high-speed dune bashing to serene starlit dinners, experience the magic of the Arabian sands."
         }

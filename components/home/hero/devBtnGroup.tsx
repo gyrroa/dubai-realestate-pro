@@ -21,7 +21,7 @@ export default function DevBtnGroup() {
     return (
         <div className="flex flex-col pt-5.5 pb-9.5 gap-5.5 justify-center">
             {/* Title */}
-            <h2 className="font-medium text text-title-2xl">
+            <h2 className="font-light text text-title-2xl">
                 {t.rich("dev_title", {
                     black: (chunk) => <span className="font-semibold">{chunk}</span>,
                     gold: (chunk) => <span className="font-semibold text-accent italic">{chunk}</span>

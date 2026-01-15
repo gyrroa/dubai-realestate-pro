@@ -85,3 +85,16 @@ body {
     scrollbar-color: var(--color-accent) transparent;
   }
 }
+
+@keyframes gold-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-gold-shimmer {
+  animation: gold-shimmer 5s infinite linear;
+}

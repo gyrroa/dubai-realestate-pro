@@ -22,10 +22,11 @@ export default function ArticleCard({ src, title, description }: ArticleCardProp
                     src={src}
                     alt={title}
                     fill
-                    quality={90}
+                    quality={75}
                     className="object-cover rounded-[30px] group-hover:scale-110 transition-transform duration-700 ease-in-out"
                     draggable={false}
                     priority={false}
+                    sizes="(max-width: 768px)"
                 />
                 <div className={cn(
                     "group-hover:opacity-50 transition-all duration-500",

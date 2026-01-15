@@ -3,13 +3,15 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useEffect, useRef, useState, useCallback } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import {
     motion,
     useMotionValue,
     animate,
     PanInfo,
 } from "framer-motion";
+import { developers } from "@/messages/constants/data";
+import { Link } from "@/i18n/routing";
 
 const AUTO_DELAY = 3000;
 const DRAG_BUFFER = 50;
@@ -17,16 +19,10 @@ const DRAG_BUFFER = 50;
 export default function PanoramaCarousel() {
     const locale = useLocale();
     const isArabic = locale === 'ar';
+    const t = useTranslations("Hero.carousel");
 
-    const developerImages = [
-        "/home/hero/1.png",
-        "/home/hero/2.png",
-        "/home/hero/3.png",
-        "/home/hero/4.png",
-    ];
-
-    const carouselItems = [...developerImages, ...developerImages, ...developerImages, ...developerImages];
-    const baseCount = developerImages.length;
+    const carouselItems = [...developers, ...developers, ...developers];
+    const baseCount = developers.length;
 
     const containerRef = useRef<HTMLDivElement>(null);
     const x = useMotionValue(0);
@@ -125,7 +121,10 @@ export default function PanoramaCarousel() {
     }, [currentIndex, isDragging, snapToIndex, isArabic]);
 
     const handleDragEnd = (_: any, info: PanInfo) => {
-        setIsDragging(false);
+        setTimeout(() => {
+            setIsDragging(false);
+        }, 50);
+
         const { offset, velocity } = info;
         let newIndex = currentIndex;
 
@@ -156,35 +155,40 @@ export default function PanoramaCarousel() {
                 onDragStart={() => setIsDragging(true)}
                 onDragEnd={handleDragEnd}
             >
-                {carouselItems.map((src, index) => (
-                    <div
+                {carouselItems.map((item, index) => (
+                    <Link
+                        href="/503"
                         key={index}
                         className={cn(
                             "group px-3 lg:px-7 shrink-0",
-                            "h-full w-auto aspect-2/3 lg:aspect-4/3",
-                            "hover:opacity-90 text-glow hover:text-highlight transition-all duration-300 flex items-center"
+                            "h-full w-auto aspect-2/3 lg:aspect-3/3",
+                            "hover:opacity-95 text-glow hover:text-highlight transition-all duration-300 flex items-center",
+                            isDragging ? "pointer-events-none" : ""
                         )}
+                        draggable={false}
                     >
-                        <div className="relative h-full w-full aspect-2/3 lg:aspect-4/3 rounded-2xl overflow-hidden select-none pointer-events-none">
-                            <div className="absolute inset-0 z-10 flex items-center justify-center">
+                        <div className="relative h-full w-full aspect-2/3 lg:aspect-3/3 rounded-2xl overflow-hidden select-none cursor-pointer">
+                            <div className={cn(
+                                "absolute inset-0 z-10 flex items-center justify-center"
+                            )}>
                                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.6)_0%,transparent_20%)]" />
                                 <h2 className="relative z-20 font-semibold text-desc-xl md:text-title-32 drop-shadow-[0_4px_4px_rgba(0,0,0,0.80)] tracking-[11.84px]">
-                                    DUGASTA
+                                    {t(`${item.id}.developer`)}
                                 </h2>
                             </div>
                             <Image
-                                src={src}
+                                src={item.imgSrc}
                                 alt="Developer"
                                 fill
-                                quality={90}
+                                quality={75}
                                 sizes="(max-width: 768px) 80vw, 50vw"
-                                className="object-cover object-center"
+                                className="object-cover object-top group-hover:scale-110 transition-all duration-700"
                                 draggable={false}
                             />
                         </div>
-                    </div>
+                    </Link>
                 ))}
-            </motion.div>
-        </div>
+            </motion.div >
+        </div >
     );
 }

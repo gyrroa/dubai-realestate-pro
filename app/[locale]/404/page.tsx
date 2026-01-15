@@ -11,8 +11,9 @@ export default function NotFound() {
                 alt="Error"
                 width={200}
                 height={200}
-                quality={90}
+                quality={75}
                 className="size-50"
+                sizes="(max-width: 768px)"
             />
             <h1 className={cn(
                 "tracking-[-1.84px] md:tracking-[-2.84px] lg:tracking-[-3.84px]",

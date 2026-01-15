@@ -26,7 +26,7 @@ export default function Footer() {
                     </div>
                 </div>
                 {/*  */}
-                <p>{t('copyright')}</p>
+                <p className="text-center">{t('copyright')}</p>
 
                 {/* Socials */}
                 <div className="flex flex-1 gap-3">
@@ -85,7 +85,7 @@ export default function Footer() {
                     {/* Submenu */}
                     <div className="grid grid-cols-2 grid-rows-5 gap-x-10 flex-1 text-desc-14">
                         <Button variant="footer_submenu" size="flat">Azizi</Button>
-                        <Button variant="footer_submenu" size="flat">Binghati</Button>
+                        <Button variant="footer_submenu" size="flat">Binghatti</Button>
                         <Button variant="footer_submenu" size="flat">Damac</Button>
                         <Button variant="footer_submenu" size="flat">Danube</Button>
                         <Button variant="footer_submenu" size="flat">Dugasta</Button>

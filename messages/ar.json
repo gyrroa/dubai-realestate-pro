@@ -1,8 +1,8 @@
 {
   "Navigation": {
+    "logo": "<black>دبي</black><gold>محترف عقارات</gold>",
     "home": "الرئيسية",
     "developers": "المطورين",
-    "logo": "<black>دبي</black><gold>محترف عقارات</gold>",
     "articles": "المقالات",
     "contact_us": "تواصل معنا"
   },
@@ -10,7 +10,36 @@
     "title": "<gold>أفضل مطوري</gold><br></br> العقارات في دبي",
     "description": "ننتقي لكم الأفضل من <gold>أفق</gold> <black>دبي</black>، خصيصاً لكم.",
     "ribbon": "دبي ريل إستيت برو",
-    "dev_title": "اكتشف <black>العقارات</black> حسب <gold>المطور:</gold>"
+    "dev_title": "اكتشف <black>العقارات</black> حسب <gold>المطور:</gold>",
+    "carousel": {
+      "emaar": {
+        "developer": "إعمار"
+      },
+      "sobha": {
+        "developer": "شوبا"
+      },
+      "dugasta": {
+        "developer": "دوغاستا"
+      },
+      "azizi": {
+        "developer": "عزيزي"
+      },
+      "binghatti": {
+        "developer": "بن غاطي"
+      },
+      "damac": {
+        "developer": "داماك"
+      },
+      "nakheel": {
+        "developer": "نخيل"
+      },
+      "samana": {
+        "developer": "سامانا"
+      },
+      "danube": {
+        "developer": "دانوب"
+      }
+    }
   },
   "About": {
     "title": "<gold>لماذا الاستثمار </gold><black>في دبي؟</black>",
@@ -277,7 +306,7 @@
       "Item4": [
         {
           "id": "b4",
-          "src": "/home/article/article-4.webp",
+          "src": "/home/article/article-4.png",
           "title": "🌵 مغامرات الصحراء: إثارة وتراث",
           "description": "من القيادة السريعة على الكثبان الرملية إلى العشاء الهادئ تحت النجوم، عش سحر الرمال العربية."
         }

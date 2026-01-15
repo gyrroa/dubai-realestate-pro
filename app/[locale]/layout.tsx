@@ -57,7 +57,6 @@ export default async function LocaleLayout({ children, params }: Props) {
         className={`${workSans.variable} ${crimsonText.variable} ${crimsonPro.variable} antialiased`}
       >
         {/* Translation Provider */}
-
         <ReactLenis root>
           <NextIntlClientProvider messages={messages}>
             <main

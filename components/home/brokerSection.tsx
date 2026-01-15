@@ -17,7 +17,7 @@ export default function BrokerSection() {
                         src="/home/broker/pres.png"
                         width={600}
                         height={600}
-                        quality={90}
+                        quality={75}
                         alt="pres"
                         className="w-127.75 h-auto -mb-34 hidden lg:block"
                         draggable={false}
@@ -65,7 +65,7 @@ export default function BrokerSection() {
                     src="/home/broker/pres.png"
                     width={600}
                     height={600}
-                    quality={90}
+                    quality={75}
                     alt="pres"
                     className="w-auto -mb-20 -mt-15 lg:hidden"
                     draggable={false}
@@ -145,7 +145,7 @@ export default function BrokerSection() {
                     src="/home/broker/vicePres.png"
                     width={600}
                     height={600}
-                    quality={90}
+                    quality={75}
                     alt="vice-pres"
                     className="w-50 md:w-70 lg:w-85.75 h-auto -mb-20 -mt-15 lg:-mb-34 block lg:hidden"
                     draggable={false}
@@ -157,10 +157,11 @@ export default function BrokerSection() {
                         src="/home/broker/vicePres.png"
                         width={600}
                         height={600}
-                        quality={90}
+                        quality={75}
                         alt="vice-pres"
                         className="w-95.75 h-auto -mb-34 -mt-15 hidden lg:block"
                         draggable={false}
+                        sizes="(max-width: 768px)"
                     />
                     {/* Content */}
                     <div className={cn(
