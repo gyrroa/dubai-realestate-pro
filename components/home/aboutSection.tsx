@@ -80,7 +80,7 @@ export default function AboutSection() {
                                         className={cn(
                                             "w-full",
                                             item.type === "image"
-                                                ? "relative h-30 lg:h-full lg:flex-1"
+                                                ? "relative h-30 lg:h-full lg:flex-1 z-50"
                                                 : "flex-none z-10"
                                         )}
                                     >

@@ -32,7 +32,7 @@ export default function AboutImageCard({ src, location, position }: { src: any; 
                 "[--x:0px] [--y:0px]"
             )}>
             {/* Shining Shimmering Splendid */}
-            <GoldSkeleton className="absolute inset-0 z-20 h-full w-full" />
+            <GoldSkeleton className="absolute inset-0 z-20 h-full w-full pointer-events-none" />
             {/* Background photo */}
 
             <div className="absolute inset-[-15%] transition-transform duration-700 ease-out"
@@ -41,7 +41,6 @@ export default function AboutImageCard({ src, location, position }: { src: any; 
                     src={src}
                     alt={location}
                     fill
-                    style={{ objectPosition: 'var(--x) var(--y)' }}
                     className="object-cover transition-all duration-500 ease-out"
                     draggable={false}
                     quality={75}
@@ -57,7 +56,7 @@ export default function AboutImageCard({ src, location, position }: { src: any; 
                 className={cn(
                     "absolute flex items-center gap-1 w-max py-1.5 px-2.5",
                     position.endsWith("left") ? "start-1/2 -translate-x-1/2" : "end-1/2 translate-x-1/2",
-                    "group-hover:bg-glow transition-all duration-300",
+                    "hover:bg-glow hover:shadow-[0_0_9.2px_var(--accent)] active:translate-x-0.5 rtl:active:-translate-x-0.5 transition-all duration-300",
                     "cursor-pointer",
                     vertical,
                     horizontal,
@@ -66,6 +65,7 @@ export default function AboutImageCard({ src, location, position }: { src: any; 
                 📍{location}
                 <ChevronRight
                     className={cn(
+                        "rtl:rotate-180",
                         "size-[clamp(0.46rem,0.28rem+0.75vw,0.75rem)] transition-all duration-500 ease-in-out",
                         "lg:opacity-0 lg:w-0 lg:-translate-x-2 lg:pointer-events-none",
                         "lg:group-hover:opacity-100 lg:group-hover:w-[clamp(0.46rem,0.28rem+0.75vw,0.75rem)] lg:group-hover:translate-x-0 lg:group-hover:pointer-events-auto"
