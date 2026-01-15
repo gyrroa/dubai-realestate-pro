@@ -99,7 +99,7 @@ export default function BrokerSection() {
                         </g>
                         <defs>
                             <filter id="filter0_f_718_1874" x="0" y="0" width="339" height="346" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                                 <feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur_718_1874" />
                             </filter>
@@ -145,7 +145,7 @@ export default function BrokerSection() {
                             </g>
                             <defs>
                                 <filter id="filter0_f_718_1874" x="0" y="0" width="339" height="346" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                                     <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                                     <feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur_718_1874" />
                                 </filter>

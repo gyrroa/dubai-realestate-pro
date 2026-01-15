@@ -29,7 +29,7 @@ export default function DevBtnGroup() {
                 {developerImages.map((src, index) => (
                     <Button variant={"hero_dev"} size={"hero_dev"} key={index} className="w-[28%] h-12 xl:w-fit xl:h-fit">
                         <div
-                            className="h-full w-full md:w-32 md:h-12 bg-accent group-hover:bg-glow transition-colors duration-600 transform-gpu"
+                            className="h-full w-full md:w-32 md:h-12 bg-accent group-hover:bg-glow transition-colors duration-600"
                             style={{
                                 maskImage: `url(${src})`,
                                 maskSize: "contain",

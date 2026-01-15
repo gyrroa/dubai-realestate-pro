@@ -13,7 +13,7 @@ export default function HeroSection() {
                 <h1 className="text-title-6xl font-serif italic text-black font-bold leading-8.5 md:leading-6 tracking-[-3.84px]">
                     {t.rich("title", {
                         gold: (chunks) => <span className="text-accent">{chunks}</span>,
-                        br: () => <br className="block md:hidden"/>
+                        br: () => <br className="block md:hidden" />
                     })}
                 </h1>
                 <p className="text-title-2xl my-6 leading-6 tracking-[-1.44px]">

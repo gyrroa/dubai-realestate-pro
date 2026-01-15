@@ -40,9 +40,11 @@ export default function PanoramaCarousel() {
         if (containerRef.current) {
             const firstItem = containerRef.current.children[0] as HTMLElement;
             if (firstItem) {
-                const _itemWidth = firstItem.offsetWidth;
-                const _centerOffset = (window.innerWidth - _itemWidth) / 2;
+                const rect = firstItem.getBoundingClientRect();
+                const _itemWidth = rect.width;
 
+                // Exact center of the screen minus half the item
+                const _centerOffset = (window.innerWidth / 2) - (_itemWidth / 2);
                 // Update Refs instantly
                 itemWidthRef.current = _itemWidth;
                 centerOffsetRef.current = _centerOffset;
@@ -141,9 +143,9 @@ export default function PanoramaCarousel() {
         <div
             dir="ltr"
             className={cn(
+                "min-h-[38dvh]",
                 "flex w-full h-full overflow-hidden cursor-grab active:cursor-grabbing",
                 "mask-[radial-gradient(ellipse_120%_25%_at_50%_0%,transparent_45%,#000_45.5%),radial-gradient(ellipse_120%_25%_at_50%_100%,transparent_45%,#000_45.5%)] mask-intersect",
-                "transform-gpu"
             )}
         >
             <motion.div
@@ -158,12 +160,12 @@ export default function PanoramaCarousel() {
                 {carouselItems.map((src, index) => (
                     <div
                         key={index}
-                        className="h-full pr-4 lg:pr-14 shrink-0 hover:opacity-90 text-glow hover:text-highlight transition-all duration-300 flex items-center"
+                        className="group h-full px-3 lg:px-7 shrink-0 hover:opacity-90 text-glow hover:text-highlight transition-all duration-300 flex items-center"
                     >
-                        <div className="relative h-full w-auto aspect-2/3 lg:aspect-4/3 rounded-2xl overflow-hidden select-none pointer-events-none">
+                        <div className="relative h-full w-full aspect-2/3 lg:aspect-4/3 rounded-2xl overflow-hidden select-none pointer-events-none">
                             <div className="absolute inset-0 z-10 flex items-center justify-center">
                                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.6)_0%,transparent_20%)]" />
-                                <h2 className="relative z-20 font-semibold text-title-32 drop-shadow-[0_4px_4px_rgba(0,0,0,0.80)] tracking-[11.84px]">
+                                <h2 className="relative z-20 font-semibold text-desc-xl md:text-title-32 drop-shadow-[0_4px_4px_rgba(0,0,0,0.80)] tracking-[11.84px]">
                                     DUGASTA
                                 </h2>
                             </div>
@@ -173,7 +175,7 @@ export default function PanoramaCarousel() {
                                 fill
                                 quality={90}
                                 sizes="(max-width: 768px) 80vw, 50vw"
-                                className="object-cover"
+                                className="object-cover object-center"
                                 draggable={false}
                             />
                         </div>
