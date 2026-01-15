@@ -35,7 +35,7 @@ export default function NotFound() {
                 </Link>
             </Button>
             {/* Top Left Shadow */}
-            <svg xmlns="http://www.w3.org/2000/svg" width="397" height="574" viewBox="0 0 397 574" fill="none" className="absolute top-0 left-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="397" height="574" viewBox="0 0 397 574" fill="none" className="absolute top-0 left-0 pointer-events-none">
                 <g opacity="0.5" filter="url(#filter0_f_837_2971)">
                     <path d="M197 262C197 323.856 148.871 374 89.5 374C30.1294 374 -18 323.856 -18 262C-18 200.144 30.1294 150 89.5 150C148.871 150 197 200.144 197 262Z" fill="#EFCB68" />
                     <path d="M89.5 150.5C148.575 150.5 196.5 200.401 196.5 262C196.5 323.599 148.575 373.5 89.5 373.5C30.4247 373.5 -17.5 323.599 -17.5 262C-17.5 200.401 30.4247 150.5 89.5 150.5Z" stroke="black" />
@@ -49,7 +49,7 @@ export default function NotFound() {
                 </defs>
             </svg>
             {/* Bottom Right Shadow */}
-            <svg xmlns="http://www.w3.org/2000/svg" width="363" height="449" viewBox="0 0 363 449" fill="none" className="absolute bottom-0 right-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="363" height="449" viewBox="0 0 363 449" fill="none" className="absolute bottom-0 right-0 pointer-events-none">
                 <g opacity="0.5" filter="url(#filter0_f_837_2969)">
                     <path d="M440 324.5C440 393.259 386.274 449 320 449C253.726 449 200 393.259 200 324.5C200 255.741 253.726 200 320 200C386.274 200 440 255.741 440 324.5Z" fill="#EFCB68" />
                     <path d="M320 200.5C385.981 200.5 439.5 255.999 439.5 324.5C439.5 393.001 385.981 448.5 320 448.5C254.019 448.5 200.5 393.001 200.5 324.5C200.5 255.999 254.019 200.5 320 200.5Z" stroke="black" />

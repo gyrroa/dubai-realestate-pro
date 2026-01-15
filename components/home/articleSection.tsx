@@ -31,7 +31,7 @@ export default function ArticleSection() {
                 ))}
 
                 {/* Left ellipse shadow */}
-                <svg xmlns="http://www.w3.org/2000/svg" width="260" height="265" viewBox="0 0 260 265" fill="none" className="absolute -left-30 -bottom-30">
+                <svg xmlns="http://www.w3.org/2000/svg" width="260" height="265" viewBox="0 0 260 265" fill="none" className="absolute -left-30 -bottom-30 pointer-events-none">
                     <g opacity="0.5" filter="url(#filter0_f_275_1170)">
                         <ellipse cx="130" cy="132.5" rx="70" ry="72.5" fill="#EFCB68" />
                         <path d="M130 60.5C168.367 60.5 199.5 92.7188 199.5 132.5C199.5 172.281 168.367 204.5 130 204.5C91.6326 204.5 60.5 172.281 60.5 132.5C60.5 92.7188 91.6326 60.5 130 60.5Z" stroke="black" />
@@ -45,7 +45,7 @@ export default function ArticleSection() {
                     </defs>
                 </svg>
                 {/* Right ellipse shadow */}
-                <svg xmlns="http://www.w3.org/2000/svg" width="260" height="265" viewBox="0 0 260 265" fill="none" className="absolute -right-30 -top-30">
+                <svg xmlns="http://www.w3.org/2000/svg" width="260" height="265" viewBox="0 0 260 265" fill="none" className="absolute -right-30 -top-30 pointer-events-none">
                     <g opacity="0.5" filter="url(#filter0_f_275_1170)">
                         <ellipse cx="130" cy="132.5" rx="70" ry="72.5" fill="#EFCB68" />
                         <path d="M130 60.5C168.367 60.5 199.5 92.7188 199.5 132.5C199.5 172.281 168.367 204.5 130 204.5C91.6326 204.5 60.5 172.281 60.5 132.5C60.5 92.7188 91.6326 60.5 130 60.5Z" stroke="black" />

@@ -35,7 +35,7 @@ export default function WhyBlock() {
                 ))}
             </div>
             {/* Shadow */}
-            <svg xmlns="http://www.w3.org/2000/svg" width="833" height="312" viewBox="0 0 833 312" fill="none" className="absolute left-1/2 -translate-x-1/2 lg:-left-3/11 -top-2/11 lg:-top-3/7 w-full -z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" width="833" height="312" viewBox="0 0 833 312" fill="none" className="absolute left-1/2 -translate-x-1/2 lg:-left-3/11 -top-2/11 lg:-top-3/7 w-full -z-10 pointer-events-none">
                 <g opacity="0.8" filter="url(#filter0_f_273_909)">
                     <path fillRule="evenodd" clipRule="evenodd" d="M344.285 100.004C504.311 99.7577 670.094 110.737 719.65 135.413C769.287 160.13 673.715 184.499 545.151 200.025C410.599 216.273 272.783 215.708 135.704 200.025C-5.86326 183.828 -69.1486 162.93 -9.76412 136.536C43.243 112.977 189.643 100.242 344.285 100.004Z" fill="url(#paint0_linear_273_909)" />
                 </g>
