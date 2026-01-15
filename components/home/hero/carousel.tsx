@@ -163,7 +163,6 @@ export default function PanoramaCarousel() {
                             "group px-3 lg:px-7 shrink-0",
                             "h-full w-auto aspect-2/3 lg:aspect-4/3",
                             "hover:opacity-90 text-glow hover:text-highlight transition-all duration-300 flex items-center"
-
                         )}
                     >
                         <div className="relative h-full w-full aspect-2/3 lg:aspect-4/3 rounded-2xl overflow-hidden select-none pointer-events-none">

@@ -65,7 +65,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             >
               {/* Background */}
               <div className="w-full absolute inset-0 -z-10 bg-[url(/background.png)] bg-cover bg-center bg-no-repeat" />
-              <NavBar locale={locale} />
+              <NavBar />
               {children}
               <Footer />
             </main>
