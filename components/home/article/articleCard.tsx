@@ -14,7 +14,7 @@ export default function ArticleCard({ src, title, description }: ArticleCardProp
     return (
         <Link href={"/503"}>
             <div className={cn(
-                "group hover:drop-shadow-2xl active:scale-95",
+                "group hover:drop-shadow-2xl active:scale-95 hover:rotate-2",
                 "transition-all duration-500 cursor-pointer",
                 "relative flex flex-col text-start justify-end h-full min-h-40 pb-6 md:pb-7 lg:pb-8 px-2.5 md:px-3 lg:px-3.5 rounded-4xl text-glow select-none overflow-clip"
             )}>
@@ -23,7 +23,7 @@ export default function ArticleCard({ src, title, description }: ArticleCardProp
                     alt={title}
                     fill
                     quality={90}
-                    className="object-cover rounded-[30px] group-hover:scale-110 transition-transform duration-700 ease-in-out group-hover:rotate-2"
+                    className="object-cover rounded-[30px] group-hover:scale-110 transition-transform duration-700 ease-in-out"
                     draggable={false}
                     priority={false}
                 />

@@ -8,6 +8,7 @@ import ReactLenis from "lenis/react";
 import "./globals.css";
 import NavBar from "@/components/common/NavBar";
 import Footer from "@/components/common/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",
@@ -71,6 +72,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             </main>
           </NextIntlClientProvider>
         </ReactLenis>
+        <Analytics />
       </body>
     </html>
   );
