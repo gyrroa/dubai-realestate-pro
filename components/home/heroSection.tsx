@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import PanoramaCarousel from "./hero/carousel";
 import TextRibbon from "./hero/textRibbon";
 import DevBtnGroup from "./hero/devBtnGroup";
+import { cn } from "@/lib/utils";
 
 export default function HeroSection() {
     const t = useTranslations('Hero');
@@ -24,13 +25,17 @@ export default function HeroSection() {
             </div>
             {/* Banner */}
             <div className="grow w-full flex flex-col relative -mt-10">
-                <div className="relative w-full h-[40vh] md:h-[50vh] lg:h-[60vh] min-h-125 flex items-end">
+                <div className={cn(
+                    "relative w-full flex items-end",
+                    "h-[30vh] md:h-[50vh] lg:h-[60vh]",
+                    "min-h-105 md:min-h-125"
+                )}>
                     {/* Carousel */}
                     <div className="absolute inset-0 z-0">
                         <PanoramaCarousel />
                     </div>
                     {/* Ribbon */}
-                    <div className="relative z-10 w-full mb-6 md:mb-10 lg:mb-14 pointer-events-none">
+                    <div className="relative z-10 w-full mb-4 md:mb-6 lg:mb-10  pointer-events-none">
                         <TextRibbon />
                     </div>
                 </div>

@@ -61,7 +61,7 @@ export default function TextRibbon() {
       <div className="relative w-full flex items-center justify-center">
         <div dir="ltr" className={cn(
           "py-0 lg:py-0.5 2xl:py-1.5 ",
-          "w-[110%] absolute bg-foreground rotate-6 md:rotate-3 text-highlight shadow-[0_4px_11px_5px_rgba(0,0,0,0.15)]"
+          "w-[110%] absolute bg-foreground rotate-9 md:rotate-6 lg:rotate-3 text-highlight shadow-[0_4px_11px_5px_rgba(0,0,0,0.15)]"
         )}>
           <motion.div
             ref={containerRef}
@@ -79,7 +79,11 @@ export default function TextRibbon() {
             ))}
           </motion.div>
         </div>
-        <div dir="ltr" className="w-[110%] absolute bg-highlight py-0 lg:py-0.5 2xl:py-1.5 -rotate-6 md:-rotate-3 shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+        {/* <div dir="ltr" className="w-[110%] absolute bg-highlight py-0 lg:py-0.5 2xl:py-1.5 -rotate-6 md:-rotate-3 shadow-[0_4px_4px_rgba(0,0,0,0.25)]"> */}
+        <div dir="ltr" className={cn(
+          "py-0 lg:py-0.5 2xl:py-1.5 ",
+          "w-[110%] absolute bg-highlight -rotate-9 md:-rotate-6 lg:-rotate-3 shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+        )}>
           <motion.div
             ref={containerRef}
             className="flex whitespace-nowrap w-max p-2.5 gap-3"

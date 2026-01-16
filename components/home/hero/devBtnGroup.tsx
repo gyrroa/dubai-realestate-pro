@@ -19,7 +19,7 @@ export default function DevBtnGroup() {
         "/home/hero/buttons/danube.svg",
     ];
     return (
-        <div className="flex flex-col pt-5.5 pb-9.5 gap-5.5 justify-center">
+        <div className="flex flex-col pb-9.5 gap-5.5 justify-center">
             {/* Title */}
             <h2 className="font-light text text-title-2xl">
                 {t.rich("dev_title", {
