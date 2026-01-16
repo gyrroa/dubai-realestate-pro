@@ -1,10 +1,24 @@
 {
   "Navigation": {
-    "logo": "<black>دبي</black><gold>محترف عقارات</gold>",
-    "home": "الرئيسية",
-    "developers": "المطورين",
-    "articles": "المقالات",
-    "contact_us": "تواصل معنا"
+    "logo": "<black>دبي</black> <gold>للعقارات <i>برو</i></gold>",
+    "menu": [
+      {
+        "id": "n1",
+        "title": "الرئيسية"
+      },
+      {
+        "id": "n2",
+        "title": "المطورون"
+      },
+      {
+        "id": "n3",
+        "title": "المقالات"
+      },
+      {
+        "id": "n4",
+        "title": "اتصل بنا"
+      }
+    ]
   },
   "Hero": {
     "title": "<gold>أفضل مطوري</gold><br></br> العقارات في دبي",
