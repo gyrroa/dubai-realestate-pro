@@ -26,7 +26,7 @@ export default function Pagination() {
 
     return (
         <div className={cn(
-            "sticky bottom-5 left-0 w-full flex justify-between px-2 z-50 mt-auto",
+            "sticky bottom-5 left-0 w-full flex justify-around lg:justify-between gap-5 px-2 z-50 mt-auto",
             "lg:absolute lg:top-1/2 lg:bottom-auto lg:left-1/2 lg:-translate-x-1/2 lg:px-10 xl:px-30 lg:mt-0",
             "pointer-events-none"
         )}>
