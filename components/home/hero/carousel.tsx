@@ -179,6 +179,8 @@ export default function PanoramaCarousel() {
                             <Image
                                 src={item.imgSrc}
                                 alt={t(`${item.id}.developer`)}
+                                placeholder="blur"
+                                blurDataURL={item.blur}
                                 fill
                                 quality={75}
                                 sizes="(max-width: 768px) 80vw, 50vw"
