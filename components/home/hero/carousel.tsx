@@ -142,7 +142,7 @@ export default function PanoramaCarousel() {
         <div
             dir="ltr"
             className={cn(
-                "flex w-full h-full overflow-hidden cursor-grab active:cursor-grabbing",
+                "w-full h-full overflow-hidden cursor-grab active:cursor-grabbing",
                 "mask-[radial-gradient(ellipse_120%_25%_at_50%_0%,transparent_45%,#000_45.5%),radial-gradient(ellipse_120%_25%_at_50%_100%,transparent_45%,#000_45.5%)] mask-intersect",
             )}
         >

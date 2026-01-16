@@ -8,7 +8,7 @@ export default function HeroSection() {
     return (
         <section id="home" className="relative text-center flex flex-col flex-1 min-h-screen pt-30 md:pt-45">
             {/* Section title */}
-            <div className="w-full">
+            <div className="w-full px-4">
                 <h1 className="text-title-6xl font-serif italic text-black font-bold leading-8 md:leading-7 lg:leading-6 tracking-[-3.84px]">
                     {t.rich("title", {
                         gold: (chunks) => <span className="text-accent">{chunks}</span>,
@@ -22,12 +22,17 @@ export default function HeroSection() {
                     })}
                 </p>
             </div>
-            <div className="flex-1 w-full flex flex-col relative justify-center -mt-10">
-                {/* Carousel */}
-                <div className="absolute inset-0 w-full h-full">
-                    <PanoramaCarousel />
+            {/* Banner */}
+            <div className="grow w-full flex flex-col relative -mt-10">
+                <div className="relative w-full h-[40vh] md:h-[50vh] lg:h-[60vh] min-h-125 flex items-end">
+                    {/* Carousel */}
+                    <div className="absolute inset-0 z-0">
+                        <PanoramaCarousel />
+                    </div>
                     {/* Ribbon */}
-                    <TextRibbon />
+                    <div className="relative z-10 w-full mb-6 md:mb-10 lg:mb-14 pointer-events-none">
+                        <TextRibbon />
+                    </div>
                 </div>
             </div>
             {/* Developer Button Group */}
