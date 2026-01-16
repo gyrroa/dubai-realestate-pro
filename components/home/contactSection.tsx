@@ -3,11 +3,16 @@ import ContactForm from "./contact/contactForm";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 export default function ContactSection() {
     const t = useTranslations('Contact');
     return (
-        <section id="contact" className="grid grid-cols-1 lg:grid-cols-2 gap-15 px-8 lg:px-17 py-30 min-h-screen overflow-clip">
+        <section id="contact" className={cn(
+            "px-8 lg:px-17",
+            "py-16 lg:py-30",
+            "grid grid-cols-1 lg:grid-cols-2 gap-15 min-h-screen overflow-clip"
+        )}>
             {/* Contact Info */}
             <div className="relative flex flex-col justify-start items-center">
                 {/* Section Title */}

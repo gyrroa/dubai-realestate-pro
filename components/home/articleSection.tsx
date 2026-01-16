@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import ArticleCard from "./article/articleCard"
 import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
@@ -11,14 +10,15 @@ export default function ArticleSection() {
     const articlePosts = Object.values(itemsRaw).flat() as any[];
     return (
         <section id="articles" className={cn(
-            "pt-50 md:pt-60 lg:pt-70 pb-30",
+            "pt-37 lg:pt-70",
+            "pb-16 lg:pb-30",
             "px-8 lg:px-25",
             "relative flex flex-col text-center items-center min-h-screen overflow-clip"
         )}>
-            <h1 className="absolute w-full flex flex-col left-1/2 -translate-x-1/2 top-35 md:top-45 lg:top-55 font-serif italic font-bold z-50 leading-16.75">
+            <h1 className="absolute w-full flex flex-col left-1/2 -translate-x-1/2 top-24 lg:top-55 font-serif italic font-bold z-50 leading-16.75">
                 {t.rich('title', {
                     black: (chunks) => <span className="text-title-64 tracking-[-3.84px] ">{chunks}</span>,
-                    gold: (chunks) => <span className="text-title-8xl text-accent -mt-7 md:-mt-4.5 lg:-mt-2 tracking-[-5.76px] ">{chunks}</span>
+                    gold: (chunks) => <span className="text-title-8xl text-accent -mt-6 md:-mt-4 lg:-mt-2 tracking-[-5.76px] ">{chunks}</span>
                 })}
             </h1>
 

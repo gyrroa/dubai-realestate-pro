@@ -230,6 +230,23 @@
       }
     ]
   },
+  "Broker": {
+    "personnel": [
+      {
+        "id": "b1",
+        "name": "<gold>Anthony Gerard</gold> O. Leuterio",
+        "position": "<black><i>Founder and President </i></black>of Filipino Homes<br></br><black><i>President </i></black> of FHI Global Realty Dubai",
+        "title": "Meet your <gold>Broker</gold>",
+        "description": "<black><i>Anthony Gerard O. Leuterio</i></black> is the <black><gold>Founder and President</gold> of Filipino Homes</black>, recognized as the second Filipino ever named <black>International <gold>REALTOR® of the Year 2024 </gold></black>by the National Association of REALTORS® (USA)."
+      },
+      {
+        "id": "b2",
+        "name": "<gold>Gilbert</gold> Monecillo",
+        "position": "<black><i>Vice President for Global Expansion </i></black>of Filipino Homes<br></br><black><i>Vice President for Mindanao </i></black>of ACRES",
+        "description": "<black><i>Gilbert Monecillo</i></black> is the <black><gold>Vice President</gold> for Global Expansion of Filipino Homes</black> a proven authority in Philippine real estate with over <black><gold>15 years </gold>of experience</black>, leading Filipino Homes VIP as the <black>nationwide <gold>Top 1 </gold></black>team leader."
+      }
+    ]
+  },
   "Why": {
     "title": "Why Choose Us?",
     "items": {
@@ -265,7 +282,7 @@
     "items": {
       "item1": [
         {
-          "id": "b1",
+          "id": "a1",
           "src": "/home/article/article-1.jpg",
           "title": "🏙️ 2026 City Guide: Must-Visit Landmarks",
           "description": "Discover the must-visit attractions and world-record sights defining the city skyline."
@@ -273,7 +290,7 @@
       ],
       "Item2": [
         {
-          "id": "b2",
+          "id": "a2",
           "src": "/home/article/article-2.png",
           "title": "🏖️ The Best of Waterfront Living",
           "description": "A curated guide to the finest beach clubs, yachting, and dining across Dubai’s coastline."
@@ -281,7 +298,7 @@
       ],
       "Item3": [
         {
-          "id": "b3",
+          "id": "a3",
           "src": "/home/article/article-3.jpg",
           "title": "✨ Hidden Gems: Old Dubai to Al Quoz",
           "description": "Explore the authentic culture, local souks, and secret art spots beyond the skyscrapers."
@@ -289,7 +306,7 @@
       ],
       "Item4": [
         {
-          "id": "b4",
+          "id": "a4",
           "src": "/home/article/article-4.png",
           "title": "🌵 Desert Escapes: Adventure & Heritage",
           "description": "From high-speed dune bashing to serene starlit dinners, experience the magic of the Arabian sands."

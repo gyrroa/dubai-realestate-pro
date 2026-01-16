@@ -23,6 +23,7 @@ export default function WhyCard({ titleKey, descriptionKey, logo }: TextCardProp
                     height={40}
                     unoptimized
                 />
+                {/* shadow */}
             </div>
             {/* Title */}
             <h2 className="text-title-64 font-bold font-serif italic leading-16.75 tracking-[-3.84px]">

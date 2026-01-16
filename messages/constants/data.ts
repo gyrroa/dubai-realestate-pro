@@ -39,6 +39,12 @@ export const about = [
     // Danube
     { id: "p4c3-3", src: "/home/about/danube.webp", position: "bottom-right" }
 ]
+export const broker = [
+    { id: "b1", imgSrc: "/home/broker/pres.png", width: "511" },
+    { id: "b2", imgSrc: "/home/broker/vicePres.png", width: "383" },
+]
+
+// soon
 export const articles = [
     {},
     {},

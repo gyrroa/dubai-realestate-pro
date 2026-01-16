@@ -32,9 +32,8 @@ export default function AboutSection() {
     return (
         <section id="about" className={cn(
             "py-10 md:py-20 lg:py-30",
-            "px-8 lg:px-46.5",
+            "px-8 lg:px-30 xl:px-46.5",
             "relative flex flex-col lg:flex-row h-full min-h-screen gap-5 "
-
         )}>
             <LayoutGroup>
                 <AnimatePresence mode="popLayout">

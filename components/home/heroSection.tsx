@@ -31,7 +31,7 @@ export default function HeroSection() {
                     "min-h-105 md:min-h-125"
                 )}>
                     {/* Carousel */}
-                    <div className="absolute inset-0 z-0">
+                    <div className="absolute inset-0 z-0 pointer-events-none">
                         <PanoramaCarousel />
                     </div>
                     {/* Ribbon */}

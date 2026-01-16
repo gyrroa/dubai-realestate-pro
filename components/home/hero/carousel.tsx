@@ -163,7 +163,7 @@ export default function PanoramaCarousel() {
                             "group px-3 lg:px-7 shrink-0",
                             "h-full w-auto aspect-2/3 lg:aspect-3/3",
                             "hover:opacity-95 text-glow hover:text-highlight transition-all duration-300 flex items-center",
-                            isDragging ? "pointer-events-none" : ""
+                            isDragging && "pointer-events-none"
                         )}
                         draggable={false}
                     >
@@ -178,7 +178,7 @@ export default function PanoramaCarousel() {
                             </div>
                             <Image
                                 src={item.imgSrc}
-                                alt="Developer"
+                                alt={t(`${item.id}.developer`)}
                                 fill
                                 quality={75}
                                 sizes="(max-width: 768px) 80vw, 50vw"
