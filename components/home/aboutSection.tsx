@@ -25,7 +25,7 @@ export default function AboutSection() {
     const bounceTransition = {
         type: "spring",
         stiffness: 100,
-        damping: 25,
+        damping: 20,
         mass: 1,
     } as const;
 
@@ -45,8 +45,7 @@ export default function AboutSection() {
                                 key={columnKey}
                                 transition={bounceTransition}
                                 className={cn(
-                                    "flex flex-col w-full h-full gap-5",
-                                    colIndex === 0 ? "text-end" : colIndex === 1 ? "text-center" : "text-start"
+                                    "flex flex-col w-full h-full gap-5 text-justify",
                                 )}
                             >
                                 {/* Title Header */}

@@ -10,6 +10,7 @@ import { useSmartScroll } from "@/hooks/useNavScroll";
 import { useNavStore } from "@/store/useNavStore";
 import { Menu, X } from "lucide-react";
 import { Link, usePathname } from "@/i18n/routing";
+import { navigation } from "@/messages/constants/data";
 
 export default function NavBar() {
     const t = useTranslations('Navigation');
@@ -67,56 +68,48 @@ export default function NavBar() {
                 </Button>
 
                 {/* Desktop menu */}
-                <div className="flex justify-between xl:justify-around items-center transition-all duration-500 gap-12.5" >
-                    {/* Home */}
-                    <Button asChild variant="nav" className="hidden xl:flex">
-                        <Link
-                            href={`/`}
-                            onClick={(e) => {
-                                if (pathname === `/`) {
-                                    e.preventDefault();
-                                    scrollTo("#home");
-                                }
-                            }}>
-                            {t('home')}
-                        </Link>
-                    </Button>
-                    {/* Developers */}
-                    <Button asChild variant="nav" className="hidden xl:flex">
-                        <Link href={`/503`} >
-                            {t('developers')}
-                        </Link>
-                    </Button>
-                    {/* Articles */}
-                    <Button asChild variant="nav" className="hidden xl:flex">
-                        <Link
-                            href={`/`}
-                            onClick={(e) => {
-                                if (pathname === `/`) {
-                                    e.preventDefault();
-                                    scrollTo("#articles");
-                                }
-                            }}>
-                            {t('articles')}
-                        </Link>
-                    </Button>
-                    {/* Contact Us */}
-                    <Button asChild variant="cta1" size={"cta1"} className="text-title-30 hidden xl:flex" >
-                        <Link
-                            href={`/`}
-                            onClick={(e) => {
-                                if (pathname === `/`) {
-                                    e.preventDefault();
-                                    scrollTo("#contact");
-                                }
-                            }}>
-                            {t('contact_us')}
-                            < svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none" className="w-5 h-3.5 ml-2 rtl:rotate-180" >
-                                <path d="M19.5645 9.59241L12.4176 16.7393C11.8816 17.3199 10.9436 17.3199 10.4076 16.7393C9.82691 16.2032 9.82691 15.2652 10.4076 14.7292L15.0977 9.99442H1.42937C0.625349 9.99442 0 9.36907 0 8.56505C0 7.8057 0.625349 7.13568 1.42937 7.13568H15.0977L10.4076 2.44556C9.82691 1.90955 9.82691 0.971524 10.4076 0.435511C10.9436 -0.14517 11.8816 -0.14517 12.4176 0.435511L19.5645 7.58236C20.1452 8.11837 20.1452 9.05639 19.5645 9.59241Z" fill="#231D20" />
-                            </svg >
-                        </Link>
-                    </Button>
-                </div >
+                <div className="flex justify-between xl:justify-around items-center transition-all duration-500 gap-12.5">
+                    {t.raw('menu').map((menuItem: { id: string; title: string }) => {
+                        const config = navigation.find((nav) => nav.id === menuItem.id);
+                        if (!config) return null;
+                        const isContact = menuItem.id === "n4";
+
+                        return (
+                            <Button
+                                key={menuItem.id}
+                                asChild
+                                variant={isContact ? "cta1" : "nav"}
+                                size={isContact ? "cta1" : "flat"}
+                                className={cn(
+                                    "hidden xl:flex",
+                                    isContact ? "text-title-30 " : ""
+                                )}
+                            >
+                                <Link
+                                    href={config.href}
+                                    onClick={(e) => {
+                                        if (pathname === `/` && config.section) {
+                                            e.preventDefault();
+                                            scrollTo(config.section);
+                                        }
+                                    }}
+                                >
+                                    {menuItem.title}
+
+                                    {!isContact ? (
+                                        // Underline
+                                        <hr className="bottom-0 w-0 h-0.5 group-active:h-1 bg-foreground group-hover:bg-accent group-hover:w-full absolute transition-all duration-500" />
+                                    ) : (
+                                        // Arrow
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none" className="w-5 h-3.5 ml-2 rtl:rotate-180">
+                                            <path d="M19.5645 9.59241L12.4176 16.7393C11.8816 17.3199 10.9436 17.3199 10.4076 16.7393C9.82691 16.2032 9.82691 15.2652 10.4076 14.7292L15.0977 9.99442H1.42937C0.625349 9.99442 0 9.36907 0 8.56505C0 7.8057 0.625349 7.13568 1.42937 7.13568H15.0977L10.4076 2.44556C9.82691 1.90955 9.82691 0.971524 10.4076 0.435511C10.9436 -0.14517 11.8816 -0.14517 12.4176 0.435511L19.5645 7.58236C20.1452 8.11837 20.1452 9.05639 19.5645 9.59241Z" fill="#231D20" />
+                                        </svg>
+                                    )}
+                                </Link>
+                            </Button>
+                        );
+                    })}
+                </div>
                 {/* Hamburger */}
                 <Button size={"flat"} className="block xl:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                     {isMobileMenuOpen ? <X className="size-6" /> : <Menu className="size-6" />}
@@ -130,54 +123,46 @@ export default function NavBar() {
                     !isMobileMenuOpen && "opacity-0 -translate-y-[150%] pointer-events-none"
                 )
             }>
-                {/* Home */}
-                <Button asChild variant="nav" className="justify-end">
-                    <Link
-                        href={`/`}
-                        onClick={(e) => {
-                            if (pathname === `/`) {
-                                e.preventDefault();
-                                scrollTo("#home");
-                            }
-                        }}>
-                        {t('home')}
-                    </Link>
-                </Button>
-                {/* Developers */}
-                <Button asChild variant="nav" className="justify-end">
-                    <Link href={`/503`} >
-                        {t('developers')}
-                    </Link>
-                </Button>
-                {/* Articles */}
-                <Button asChild variant="nav" className="justify-end">
-                    <Link
-                        href={`/`}
-                        onClick={(e) => {
-                            if (pathname === `/`) {
-                                e.preventDefault();
-                                scrollTo("#articles");
-                            }
-                        }}>
-                        {t('articles')}
-                    </Link>
-                </Button>
-                {/* Contact Us */}
-                <Button asChild variant="cta1" size={"cta1"} className="text-title-30" >
-                    <Link
-                        href={`/`}
-                        onClick={(e) => {
-                            if (pathname === `/`) {
-                                e.preventDefault();
-                                scrollTo("#contact");
-                            }
-                        }}>
-                        {t('contact_us')}
-                        < svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none" className="w-5 h-3.5 ml-2 rtl:rotate-180" >
-                            <path d="M19.5645 9.59241L12.4176 16.7393C11.8816 17.3199 10.9436 17.3199 10.4076 16.7393C9.82691 16.2032 9.82691 15.2652 10.4076 14.7292L15.0977 9.99442H1.42937C0.625349 9.99442 0 9.36907 0 8.56505C0 7.8057 0.625349 7.13568 1.42937 7.13568H15.0977L10.4076 2.44556C9.82691 1.90955 9.82691 0.971524 10.4076 0.435511C10.9436 -0.14517 11.8816 -0.14517 12.4176 0.435511L19.5645 7.58236C20.1452 8.11837 20.1452 9.05639 19.5645 9.59241Z" fill="#231D20" />
-                        </svg >
-                    </Link>
-                </Button>
+                {t.raw('menu').map((menuItem: { id: string; title: string }) => {
+                    const config = navigation.find((nav) => nav.id === menuItem.id);
+                    if (!config) return null;
+                    const isContact = menuItem.id === "n4";
+
+                    return (
+                        <Button
+                            key={menuItem.id}
+                            asChild
+                            variant={isContact ? "cta1" : "nav"}
+                            size={isContact ? "cta1" : "flat"}
+                            className={cn(
+                                "justify-end",
+                                isContact ? "text-title-30 " : ""
+                            )}
+                        >
+                            <Link
+                                href={config.href}
+                                onClick={(e) => {
+                                    if (pathname === `/` && config.section) {
+                                        e.preventDefault();
+                                        scrollTo(config.section);
+                                    }
+                                }}
+                            >
+                                {menuItem.title}
+
+                                {!isContact ? (
+                                    // Underline
+                                    <hr className="bottom-0 w-0 h-0.5 group-active:h-1 bg-foreground group-hover:bg-accent group-hover:w-full absolute transition-all duration-500" />
+                                ) : (
+                                    // Arrow
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none" className="w-5 h-3.5 ml-2 rtl:rotate-180">
+                                        <path d="M19.5645 9.59241L12.4176 16.7393C11.8816 17.3199 10.9436 17.3199 10.4076 16.7393C9.82691 16.2032 9.82691 15.2652 10.4076 14.7292L15.0977 9.99442H1.42937C0.625349 9.99442 0 9.36907 0 8.56505C0 7.8057 0.625349 7.13568 1.42937 7.13568H15.0977L10.4076 2.44556C9.82691 1.90955 9.82691 0.971524 10.4076 0.435511C10.9436 -0.14517 11.8816 -0.14517 12.4176 0.435511L19.5645 7.58236C20.1452 8.11837 20.1452 9.05639 19.5645 9.59241Z" fill="#231D20" />
+                                    </svg>
+                                )}
+                            </Link>
+                        </Button>
+                    );
+                })}
             </div>
         </nav>
     );

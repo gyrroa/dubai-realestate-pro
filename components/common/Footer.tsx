@@ -5,11 +5,15 @@ import { Button } from "../ui/button";
 import LanguageFooterBtn from "../translate";
 import { useSmartScroll } from "@/hooks/useNavScroll";
 import { useTranslations } from "next-intl";
+import { navigation } from "@/messages/constants/data";
+import { Link, usePathname } from "@/i18n/routing";
 
 export default function Footer() {
     const t = useTranslations('Footer');
     const n = useTranslations('Navigation');
     const scrollTo = useSmartScroll();
+    const pathname = usePathname();
+    
     return (
         <footer className="w-full flex flex-1 flex-col gap-10 items-center md:items-stretch lg:flex-row justify-between text-glow py-10 px-10 md:px-20 bg-[url(/footer/background.png)] bg-cover bg-no-repeat bg-center bg-accent">
             {/* Start footer */}
@@ -73,10 +77,31 @@ export default function Footer() {
                     <h2 className="font-semibold leading-5.75 text-title-2xl tracking-[-1.44px] drop-shadow-[0_0_9.2px_var(--highlight)]">{t('quick_links')}</h2>
                     {/* Submenu */}
                     <div className="grid grid-cols-1 grid-rows-5 flex-1 text-desc-14">
-                        <Button variant="footer_submenu" size="flat" onClick={() => scrollTo("#home")}>{n('home')}</Button>
-                        <Button variant="footer_submenu" size="flat">{n('developers')}</Button>
-                        <Button variant="footer_submenu" size="flat" onClick={() => scrollTo("#articles")}>{n('articles')}</Button>
-                        <Button variant="footer_submenu" size="flat" onClick={() => scrollTo("#contact")}>{n('contact_us')}</Button>
+                        {n.raw('menu').map((menuItem: { id: string; title: string }) => {
+                            const config = navigation.find((nav) => nav.id === menuItem.id);
+                            if (!config) return null;
+
+                            return (
+                                <Button
+                                    asChild
+                                    key={menuItem.id}
+                                    variant="footer_submenu"
+                                    size="flat"
+                                >
+                                    <Link
+                                        href={config.href}
+                                        onClick={(e) => {
+                                            if (pathname === "/" && config.section) {
+                                                e.preventDefault();
+                                                scrollTo(config.section);
+                                            }
+                                        }}
+                                    >
+                                        {menuItem.title}
+                                    </Link>
+                                </Button>
+                            );
+                        })}
                     </div>
                 </div>
                 {/* Our developers */}

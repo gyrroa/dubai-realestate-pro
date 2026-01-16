@@ -9,7 +9,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "",
-        nav: "w-32 text-desc-3xl font-light hover:text-accent active:font-bold hover:underline",
+        nav: "group w-fit text-desc-3xl font-light hover:text-accent active:font-bold relative",
         hero_dev: "bg-glow border border-accent hover:border-glow active:scale-95 rounded-[26px] shadow-[0_0_10px_0_rgba(35,29,32,0.25)] hover:bg-accent transition-all group",
         cta1: "text-title-2xl tracking-[-1.2px] font-light bg-highlight border-foreground border-2 hover:-translate-y-0.5 active:translate-0 shadow-[0_4px_4px_rgba(0,0,0,0.25)] active:shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_8px_rgba(0,0,0,0.25)]",
         cta2: "text-desc-3xl tracking-[-1.2px] [color:var(--glow)] font-light bg-accent border-glow border-2 hover:-translate-y-0.5 active:translate-0 shadow-[0_4px_4px_rgba(0,0,0,0.25)] active:shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_8px_rgba(0,0,0,0.25)]",

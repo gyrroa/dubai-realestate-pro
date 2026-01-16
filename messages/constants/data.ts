@@ -1,3 +1,9 @@
+export const navigation = [
+    { id: "n1", href: "/", section: "#home", type: "nav" },
+    { id: "n2", href: "/503", section: "", type: "nav" }, //future
+    { id: "n3", href: "/#articles", section: "#articles", type: "nav" },
+    { id: "n4", href: "/#contact", section: "#contact", type: "cta" },
+]
 export const developers = [
     { id: "emaar", imgSrc: "/home/hero/emaar.webp" },
     { id: "sobha", imgSrc: "/home/hero/sobha.webp" },
@@ -9,7 +15,6 @@ export const developers = [
     { id: "samana", imgSrc: "/home/hero/samana.webp" },
     { id: "danube", imgSrc: "/home/hero/danube.webp" },
 ];
-
 export const about = [
     // Emaar
     { id: "p1c1-1", src: "/home/about/emaar1.webp", position: "top-left" },

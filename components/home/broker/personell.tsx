@@ -8,7 +8,6 @@ interface BrokerCardProps {
     index: number;
     reverse?: boolean;
     t: any;
-
 }
 
 export const PersonnelCard = ({ index, reverse, t }: BrokerCardProps) => {

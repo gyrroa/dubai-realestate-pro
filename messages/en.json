@@ -1,10 +1,24 @@
 {
   "Navigation": {
     "logo": "<black>DUBAI</black> <gold>REAL ESTATE <i>PRO</i></gold>",
-    "home": "Home",
-    "developers": "Developers",
-    "articles": "Articles",
-    "contact_us": "Contact Us"
+    "menu": [
+      {
+        "id": "n1",
+        "title": "Home"
+      },
+      {
+        "id": "n2",
+        "title": "Developers"
+      },
+      {
+        "id": "n3",
+        "title": "Articles"
+      },
+      {
+        "id": "n4",
+        "title": "Contact Us"
+      }
+    ]
   },
   "Hero": {
     "title": "<gold>Dubai’s Top</gold><br></br> Real Estate Developers",
