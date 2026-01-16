@@ -30,19 +30,28 @@ export default function ContactSection() {
                 </p>
                 {/* Map */}
                 <div className="relative h-full w-full mt-9" >
-                    <div className="z-10 lg:absolute inset-0 rounded-3xl overflow-hidden border-2 border-accent">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3034.101870778258!2d55.32188165050842!3d25.264679970843027!3m2!1i1024!2i768!4f13.1!2m1!1sDubai%20Real%20Estate%20Pro%2C%20Office%20No.%2098%2C%203rd%20Floor%2C%20Al%20Rigga%20Business%20Center%20Dubai%2C%20UAE!5e0!3m2!1sen!2sph!4v1768400250351!5m2!1sen!2sph"
-                            loading="eager" className="w-full h-125 lg:h-full clip pointer-events-none"
+                    {/* Container: Added 'relative' to ensure the pin positions correctly inside */}
+                    <div className="z-10 lg:absolute inset-0 rounded-3xl overflow-hidden border-2 border-accent relative">
+                        <Image
+                            src="/map.png"
+                            alt=""
+                            width={966}
+                            height={646}
+                            className="size-full object-cover"
+                            draggable={false}
                         />
+
                         <Link
                             href={"https://maps.app.goo.gl/uSTRj2yq9MEmQcNm9"}
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-[calc(100%-8px)] z-20"
                         >
-                            <Button size="flat" variant="pin">
-                                <div className="flex items-center justify-center w-20 h-22.5 bg-glow border-2 border-accent rounded-3xl">
+                            <Button size="flat" variant="pin" className="group">
+                                <div className="flex items-center justify-center w-20 h-22.5 bg-glow border-2 border-accent rounded-3xl relative">
                                     <Image width={42} height={65} alt="Logo" src="/logo.png" className="w-10.5 h-16.25" />
+
+                                    {/* The Pin Tail: 4x4 rotated box */}
                                     <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-glow border-b-2 border-r-2 border-accent rotate-45" />
                                 </div>
                             </Button>
