@@ -37,7 +37,7 @@ export default function AboutSection() {
 
         )}>
             <LayoutGroup>
-                <AnimatePresence mode="wait">
+                <AnimatePresence mode="popLayout">
                     <motion.div className="flex flex-col lg:flex-row w-full gap-5 grow">
                         {/* Column */}
                         {Object.entries(activePage.items).map(([columnKey, columnItems]: any, colIndex) => (
