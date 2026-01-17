@@ -22,39 +22,39 @@
     "devSubMenu": [
       {
         "title": "Azizi",
-        "preview": "With over 200 projects, Azizi Developments creates vibrant communities and premium properties. Notable developments include Riviera in MBR City and Mina on Palm Jumeirah, catering to diverse lifestyles."
+        "description": "Dubai's leading developer, 150,000+ units under construction"
       },
       {
         "title": "Binghatti Developers",
-        "preview": "Recognized for architectural innovation and design excellence, Binghatti Developers offers a diverse portfolio of residential and commercial properties that blend luxury with modern functionality."
+        "description": "Award-winning developer, 79+ projects with signature façades"
       },
       {
         "title": "DAMAC Properties",
-        "preview": "Specializes in luxury residences and has delivered over 39,400 homes. Known for premium projects like DAMAC Hills, Akoya Oxygen, and luxury hospitality experiences in Dubai's most exclusive districts."
+        "description": "Luxury real estate excellence since 1982, UAE & beyond"
       },
       {
         "title": "Danube Properties",
-        "preview": "Transforming Dubai's skyline with affordable luxury, offering exceptional value through projects like Bayz and Elitz series in prime locations with flexible payment plans and world-class amenities."
+        "description": "Top 5 UAE developer, on-time delivery & 50+ awards"
       },
       {
         "title": "Dugasta",
-        "preview": "Pioneering luxury developments with innovative design and sustainable living solutions across Dubai's most sought-after locations."
+        "description": "Value-focused developer with 30+ years expertise & flexible plans"
       },
       {
         "title": "Emaar",
-        "preview": "Renowned for creating iconic landmarks including Burj Khalifa, Dubai Mall, and Downtown Dubai, Emaar Properties sets the standard in luxury real estate and master-planned communities."
+        "description": "AED 177.5 Bn net assets, world-class master developer"
       },
       {
         "title": "Nakheel",
-        "preview": "Master developer of iconic projects like Palm Jumeirah and The World Islands, Nakheel shapes Dubai's waterfront living and future with innovative, sustainable developments."
+        "description": "Creator of Palm Jumeirah, added 300km+ to Dubai's coastline"
       },
       {
         "title": "Samana Developers",
-        "preview": " Emerging as a key player in Dubai's real estate market, Samana Developers focuses on lifestyle-driven residential projects with innovative designs and community-centric developments."
+        "description": "Ranked 5th in Dubai, pioneering resort-style living experiences"
       },
       {
         "title": "Sobha Realty",
-        "preview": "A name synonymous with quality craftsmanship and attention to detail, Sobha Realty delivers premium residential communities including Sobha Hartland and Sobha Reserve across Dubai."
+        "description": "Five decades of uncompromising craftsmanship & detailing excellence"
       }
     ]
   },

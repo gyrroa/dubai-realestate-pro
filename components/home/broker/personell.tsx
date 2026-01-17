@@ -15,10 +15,11 @@ export const PersonnelCard = ({ index, reverse, t }: BrokerCardProps) => {
     const personnelPath = `personnel.${index}`;
 
     return (
-        <div className={cn(
-            "flex gap-6.5 justify-center items-center flex-col lg:flex-row",
-            reverse && "lg:items-start w-fit"
-        )}>
+        <div
+            className={cn(
+                "flex gap-6.5 justify-center items-center flex-col lg:flex-row",
+                reverse && "lg:items-start w-fit"
+            )}>
             {/* Repeating Div: Profile & Image Container */}
             <div className={cn(
                 "flex lg:flex-col size-fit items-center lg:-mt-35 -z-10 lg:z-10 w-full lg:w-auto pointer-events-none",

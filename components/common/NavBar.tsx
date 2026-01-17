@@ -48,7 +48,7 @@ export default function NavBar() {
                 if (visibleEntry) {
                     const hash = `#${visibleEntry.target.id}`;
                     setActiveSection(hash);
-                    window.history.replaceState(null, '', `${pathname}${hash}`);
+                    window.history.replaceState(null, '', `${window.location.pathname}${hash}`);
                 }
             },
             { rootMargin: "-25% 0px -70% 0px", threshold: 0 }
@@ -72,7 +72,7 @@ export default function NavBar() {
         // Reset to home if at top
         if (scroll < 100 && activeSection !== "#home") {
             setActiveSection("#home");
-            window.history.replaceState(null, '', `${pathname}#home`);
+            window.history.replaceState(null, '', `${window.location.pathname}#home`);
         }
 
         // Close menus on scroll
@@ -114,7 +114,7 @@ export default function NavBar() {
     const handleLogoClick = () => {
         setActiveSection("#home");
         scrollTo("#home");
-        window.history.pushState(null, '', `${pathname}#home`);
+        window.history.pushState(null, '', `${window.location.pathname}#home`);
     };
 
     const handleNavClick = (e: React.MouseEvent, config: typeof navigation[number], isMobile: boolean) => {

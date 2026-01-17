@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 interface DeveloperItem {
     title: string;
-    preview: string;
+    description: string;
 }
 
 interface DeveloperSubMenuProps {
@@ -42,7 +42,7 @@ export function DeveloperSubMenu({ isOpen, isAtTop, data, onClose }: DeveloperSu
                                 {item.title}
                             </h2>
                             <p className="transition-all hidden duration-500 text-label-base font-light tracking-[-0.96px] w-70.5 xl:line-clamp-2 whitespace-break-spaces group-hover/sub:text-accent">
-                                {item.preview}
+                                {item.description}
                             </p>
                         </Link>
                     ))}
