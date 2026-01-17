@@ -227,7 +227,6 @@ export default function NavBar() {
                     {menuItems.map((menuItem) => {
                         const config = navigation.find((nav) => nav.id === menuItem.id);
                         if (!config) return null;
-                        const isDeveloper = config.type === "nav2";
 
                         return (
                             <NavItem
