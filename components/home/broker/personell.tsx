@@ -85,12 +85,14 @@ export const PersonnelCard = ({ index, reverse, t }: BrokerCardProps) => {
                 !reverse && "lg:bottom-16",
                 "relative size-fit flex flex-col bg-glow rounded-[30px] shadow-[0_0_10px_0_rgba(0,0,0,0.25)] border border-accent"
             )}>
-                {/* Section Title (Only for index 0) */}
-                {index === 0 && (
+                {/* Section Title (Only for index 0) 
+                // Removed for now
+                */}
+                {/* {index === 0 && (
                     <h1 className="lg:-left-24 leading-16.75 absolute text-title-100 font-serif italic font-bold -top-12 tracking-[-6px] whitespace-nowrap text-center lg:text-left self-center">
                         {t.rich(`${personnelPath}.title`, richRenderers)}
                     </h1>
-                )}
+                )} */}
 
                 <p className="font-light text-title-2xl leading-5.5 md:leading-6.5 lg:leading-7.5 tracking-[-1.44px] lg:max-w-119">
                     {t.rich(`${personnelPath}.description`, richRenderers)}

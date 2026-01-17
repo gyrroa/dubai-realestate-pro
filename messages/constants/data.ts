@@ -1,7 +1,7 @@
 export const navigation = [
-    { id: "n1", href: "/", section: "#home", type: "nav" },
-    { id: "n2", href: "/503", section: "", type: "nav" }, //future
-    { id: "n3", href: "/#articles", section: "#articles", type: "nav" },
+    { id: "n1", href: "/#home", section: "#home", type: "nav1" },
+    { id: "n2", href: "", section: "", type: "nav2" }, // future work
+    { id: "n3", href: "/#articles", section: "#articles", type: "nav1" },
     { id: "n4", href: "/#contact", section: "#contact", type: "cta" },
 ]
 export const developers = [
@@ -84,8 +84,7 @@ export const broker = [
     { id: "b1", imgSrc: "/home/broker/pres.png", width: "511" },
     { id: "b2", imgSrc: "/home/broker/vicePres.png", width: "383" },
 ]
-
-// tbc
+// tbcgy
 export const articles = [
     {},
     {},

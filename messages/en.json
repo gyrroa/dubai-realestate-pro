@@ -18,6 +18,44 @@
         "id": "n4",
         "title": "Contact Us"
       }
+    ],
+    "devSubMenu": [
+      {
+        "title": "Azizi",
+        "preview": "With over 200 projects, Azizi Developments creates vibrant communities and premium properties. Notable developments include Riviera in MBR City and Mina on Palm Jumeirah, catering to diverse lifestyles."
+      },
+      {
+        "title": "Binghatti Developers",
+        "preview": "Recognized for architectural innovation and design excellence, Binghatti Developers offers a diverse portfolio of residential and commercial properties that blend luxury with modern functionality."
+      },
+      {
+        "title": "DAMAC Properties",
+        "preview": "Specializes in luxury residences and has delivered over 39,400 homes. Known for premium projects like DAMAC Hills, Akoya Oxygen, and luxury hospitality experiences in Dubai's most exclusive districts."
+      },
+      {
+        "title": "Danube Properties",
+        "preview": "Transforming Dubai's skyline with affordable luxury, offering exceptional value through projects like Bayz and Elitz series in prime locations with flexible payment plans and world-class amenities."
+      },
+      {
+        "title": "Dugasta",
+        "preview": "Pioneering luxury developments with innovative design and sustainable living solutions across Dubai's most sought-after locations."
+      },
+      {
+        "title": "Emaar",
+        "preview": "Renowned for creating iconic landmarks including Burj Khalifa, Dubai Mall, and Downtown Dubai, Emaar Properties sets the standard in luxury real estate and master-planned communities."
+      },
+      {
+        "title": "Nakheel",
+        "preview": "Master developer of iconic projects like Palm Jumeirah and The World Islands, Nakheel shapes Dubai's waterfront living and future with innovative, sustainable developments."
+      },
+      {
+        "title": "Samana Developers",
+        "preview": " Emerging as a key player in Dubai's real estate market, Samana Developers focuses on lifestyle-driven residential projects with innovative designs and community-centric developments."
+      },
+      {
+        "title": "Sobha Realty",
+        "preview": "A name synonymous with quality craftsmanship and attention to detail, Sobha Realty delivers premium residential communities including Sobha Hartland and Sobha Reserve across Dubai."
+      }
     ]
   },
   "Hero": {

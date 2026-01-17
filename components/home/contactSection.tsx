@@ -81,7 +81,7 @@ export default function ContactSection() {
                     </svg>
                     {/* Address */}
                     <div className="z-20 absolute bottom-0 -right-[24.5px] py-3.5 px-5 bg-glow w-50.5 rounded-[20px] border-2 border-accent" >
-                        <p className="leading-4 tracking-[-0.75px] text-right font-light text-desc-base">
+                        <p className="leading-4 tracking-[-0.75px] text-right font-light text-label-base">
                             {t.rich('contact_info.address', {
                                 black: (chunks) => <span className="font-semibold">{chunks}</span>,
                                 gold: (chunks) => <span className="font-semibold text-accent">{chunks}</span>

@@ -17,7 +17,7 @@ export default function DevBtnGroup() {
         "/home/hero/buttons/nakheel.svg",
         "/home/hero/buttons/samana.svg",
         "/home/hero/buttons/danube.svg",
-    ]; // tbc
+    ]; // tbcgy
 
     return (
         <div className="flex flex-col pb-9.5 gap-5.5 justify-center">
@@ -33,10 +33,10 @@ export default function DevBtnGroup() {
                 "flex flex-wrap w-full h-full justify-center"
             )}>
                 {developerImages.map((src, index) => (
-                    <Button asChild variant={"hero_dev"} size={"hero_dev"} key={index} className="w-[28%] h-12 xl:w-fit xl:h-fit">
+                    <Button asChild variant={"hero_dev"} size={"hero_dev"} key={index} className="w-fit h-fit">
                         <Link href={"/503"}>
                             <div
-                                className="h-full w-full md:w-32 md:h-12 bg-accent group-hover:bg-glow transition-colors duration-600"
+                                className="w-32 h-12 bg-accent group-hover:bg-glow transition-colors duration-600"
                                 style={{
                                     maskImage: `url(${src})`,
                                     maskSize: "contain",

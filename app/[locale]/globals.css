@@ -35,7 +35,7 @@
   --text-title-32: clamp(1.23rem, 0.75rem + 1.99vw, 2rem);
   --text-title-30: clamp(1.16rem, 0.81rem + 1.41vw, 1.875rem);
   --text-title-48: clamp(1.85rem, 1.12rem + 2.99vw, 3rem);
-  --text-desc-base: clamp(0.62rem, 0.44rem + 0.74vw, 1rem);
+  --text-title-20: clamp(0.77rem, 0.54rem + 0.94vw, 1.25rem);
 }
 
 @utility text-glow {

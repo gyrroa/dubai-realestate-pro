@@ -30,9 +30,7 @@ export default async function Home({ params }: Props) {
         <BrokerSection />
       </FadeUp>
 
-      <FadeUp>
-        <WhyBlock />
-      </FadeUp>
+      <WhyBlock />
 
       <FadeUp>
         <ArticleSection />
