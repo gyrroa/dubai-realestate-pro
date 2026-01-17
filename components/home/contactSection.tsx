@@ -16,7 +16,7 @@ export default function ContactSection() {
             {/* Contact Info */}
             <div className="relative flex flex-col justify-start items-center">
                 {/* Section Title */}
-                <h1 className="flex text-start flex-col font-serif italic font-bold leading-14 lg:leading-16.75 z-50 tracking-[-6px] text-title-100 max-w-144.25 w-full px-15.5">
+                <h1 className="flex text-start flex-col font-serif italic font-bold leading-14.75 md:leading-15.75 lg:leading-16.75 z-50 tracking-[-6px] text-title-100 max-w-144.25 w-full lg:px-15.5">
                     {t.rich('contact_info.title', {
                         gold: (chunks) => <span className="text-end text-accent">{chunks}</span>
                     })}
@@ -81,7 +81,7 @@ export default function ContactSection() {
                     </svg>
                     {/* Address */}
                     <div className="z-20 absolute bottom-0 -right-[24.5px] py-3.5 px-5 bg-glow w-50.5 rounded-[20px] border-2 border-accent" >
-                        <p className="leading-4 tracking-[-0.75px] text-right font-light">
+                        <p className="leading-4 tracking-[-0.75px] text-right font-light text-desc-base">
                             {t.rich('contact_info.address', {
                                 black: (chunks) => <span className="font-semibold">{chunks}</span>,
                                 gold: (chunks) => <span className="font-semibold text-accent">{chunks}</span>

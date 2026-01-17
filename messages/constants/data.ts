@@ -85,7 +85,7 @@ export const broker = [
     { id: "b2", imgSrc: "/home/broker/vicePres.png", width: "383" },
 ]
 
-// soon
+// tbc
 export const articles = [
     {},
     {},

@@ -17,7 +17,7 @@ export default function DevBtnGroup() {
         "/home/hero/buttons/nakheel.svg",
         "/home/hero/buttons/samana.svg",
         "/home/hero/buttons/danube.svg",
-    ]; // move later
+    ]; // tbc
 
     return (
         <div className="flex flex-col pb-9.5 gap-5.5 justify-center">
