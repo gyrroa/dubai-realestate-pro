@@ -22,7 +22,7 @@ export const PersonnelCard = ({ index, reverse, t }: BrokerCardProps) => {
             )}>
             {/* Repeating Div: Profile & Image Container */}
             <div className={cn(
-                "flex lg:flex-col size-fit items-center lg:-mt-35 -z-10 lg:z-10 w-full lg:w-auto pointer-events-none",
+                "flex lg:flex-col size-fit items-center lg:-mt-55 -z-10 lg:z-10 w-full lg:w-auto pointer-events-none",
                 reverse && "lg:order-last"
             )}>
                 {/* Image Wrapper */}

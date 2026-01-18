@@ -101,28 +101,28 @@
         "items": {
           "column_1": [
             {
+              "id": "p1c1-2",
+              "type": "text",
+              "title": "1. <gold>Strong</gold> Capital Growth",
+              "description": "Property values continued rising across <semi>key communities</semi> in 2025"
+            },
+            {
               "id": "p1c1-1",
               "type": "image",
               "location": "Creek Bay at Dubai Creek Harbour"
-            },
-            {
-              "id": "p1c1-2",
-              "type": "text",
-              "title": "1. <gold>Zero Tax</gold> on Income and Capital Gains",
-              "description": "Dubai imposes no personal income tax, capital gains tax, property tax, or inheritance tax, allowing investors to <semi>retain 100% </semi>of their rental income and property appreciation."
             }
           ],
           "column_2": [
             {
-              "id": "p1c2-1",
-              "type": "text",
-              "title": "2. Robust <gold>Economic Foundation</gold>",
-              "description": "Dubai's strategic diversification beyond oil has created a <semi>resilient economy</semi> thriving in sectors like tourism, finance, trade, and technology, ensuring stability and consistent GDP growth."
-            },
-            {
               "id": "p1c2-2",
               "type": "image",
               "location": "Creek Haven at Dubai Creek Harbour"
+            },
+            {
+              "id": "p1c2-1",
+              "type": "text",
+              "title": "2. <gold>High</gold> Rental Yields",
+              "description": "Attractive <semi>rental returns</semi>, especially in prime locations"
             }
           ],
           "column_3": [
@@ -134,8 +134,8 @@
             {
               "id": "p1c3-2",
               "type": "text",
-              "title": "3. <gold>State-of-the-Art</gold> Infrastructure",
-              "description": "Dubai boasts <semi>modern transportation systems</semi> including the Dubai Metro, extensive road networks, cutting-edge telecommunications, and <semi>top-tier healthcare and education facilities</semi> that rival global standards."
+              "title": "3. <gold>Record</gold> Transactions",
+              "description": "2025 remained a <semi>record-breaking year</semi> for Dubai real estate"
             },
             {
               "id": "p1c3-3",
@@ -150,28 +150,28 @@
         "items": {
           "column_1": [
             {
-              "id": "p2c1-1",
-              "type": "text",
-              "title": "4. <gold>USD-Pegged</gold> Currency",
-              "description": "The UAE Dirham is pegged to the US Dollar, providing currency stability and protecting international investors from exchange rate volatility."
-            },
-            {
               "id": "p2c1-2",
               "type": "image",
               "location": "Al Haseen Residences"
+            },
+            {
+              "id": "p2c1-1",
+              "type": "text",
+              "title": "4. <gold>Global</gold> Investor Hub",
+              "description": "Foreign-friendly market with <semi>strong international demand</semi>"
             }
           ],
           "column_2": [
             {
+              "id": "p2c2-2",
+              "type": "text",
+              "title": "5. <gold>Tax-Free</gold> Advantage",
+              "description": "No <semi>income tax</semi> and no capital gains tax on <semi>property investments</semi>"
+            },
+            {
               "id": "p2c2-1",
               "type": "image",
               "location": "Al Haseen Residences 3"
-            },
-            {
-              "id": "p2c2-2",
-              "type": "text",
-              "title": "5. <gold>Attractive</gold> Rental Returns",
-              "description": "Investors can expect rental yields ranging from 6% to 10% annually, significantly higher than many global cities, ensuring strong passive income potential."
             }
           ],
           "column_3": [
@@ -200,15 +200,15 @@
           ],
           "column_2": [
             {
-              "id": "p3c2-1",
-              "type": "text",
-              "title": "6. <gold>Gateway</gold> Between East & West",
-              "description": "Situated at the crossroads of Europe, Asia, and Africa, Dubai serves as a global business and travel hub, with world-class airports connecting to over 250 destinations worldwide."
-            },
-            {
               "id": "p3c2-2",
               "type": "image",
               "location": "DAMAC Riverside Views"
+            },
+            {
+              "id": "p3c2-1",
+              "type": "text",
+              "title": "6. <gold>Economic</gold> Stability",
+              "description": "Diversified economy with a <semi>USD-pegged currency</semi>"
             }
           ],
           "column_3": [
@@ -220,8 +220,8 @@
             {
               "id": "p3c3-2",
               "type": "text",
-              "title": "7. Expanding Population <gold>Driving Demand</gold>",
-              "description": "Dubai's population has surpassed 4 million residents, with continuous influx of expatriates and professionals, driving sustained demand for quality housing and real estate investments."
+              "title": "7. <gold>Growing</gold> Population",
+              "description": "4M+ residents driving <semi>strong housing demand</semi>"
             },
             {
               "id": "p3c3-3",
@@ -236,28 +236,28 @@
         "items": {
           "column_1": [
             {
-              "id": "p4c1-1",
-              "type": "text",
-              "title": "8. <gold>Transparent</gold> Regulatory Environment",
-              "description": "The Dubai Land Department (DLD) and the Real Estate Regulatory Agency (RERA) ensure transparency, protect investor rights, and maintain high standards in the real estate sector."
-            },
-            {
               "id": "p4c1-2",
               "type": "image",
               "location": "Palm Central"
+            },
+            {
+              "id": "p4c1-1",
+              "type": "text",
+              "title": "8. <gold>World-Class</gold> Infrastructure",
+              "description": "Modern <semi>transport, healthcare, and education</semi> lifestyle"
             }
           ],
           "column_2": [
             {
+              "id": "p4c2-2",
+              "type": "text",
+              "title": "9. <gold>Diverse</gold> Property Options",
+              "description": "Off-plan, luxury, family homes, and <semi>high-yield units</semi>"
+            },
+            {
               "id": "p4c2-1",
               "type": "image",
               "location": "SAMANA Boulevard Heights"
-            },
-            {
-              "id": "p4c2-2",
-              "type": "text",
-              "title": "9. <gold>Long-Term</gold> Residency Opportunities",
-              "description": "Investors purchasing property valued at AED 2 million or more are eligible for a 10-year Golden Visa, offering extended residency rights and access to UAE's thriving economy."
             }
           ],
           "column_3": [
@@ -269,8 +269,8 @@
             {
               "id": "p4c3-2",
               "type": "text",
-              "title": "10. <gold>Global</gold> Tourism Hub",
-              "description": "Dubai welcomed over 18 million international visitors in recent years, boosting demand for short-term rentals and hospitality investments, ensuring strong rental returns."
+              "title": "10. <gold>Safe</gold> Investment Climate",
+              "description": "Strong governance and a <semi>resilient real estate market</semi>"
             },
             {
               "id": "p4c3-3",

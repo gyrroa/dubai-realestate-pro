@@ -10,7 +10,7 @@ export default function BrokerSection() {
     return (
         <section id="broker" className={cn(
             "pb-30 lg:pb-6",
-            "gap-7.5 md:8.5 lg:gap-9.5",
+            "gap-7.5 md:gap-8.5 lg:gap-9.5",
             "flex flex-col px-8 lg:px-30 items-center overflow-x-clip"
         )}>
             {/* President Card */}

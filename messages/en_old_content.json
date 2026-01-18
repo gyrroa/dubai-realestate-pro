@@ -1,0 +1,401 @@
+{
+  "Navigation": {
+    "logo": "<black>DUBAI</black> <gold>REAL ESTATE <i>PRO</i></gold>",
+    "menu": [
+      {
+        "id": "n1",
+        "title": "Home"
+      },
+      {
+        "id": "n2",
+        "title": "Developers"
+      },
+      {
+        "id": "n3",
+        "title": "Articles"
+      },
+      {
+        "id": "n4",
+        "title": "Contact Us"
+      }
+    ],
+    "devSubMenu": [
+      {
+        "title": "Azizi",
+        "description": "Dubai's leading developer, 150,000+ units under construction"
+      },
+      {
+        "title": "Binghatti Developers",
+        "description": "Award-winning developer, 79+ projects with signature façades"
+      },
+      {
+        "title": "DAMAC Properties",
+        "description": "Luxury real estate excellence since 1982, UAE & beyond"
+      },
+      {
+        "title": "Danube Properties",
+        "description": "Top 5 UAE developer, on-time delivery & 50+ awards"
+      },
+      {
+        "title": "Dugasta",
+        "description": "Value-focused developer with 30+ years expertise & flexible plans"
+      },
+      {
+        "title": "Emaar",
+        "description": "AED 177.5 Bn net assets, world-class master developer"
+      },
+      {
+        "title": "Nakheel",
+        "description": "Creator of Palm Jumeirah, added 300km+ to Dubai's coastline"
+      },
+      {
+        "title": "Samana Developers",
+        "description": "Ranked 5th in Dubai, pioneering resort-style living experiences"
+      },
+      {
+        "title": "Sobha Realty",
+        "description": "Five decades of uncompromising craftsmanship & detailing excellence"
+      }
+    ]
+  },
+  "Hero": {
+    "title": "<gold>Dubai’s Top</gold><br></br> Real Estate Developers",
+    "description": "Curating the best of <black>Dubai’s</black> <gold>skyline</gold>, just for you.",
+    "ribbon": "DUBAI REAL ESTATE PRO",
+    "dev_title": "Discover <black>properties</black> by <gold>developer:</gold>",
+    "carousel": {
+      "emaar": {
+        "developer": "EMAAR"
+      },
+      "sobha": {
+        "developer": "SOBHA"
+      },
+      "dugasta": {
+        "developer": "DUGASTA"
+      },
+      "azizi": {
+        "developer": "AZIZI"
+      },
+      "binghatti": {
+        "developer": "BINGHATTI"
+      },
+      "damac": {
+        "developer": "DAMAC"
+      },
+      "nakheel": {
+        "developer": "NAKHEEL"
+      },
+      "samana": {
+        "developer": "SAMANA"
+      },
+      "danube": {
+        "developer": "DANUBE"
+      }
+    }
+  },
+  "About": {
+    "title": "<gold>Why Invest </gold><black>In Dubai?</black>",
+    "pages": [
+      {
+        "page": 1,
+        "items": {
+          "column_1": [
+            {
+              "id": "p1c1-1",
+              "type": "image",
+              "location": "Creek Bay at Dubai Creek Harbour"
+            },
+            {
+              "id": "p1c1-2",
+              "type": "text",
+              "title": "1. <gold>Zero Tax</gold> on Income and Capital Gains",
+              "description": "Dubai imposes no personal income tax, capital gains tax, property tax, or inheritance tax, allowing investors to <semi>retain 100% </semi>of their rental income and property appreciation."
+            }
+          ],
+          "column_2": [
+            {
+              "id": "p1c2-1",
+              "type": "text",
+              "title": "2. Robust <gold>Economic Foundation</gold>",
+              "description": "Dubai's strategic diversification beyond oil has created a <semi>resilient economy</semi> thriving in sectors like tourism, finance, trade, and technology, ensuring stability and consistent GDP growth."
+            },
+            {
+              "id": "p1c2-2",
+              "type": "image",
+              "location": "Creek Haven at Dubai Creek Harbour"
+            }
+          ],
+          "column_3": [
+            {
+              "id": "p1c3-1",
+              "type": "image",
+              "location": "Sobha SkyParks"
+            },
+            {
+              "id": "p1c3-2",
+              "type": "text",
+              "title": "3. <gold>State-of-the-Art</gold> Infrastructure",
+              "description": "Dubai boasts <semi>modern transportation systems</semi> including the Dubai Metro, extensive road networks, cutting-edge telecommunications, and <semi>top-tier healthcare and education facilities</semi> that rival global standards."
+            },
+            {
+              "id": "p1c3-3",
+              "type": "image",
+              "location": "Sobha Central"
+            }
+          ]
+        }
+      },
+      {
+        "page": 2,
+        "items": {
+          "column_1": [
+            {
+              "id": "p2c1-1",
+              "type": "text",
+              "title": "4. <gold>USD-Pegged</gold> Currency",
+              "description": "The UAE Dirham is pegged to the US Dollar, providing currency stability and protecting international investors from exchange rate volatility."
+            },
+            {
+              "id": "p2c1-2",
+              "type": "image",
+              "location": "Al Haseen Residences"
+            }
+          ],
+          "column_2": [
+            {
+              "id": "p2c2-1",
+              "type": "image",
+              "location": "Al Haseen Residences 3"
+            },
+            {
+              "id": "p2c2-2",
+              "type": "text",
+              "title": "5. <gold>Attractive</gold> Rental Returns",
+              "description": "Investors can expect rental yields ranging from 6% to 10% annually, significantly higher than many global cities, ensuring strong passive income potential."
+            }
+          ],
+          "column_3": [
+            {
+              "id": "p2c3-1",
+              "type": "image",
+              "location": "AZIZI Rose"
+            },
+            {
+              "id": "p2c3-2",
+              "type": "image",
+              "location": "AZIZI Farishta II"
+            }
+          ]
+        }
+      },
+      {
+        "page": 3,
+        "items": {
+          "column_1": [
+            {
+              "id": "p3c1-1",
+              "type": "image",
+              "location": "DAMAC Islands 2 Dubai"
+            }
+          ],
+          "column_2": [
+            {
+              "id": "p3c2-1",
+              "type": "text",
+              "title": "6. <gold>Gateway</gold> Between East & West",
+              "description": "Situated at the crossroads of Europe, Asia, and Africa, Dubai serves as a global business and travel hub, with world-class airports connecting to over 250 destinations worldwide."
+            },
+            {
+              "id": "p3c2-2",
+              "type": "image",
+              "location": "DAMAC Riverside Views"
+            }
+          ],
+          "column_3": [
+            {
+              "id": "p3c3-1",
+              "type": "image",
+              "location": "Binghatti Cullinan"
+            },
+            {
+              "id": "p3c3-2",
+              "type": "text",
+              "title": "7. Expanding Population <gold>Driving Demand</gold>",
+              "description": "Dubai's population has surpassed 4 million residents, with continuous influx of expatriates and professionals, driving sustained demand for quality housing and real estate investments."
+            },
+            {
+              "id": "p3c3-3",
+              "type": "image",
+              "location": "Binghatti Hillcrest"
+            }
+          ]
+        }
+      },
+      {
+        "page": 4,
+        "items": {
+          "column_1": [
+            {
+              "id": "p4c1-1",
+              "type": "text",
+              "title": "8. <gold>Transparent</gold> Regulatory Environment",
+              "description": "The Dubai Land Department (DLD) and the Real Estate Regulatory Agency (RERA) ensure transparency, protect investor rights, and maintain high standards in the real estate sector."
+            },
+            {
+              "id": "p4c1-2",
+              "type": "image",
+              "location": "Palm Central"
+            }
+          ],
+          "column_2": [
+            {
+              "id": "p4c2-1",
+              "type": "image",
+              "location": "SAMANA Boulevard Heights"
+            },
+            {
+              "id": "p4c2-2",
+              "type": "text",
+              "title": "9. <gold>Long-Term</gold> Residency Opportunities",
+              "description": "Investors purchasing property valued at AED 2 million or more are eligible for a 10-year Golden Visa, offering extended residency rights and access to UAE's thriving economy."
+            }
+          ],
+          "column_3": [
+            {
+              "id": "p4c3-1",
+              "type": "image",
+              "location": "Bay Grove"
+            },
+            {
+              "id": "p4c3-2",
+              "type": "text",
+              "title": "10. <gold>Global</gold> Tourism Hub",
+              "description": "Dubai welcomed over 18 million international visitors in recent years, boosting demand for short-term rentals and hospitality investments, ensuring strong rental returns."
+            },
+            {
+              "id": "p4c3-3",
+              "type": "image",
+              "location": "Shahrukhz"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Broker": {
+    "personnel": [
+      {
+        "id": "b1",
+        "name": "<gold>Anthony Gerard</gold> O. Leuterio",
+        "position": "<black><i>Founder and President </i></black>of Filipino Homes<br></br><black><i>President </i></black> of FHI Global Realty Dubai",
+        "title": "Meet your <gold>Broker</gold>",
+        "description": "<black><i>Anthony Gerard O. Leuterio</i></black> is the <black><gold>Founder and President</gold> of Filipino Homes</black>, recognized as the second Filipino ever named <black>International <gold>REALTOR® of the Year 2024 </gold></black>by the National Association of REALTORS® (USA)."
+      },
+      {
+        "id": "b2",
+        "name": "<gold>Gilbert</gold> Monecillo",
+        "position": "<black><i>Vice President for Global Expansion </i></black>of Filipino Homes<br></br><black><i>Vice President for Mindanao </i></black>of ACRES",
+        "description": "<black><i>Gilbert Monecillo</i></black> is the <black><gold>Vice President</gold> for Global Expansion of Filipino Homes</black> a proven authority in Philippine real estate with over <black><gold>15 years </gold>of experience</black>, leading Filipino Homes VIP as the <black>nationwide <gold>Top 1 </gold></black>team leader."
+      }
+    ]
+  },
+  "Why": {
+    "title": "Why Choose Us?",
+    "items": {
+      "item1": [
+        {
+          "id": "w1",
+          "logo": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMzkiIHZpZXdCb3g9IjAgMCA1MCAzOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNNDMuNDgxNCAxNS43ODE4TDQwLjIzMTUgMzUuMjc5MUM0MC4xNjY1IDM1LjY2OCAzOS45NjU2IDM2LjAyMTMgMzkuNjY0NyAzNi4yNzYxQzM5LjM2MzcgMzYuNTMwOSAzOC45ODIyIDM2LjY3MDcgMzguNTg3OCAzNi42NzA3SDExLjQxMzdDMTEuMDE5MyAzNi42NzA3IDEwLjYzNzggMzYuNTMwOSAxMC4zMzY4IDM2LjI3NjFDMTAuMDM1OSAzNi4wMjEzIDkuODM1MDMgMzUuNjY4IDkuNzY5OTcgMzUuMjc5MUw2LjUyMDA3IDE1Ljc4MThINi41MzY3M0M3LjI0MTE3IDE1LjY2MzkgNy45MDI5OCAxNS4zNjUzIDguNDU3NTEgMTQuOTE1MUwxNi42Njc3IDI1LjAwNDRMMjMuMzM0MSA5LjY2MTEzQzIzLjg1NzUgOS44ODgxOSAyNC40MjE5IDEwLjAwNTMgMjQuOTkyNCAxMC4wMDUzQzI1LjU2MjkgMTAuMDA1MyAyNi4xMjczIDkuODg4MTkgMjYuNjUwNyA5LjY2MTEzTDMzLjMzMzggMjUuMDA0NEw0MS41Mzk4IDE0LjkwNDdDNDIuMDk0NCAxNS4zNTQ5IDQyLjc1NjIgMTUuNjUzNSA0My40NjA2IDE1Ljc3MTRMNDMuNDgxNCAxNS43ODE4WiIgZmlsbD0iIzg5NzQ0NCIvPgo8cGF0aCBkPSJNNTAgMTEuNjcxQzUwLjAwMDggMTAuNzU3NCA0OS43ODcgOS44NTYzNiA0OS4zNzU4IDkuMDQwNTJDNDguOTY0NiA4LjIyNDY4IDQ4LjM2NzUgNy41MTY4MyA0Ny42MzI3IDYuOTc0QzQ2Ljg5NzggNi40MzExNyA0Ni4wNDU3IDYuMDY4NTUgNDUuMTQ1MSA1LjkxNTM0QzQ0LjI0NDQgNS43NjIxMiA0My4zMjA0IDUuODIyNjEgNDIuNDQ3MyA2LjA5MTkyQzQxLjU3NDMgNi4zNjEyNCA0MC43NzY4IDYuODMxODUgNDAuMTE5IDcuNDY1ODRDMzkuNDYxMiA4LjA5OTgzIDM4Ljk2MTQgOC44Nzk0NyAzOC42NjAxIDkuNzQxOTVDMzguMzU4OCAxMC42MDQ0IDM4LjI2NDMgMTEuNTI1NiAzOC4zODQxIDEyLjQzMTNDMzguNTA0IDEzLjMzNyAzOC44MzUgMTQuMjAxOSAzOS4zNTAzIDE0Ljk1NjNMMzMuNzY5MiAyMS44MzExTDI4Ljc1MDcgMTAuMjk2QzI5LjY2NiA5LjUyNTY3IDMwLjMyMjMgOC40OTI1MSAzMC42MzA2IDcuMzM2NTlDMzAuOTM4OSA2LjE4MDY3IDMwLjg4NDQgNC45NTc5IDMwLjQ3NDQgMy44MzQwMkMzMC4wNjQ0IDIuNzEwMTMgMjkuMzE4NyAxLjczOTQ5IDI4LjMzODUgMS4wNTM2N0MyNy4zNTgzIDAuMzY3ODQzIDI2LjE5MDkgMCAyNC45OTQ1IDBDMjMuNzk4MiAwIDIyLjYzMDggMC4zNjc4NDMgMjEuNjUwNSAxLjA1MzY3QzIwLjY3MDMgMS43Mzk0OSAxOS45MjQ2IDIuNzEwMTMgMTkuNTE0NiAzLjgzNDAyQzE5LjEwNDYgNC45NTc5IDE5LjA1MDEgNi4xODA2NyAxOS4zNTg0IDcuMzM2NTlDMTkuNjY2OCA4LjQ5MjUxIDIwLjMyMzEgOS41MjU2NyAyMS4yMzg0IDEwLjI5NkwxNi4yMzIzIDIxLjgyNDhMMTAuNjUxMiAxNC45NUMxMS4zNjgxIDEzLjg5OTUgMTEuNzIyMSAxMi42NDM1IDExLjY1OTIgMTEuMzczM0MxMS41OTYzIDEwLjEwMyAxMS4xMTk5IDguODg4MDggMTAuMzAyNiA3LjkxMzU4QzkuNDg1MzkgNi45MzkwOSA4LjM3MjA0IDYuMjU4MzkgNy4xMzIxNSA1Ljk3NTE3QzUuODkyMjYgNS42OTE5NSA0LjU5Mzc3IDUuODIxNzIgMy40MzQ0NiA2LjM0NDcyQzIuMjc1MTQgNi44Njc3MiAxLjMxODUyIDcuNzU1MjggMC43MTAyOTIgOC44NzIyNUMwLjEwMjA2MyA5Ljk4OTIxIC0wLjEyNDQ0NSAxMS4yNzQ0IDAuMDY1MjY2NCAxMi41MzE5QzAuMjU0OTc3IDEzLjc4OTUgMC44NTA1MSAxNC45NTA3IDEuNzYxMTcgMTUuODM4NUMyLjY3MTgyIDE2LjcyNjQgMy44NDc3IDE3LjI5MjIgNS4xMDk3IDE3LjQ1TDguMTI2MjggMzUuNTUxNUM4LjI1NTk2IDM2LjMyOTcgOC42NTc0OSAzNy4wMzY3IDkuMjU5NDMgMzcuNTQ2N0M5Ljg2MTM4IDM4LjA1NjggMTAuNjI0NyAzOC4zMzY3IDExLjQxMzcgMzguMzM2OEgzOC41ODc5QzM5LjM3NjggMzguMzM2NyA0MC4xNDAyIDM4LjA1NjggNDAuNzQyMSAzNy41NDY3QzQxLjM0NCAzNy4wMzY3IDQxLjc0NTYgMzYuMzI5NyA0MS44NzUzIDM1LjU1MTVMNDQuODg5NyAxNy40NTgzQzQ2LjMwMDUgMTcuMjgyMSA0Ny41OTgzIDE2LjU5NjggNDguNTM5MyAxNS41MzExQzQ5LjQ4MDQgMTQuNDY1NCA0OS45OTk4IDEzLjA5MjcgNTAgMTEuNjcxWk0yNS4wMDA4IDMuMzM3OUMyNS40OTUyIDMuMzM3OSAyNS45Nzg1IDMuNDg0NTIgMjYuMzg5NyAzLjc1OTIxQzI2LjgwMDggNC4wMzM5MSAyNy4xMjEyIDQuNDI0MzQgMjcuMzEwNCA0Ljg4MTE0QzI3LjQ5OTYgNS4zMzc5NCAyNy41NDkxIDUuODQwNiAyNy40NTI3IDYuMzI1NTNDMjcuMzU2MiA2LjgxMDQ3IDI3LjExODEgNy4yNTU5MiAyNi43Njg1IDcuNjA1NTRDMjYuNDE4OSA3Ljk1NTE2IDI1Ljk3MzQgOC4xOTMyNSAyNS40ODg1IDguMjg5NzFDMjUuMDAzNSA4LjM4NjE3IDI0LjUwMDkgOC4zMzY2NiAyNC4wNDQxIDguMTQ3NDVDMjMuNTg3MyA3Ljk1ODI0IDIzLjE5NjggNy42Mzc4MiAyMi45MjIyIDcuMjI2NzFDMjIuNjQ3NSA2LjgxNTU5IDIyLjUwMDggNi4zMzIyNiAyMi41MDA4IDUuODM3ODJDMjIuNTAwOCA1LjE3NDggMjIuNzY0MiA0LjUzODk0IDIzLjIzMzEgNC4wNzAxMUMyMy43MDE5IDMuNjAxMjggMjQuMzM3NyAzLjMzNzkgMjUuMDAwOCAzLjMzNzlaTTMuMzM0NzYgMTEuNjcxQzMuMzM0NzYgMTEuMTc2NSAzLjQ4MTM4IDEwLjY5MzIgMy43NTYwNyAxMC4yODIxQzQuMDMwNzcgOS44NzA5OSA0LjQyMTIgOS41NTA1NiA0Ljg3OCA5LjM2MTM1QzUuMzM0OCA5LjE3MjE0IDUuODM3NDUgOS4xMjI2MyA2LjMyMjM5IDkuMjE5MDlDNi44MDczMyA5LjMxNTU1IDcuMjUyNzcgOS41NTM2NCA3LjYwMjQgOS45MDMyNkM3Ljk1MjAyIDEwLjI1MjkgOC4xOTAxMSAxMC42OTgzIDguMjg2NTcgMTEuMTgzM0M4LjM4MzAzIDExLjY2ODIgOC4zMzM1MiAxMi4xNzA5IDguMTQ0MzEgMTIuNjI3N0M3Ljk1NTEgMTMuMDg0NSA3LjYzNDY4IDEzLjQ3NDkgNy4yMjM1NyAxMy43NDk2QzYuODEyNDUgMTQuMDI0MyA2LjMyOTEyIDE0LjE3MDkgNS44MzQ2OCAxNC4xNzA5QzUuMTcxNjYgMTQuMTcwOSA0LjUzNTc5IDEzLjkwNzUgNC4wNjY5NyAxMy40Mzg3QzMuNTk4MTQgMTIuOTY5OSAzLjMzNDc2IDEyLjMzNCAzLjMzNDc2IDExLjY3MVpNMzguNTg3OSAzNS4wMDM2SDExLjQxMzdMOC41MTM3NyAxNy42MTI1TDE1LjM3NCAyNi4wNDU1QzE1LjUyOTQgMjYuMjM5NiAxNS43MjYyIDI2LjM5NjUgMTUuOTUgMjYuNTA0NkMxNi4xNzM5IDI2LjYxMjcgMTYuNDE5MSAyNi42Njk0IDE2LjY2NzcgMjYuNjcwNUMxNi43NDI5IDI2LjY3MDkgMTYuODE4MSAyNi42NjYgMTYuODkyNyAyNi42NTU5QzE3LjE3NjYgMjYuNjE3MyAxNy40NDU4IDI2LjUwNjIgMTcuNjc0MiAyNi4zMzMyQzE3LjkwMjcgMjYuMTYwMiAxOC4wODI3IDI1LjkzMTMgMTguMTk2OCAyNS42Njg1TDI0LjMwMDggMTEuNjI3MkMyNC43NjU2IDExLjY4NTUgMjUuMjM1OSAxMS42ODU1IDI1LjcwMDcgMTEuNjI3MkwzMS44MDQ3IDI1LjY2ODVDMzEuOTE4OSAyNS45MzEzIDMyLjA5ODkgMjYuMTYwMiAzMi4zMjczIDI2LjMzMzJDMzIuNTU1NyAyNi41MDYyIDMyLjgyNDkgMjYuNjE3MyAzMy4xMDg5IDI2LjY1NTlDMzMuMTgzNCAyNi42NjYgMzMuMjU4NiAyNi42NzA5IDMzLjMzMzggMjYuNjcwNUMzMy41ODI0IDI2LjY2OTQgMzMuODI3NyAyNi42MTI3IDM0LjA1MTUgMjYuNTA0NkMzNC4yNzU0IDI2LjM5NjUgMzQuNDcyMiAyNi4yMzk2IDM0LjYyNzYgMjYuMDQ1NUw0MS40ODc4IDE3LjYwNDFMMzguNTg3OSAzNS4wMDM2Wk00NC4xNjY5IDE0LjE3MDlDNDMuNjcyNCAxNC4xNzA5IDQzLjE4OTEgMTQuMDI0MyA0Mi43NzggMTMuNzQ5NkM0Mi4zNjY5IDEzLjQ3NDkgNDIuMDQ2NCAxMy4wODQ1IDQxLjg1NzIgMTIuNjI3N0M0MS42NjggMTIuMTcwOSA0MS42MTg1IDExLjY2ODIgNDEuNzE1IDExLjE4MzNDNDEuODExNCAxMC42OTgzIDQyLjA0OTUgMTAuMjUyOSA0Mi4zOTkxIDkuOTAzMjZDNDIuNzQ4OCA5LjU1MzY0IDQzLjE5NDIgOS4zMTU1NSA0My42NzkxIDkuMjE5MDlDNDQuMTY0MSA5LjEyMjYzIDQ0LjY2NjcgOS4xNzIxNCA0NS4xMjM1IDkuMzYxMzVDNDUuNTgwMyA5LjU1MDU2IDQ1Ljk3MDggOS44NzA5OSA0Ni4yNDU1IDEwLjI4MjFDNDYuNTIwMiAxMC42OTMyIDQ2LjY2NjggMTEuMTc2NSA0Ni42NjY4IDExLjY3MUM0Ni42NjY4IDEyLjMzNCA0Ni40MDM0IDEyLjk2OTkgNDUuOTM0NiAxMy40Mzg3QzQ1LjQ2NTcgMTMuOTA3NSA0NC44Mjk5IDE0LjE3MDkgNDQuMTY2OSAxNC4xNzA5WiIgZmlsbD0iIzg5NzQ0NCIvPgo8L3N2Zz4K",
+          "title": "Priority <gold>Access</gold>",
+          "description": "<semi>Early-phase units and off-plan deals</semi> from Dubai’s top developers."
+        }
+      ],
+      "item2": [
+        {
+          "id": "w2",
+          "logo": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iMzkiIHZpZXdCb3g9IjAgMCA1MCAzOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNNDMuNzUgNi42Njg0NlYzNC43OTM1SDYuMjVWMy41NDM0Nkg0MC42MjVDNDEuNDUzOCAzLjU0MzQ2IDQyLjI0ODcgMy44NzI3IDQyLjgzNDcgNC40NTg3NUM0My40MjA4IDUuMDQ0OCA0My43NSA1LjgzOTY2IDQzLjc1IDYuNjY4NDZaIiBmaWxsPSIjODk3NDQ0Ii8+CjxwYXRoIGQ9Ik00NS4zMTI1IDM0Ljc5MzVDNDUuMzEyNSAzNS4yMDc5IDQ1LjE0NzkgMzUuNjA1MyA0NC44NTQ5IDM1Ljg5ODNDNDQuNTYxOCAzNi4xOTEzIDQ0LjE2NDQgMzYuMzU2IDQzLjc1IDM2LjM1Nkg2LjI1QzUuODM1NiAzNi4zNTYgNS40MzgxNyAzNi4xOTEzIDUuMTQ1MTUgMzUuODk4M0M0Ljg1MjEyIDM1LjYwNTMgNC42ODc1IDM1LjIwNzkgNC42ODc1IDM0Ljc5MzVWMy41NDM0NkM0LjY4NzUgMy4xMjkwNiA0Ljg1MjEyIDIuNzMxNjMgNS4xNDUxNSAyLjQzODZDNS40MzgxNyAyLjE0NTU4IDUuODM1NiAxLjk4MDk2IDYuMjUgMS45ODA5NkM2LjY2NDQgMS45ODA5NiA3LjA2MTgzIDIuMTQ1NTggNy4zNTQ4NSAyLjQzODZDNy42NDc4OCAyLjczMTYzIDcuODEyNSAzLjEyOTA2IDcuODEyNSAzLjU0MzQ2VjI0Ljc3MkwxNy42NDQ1IDE0LjkzOEMxNy43ODk2IDE0Ljc5MjcgMTcuOTYyIDE0LjY3NzUgMTguMTUxNyAxNC41OTg4QzE4LjM0MTMgMTQuNTIwMiAxOC41NDQ3IDE0LjQ3OTcgMTguNzUgMTQuNDc5N0MxOC45NTUzIDE0LjQ3OTcgMTkuMTU4NyAxNC41MjAyIDE5LjM0ODMgMTQuNTk4OEMxOS41MzggMTQuNjc3NSAxOS43MTA0IDE0Ljc5MjcgMTkuODU1NSAxNC45MzhMMjUgMjAuMDg0NUwzNS4yOTEgOS43OTM0NkgzMS4yNUMzMC44MzU2IDkuNzkzNDYgMzAuNDM4MiA5LjYyODg0IDMwLjE0NTEgOS4zMzU4MUMyOS44NTIxIDkuMDQyNzkgMjkuNjg3NSA4LjY0NTM2IDI5LjY4NzUgOC4yMzA5NkMyOS42ODc1IDcuODE2NTYgMjkuODUyMSA3LjQxOTEzIDMwLjE0NTEgNy4xMjYxQzMwLjQzODIgNi44MzMwOCAzMC44MzU2IDYuNjY4NDYgMzEuMjUgNi42Njg0NkgzOS4wNjI1QzM5LjQ3NjkgNi42Njg0NiAzOS44NzQzIDYuODMzMDggNDAuMTY3NCA3LjEyNjFDNDAuNDYwNCA3LjQxOTEzIDQwLjYyNSA3LjgxNjU2IDQwLjYyNSA4LjIzMDk2VjE2LjA0MzVDNDAuNjI1IDE2LjQ1NzkgNDAuNDYwNCAxNi44NTUzIDQwLjE2NzQgMTcuMTQ4M0MzOS44NzQzIDE3LjQ0MTMgMzkuNDc2OSAxNy42MDYgMzkuMDYyNSAxNy42MDZDMzguNjQ4MSAxNy42MDYgMzguMjUwNyAxNy40NDEzIDM3Ljk1NzYgMTcuMTQ4M0MzNy42NjQ2IDE2Ljg1NTMgMzcuNSAxNi40NTc5IDM3LjUgMTYuMDQzNVYxMi4wMDI0TDI2LjEwNTUgMjMuMzk4OUMyNS45NjA0IDIzLjU0NDIgMjUuNzg4IDIzLjY1OTUgMjUuNTk4MyAyMy43MzgxQzI1LjQwODcgMjMuODE2NyAyNS4yMDUzIDIzLjg1NzIgMjUgMjMuODU3MkMyNC43OTQ3IDIzLjg1NzIgMjQuNTkxMyAyMy44MTY3IDI0LjQwMTcgMjMuNzM4MUMyNC4yMTIgMjMuNjU5NSAyNC4wMzk2IDIzLjU0NDIgMjMuODk0NSAyMy4zOTg5TDE4Ljc1IDE4LjI1MjRMNy44MTI1IDI5LjE4OTlWMzMuMjMxSDQzLjc1QzQ0LjE2NDQgMzMuMjMxIDQ0LjU2MTggMzMuMzk1NiA0NC44NTQ5IDMzLjY4ODZDNDUuMTQ3OSAzMy45ODE2IDQ1LjMxMjUgMzQuMzc5MSA0NS4zMTI1IDM0Ljc5MzVaIiBmaWxsPSIjODk3NDQ0Ii8+Cjwvc3ZnPgo=",
+          "title": "Expert <gold>ROI</gold>",
+          "description": "Data-driven property selection for <semi>high rental yields and capital growth.</semi>"
+        }
+      ],
+      "item3": [
+        {
+          "id": "w3",
+          "logo": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNDEiIHZpZXdCb3g9IjAgMCA1MCA0MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNNDMuNzUgMjAuMzEyNUM0My43NSAyNC4wMjA5IDQyLjY1MDMgMjcuNjQ2IDQwLjU5MDEgMzAuNzI5NEMzOC41Mjk4IDMzLjgxMjkgMzUuNjAxNCAzNi4yMTYxIDMyLjE3NTMgMzcuNjM1MkMyOC43NDkyIDM5LjA1NDQgMjQuOTc5MiAzOS40MjU3IDIxLjM0MjEgMzguNzAyMkMxNy43MDQ5IDM3Ljk3ODggMTQuMzY0IDM2LjE5MyAxMS43NDE4IDMzLjU3MDhDOS4xMTk1MiAzMC45NDg1IDcuMzMzNzYgMjcuNjA3NiA2LjYxMDI4IDIzLjk3MDRDNS44ODY4MSAyMC4zMzMzIDYuMjU4MTIgMTYuNTYzMyA3LjY3NzI3IDEzLjEzNzJDOS4wOTY0MSA5LjcxMTA3IDExLjQ5OTYgNi43ODI3MiAxNC41ODMxIDQuNzIyNDVDMTcuNjY2NSAyLjY2MjE3IDIxLjI5MTYgMS41NjI1IDI1IDEuNTYyNUMyOS45NzI4IDEuNTYyNSAzNC43NDIgMy41Mzc5NCAzOC4yNTgzIDcuMDU0MjVDNDEuNzc0NiAxMC41NzA2IDQzLjc1IDE1LjMzOTcgNDMuNzUgMjAuMzEyNVoiIGZpbGw9IiM4OTc0NDQiLz4KPHBhdGggZD0iTTI1IDBDMjAuOTgyNiAwIDE3LjA1NTQgMS4xOTEzMSAxMy43MTUgMy40MjMyN0MxMC4zNzQ2IDUuNjU1MjQgNy43NzExMSA4LjgyNzYyIDYuMjMzNzEgMTIuNTM5MkM0LjY5NjMgMTYuMjUwOSA0LjI5NDA1IDIwLjMzNSA1LjA3NzgxIDI0LjI3NTNDNS44NjE1NyAyOC4yMTU1IDcuNzk2MTUgMzEuODM0OSAxMC42MzY5IDM0LjY3NTZDMTMuNDc3NyAzNy41MTY0IDE3LjA5NyAzOS40NTA5IDIxLjAzNzIgNDAuMjM0N0MyNC45Nzc1IDQxLjAxODUgMjkuMDYxNiA0MC42MTYyIDMyLjc3MzMgMzkuMDc4OEMzNi40ODQ5IDM3LjU0MTQgMzkuNjU3MyAzNC45Mzc5IDQxLjg4OTIgMzEuNTk3NUM0NC4xMjEyIDI4LjI1NzEgNDUuMzEyNSAyNC4zMjk5IDQ1LjMxMjUgMjAuMzEyNUM0NS4zMDYzIDE0LjkyNzIgNDMuMTY0MyA5Ljc2NDIzIDM5LjM1NjMgNS45NTYyNEMzNS41NDgzIDIuMTQ4MjYgMzAuMzg1MyAwLjAwNjIwMzA4IDI1IDBaTTQyLjE4NzUgMjAuMzEyNUM0Mi4xODg5IDIxLjg5NzYgNDEuOTcgMjMuNDc1MiA0MS41MzcxIDI1SDM0LjAxNTZDMzQuNDk0OCAyMS44OTM0IDM0LjQ5NDggMTguNzMxNiAzNC4wMTU2IDE1LjYyNUg0MS41MzcxQzQxLjk3IDE3LjE0OTggNDIuMTg4OSAxOC43Mjc0IDQyLjE4NzUgMjAuMzEyNVpNMTkuOTIxOSAyOC4xMjVIMzAuMDc4MUMyOS4wNzc2IDMxLjQwMzUgMjcuMzQwNiAzNC40MDk4IDI1IDM2LjkxNDFDMjIuNjYwMyAzNC40MDkxIDIwLjkyMzUgMzEuNDAzMSAxOS45MjE5IDI4LjEyNVpNMTkuMTYwMiAyNUMxOC42MjM3IDIxLjg5OCAxOC42MjM3IDE4LjcyNyAxOS4xNjAyIDE1LjYyNUgzMC44NTU1QzMxLjM5MTkgMTguNzI3IDMxLjM5MTkgMjEuODk4IDMwLjg1NTUgMjVIMTkuMTYwMlpNNy44MTI1MSAyMC4zMTI1QzcuODExMTUgMTguNzI3NCA4LjAzMDA0IDE3LjE0OTggOC40NjI5IDE1LjYyNUgxNS45ODQ0QzE1LjUwNTIgMTguNzMxNiAxNS41MDUyIDIxLjg5MzQgMTUuOTg0NCAyNUg4LjQ2MjlDOC4wMzAwNCAyMy40NzUyIDcuODExMTUgMjEuODk3NiA3LjgxMjUxIDIwLjMxMjVaTTMwLjA3ODEgMTIuNUgxOS45MjE5QzIwLjkyMjQgOS4yMjE1IDIyLjY1OTQgNi4yMTUyIDI1IDMuNzEwOTRDMjcuMzM5NyA2LjIxNTg2IDI5LjA3NjYgOS4yMjE5NCAzMC4wNzgxIDEyLjVaTTQwLjI5ODggMTIuNUgzMy4zNDE4QzMyLjQ2NSA5LjI4MzAyIDMwLjk4NzEgNi4yNjEwOCAyOC45ODYzIDMuNTkzNzVDMzEuNDAzNyA0LjE3NDQ3IDMzLjY2NyA1LjI3MTA1IDM1LjYyMDkgNi44MDgzMUMzNy41NzQ5IDguMzQ1NTggMzkuMTczMyAxMC4yODcyIDQwLjMwNjYgMTIuNUg0MC4yOTg4Wk0yMS4wMTM3IDMuNTkzNzVDMTkuMDEyOSA2LjI2MTA4IDE3LjUzNTEgOS4yODMwMiAxNi42NTgyIDEyLjVIOS42OTMzN0MxMC44MjY3IDEwLjI4NzIgMTIuNDI1MSA4LjM0NTU4IDE0LjM3OTEgNi44MDgzMUMxNi4zMzMgNS4yNzEwNSAxOC41OTYzIDQuMTc0NDcgMjEuMDEzNyAzLjU5Mzc1Wk05LjY5MzM3IDI4LjEyNUgxNi42NTgyQzE3LjUzNTEgMzEuMzQyIDE5LjAxMjkgMzQuMzYzOSAyMS4wMTM3IDM3LjAzMTJDMTguNTk2MyAzNi40NTA1IDE2LjMzMyAzNS4zNTQgMTQuMzc5MSAzMy44MTY3QzEyLjQyNTEgMzIuMjc5NCAxMC44MjY3IDMwLjMzNzggOS42OTMzNyAyOC4xMjVaTTI4Ljk4NjMgMzcuMDMxMkMzMC45ODcxIDM0LjM2MzkgMzIuNDY1IDMxLjM0MiAzMy4zNDE4IDI4LjEyNUg0MC4zMDY2QzM5LjE3MzMgMzAuMzM3OCAzNy41NzQ5IDMyLjI3OTQgMzUuNjIwOSAzMy44MTY3QzMzLjY2NyAzNS4zNTQgMzEuNDAzNyAzNi40NTA1IDI4Ljk4NjMgMzcuMDMxMloiIGZpbGw9IiM4OTc0NDQiLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNNDMuNzUgMjAuMzEyNUM0My43NSAyNC4wMjA5IDQyLjY1MDMgMjcuNjQ2IDQwLjU5MDEgMzAuNzI5NEMzOC41Mjk4IDMzLjgxMjkgMzUuNjAxNCAzNi4yMTYxIDMyLjE3NTMgMzcuNjM1MkMyOC43NDkyIDM5LjA1NDQgMjQuOTc5MiAzOS40MjU3IDIxLjM0MjEgMzguNzAyMkMxNy43MDQ5IDM3Ljk3ODggMTQuMzY0IDM2LjE5MyAxMS43NDE4IDMzLjU3MDhDOS4xMTk1MiAzMC45NDg1IDcuMzMzNzYgMjcuNjA3NiA2LjYxMDI4IDIzLjk3MDRDNS44ODY4MSAyMC4zMzMzIDYuMjU4MTIgMTYuNTYzMyA3LjY3NzI3IDEzLjEzNzJDOS4wOTY0MSA5LjcxMTA3IDExLjQ5OTYgNi43ODI3MiAxNC41ODMxIDQuNzIyNDVDMTcuNjY2NSAyLjY2MjE3IDIxLjI5MTYgMS41NjI1IDI1IDEuNTYyNUMyOS45NzI4IDEuNTYyNSAzNC43NDIgMy41Mzc5NCAzOC4yNTgzIDcuMDU0MjVDNDEuNzc0NiAxMC41NzA2IDQzLjc1IDE1LjMzOTcgNDMuNzUgMjAuMzEyNVoiIGZpbGw9IiM4OTc0NDQiLz4KPHBhdGggZD0iTTI1IDBDMjAuOTgyNiAwIDE3LjA1NTQgMS4xOTEzMSAxMy43MTUgMy40MjMyN0MxMC4zNzQ2IDUuNjU1MjQgNy43NzExMSA4LjgyNzYyIDYuMjMzNzEgMTIuNTM5MkM0LjY5NjMgMTYuMjUwOSA0LjI5NDA1IDIwLjMzNSA1LjA3NzgxIDI0LjI3NTNDNS44NjE1NyAyOC4yMTU1IDcuNzk2MTUgMzEuODM0OSAxMC42MzY5IDM0LjY3NTZDMTMuNDc3NyAzNy41MTY0IDE3LjA5NyAzOS40NTA5IDIxLjAzNzIgNDAuMjM0N0MyNC45Nzc1IDQxLjAxODUgMjkuMDYxNiA0MC42MTYyIDMyLjc3MzMgMzkuMDc4OEMzNi40ODQ5IDM3LjU0MTQgMzkuNjU3MyAzNC45Mzc5IDQxLjg4OTIgMzEuNTk3NUM0NC4xMjEyIDI4LjI1NzEgNDUuMzEyNSAyNC4zMjk5IDQ1LjMxMjUgMjAuMzEyNUM0NS4zMDYzIDE0LjkyNzIgNDMuMTY0MyA5Ljc2NDIzIDM5LjM1NjMgNS45NTYyNEMzNS41NDgzIDIuMTQ4MjYgMzAuMzg1MyAwLjAwNjIwMzA4IDI1IDBaTTQyLjE4NzUgMjAuMzEyNUM0Mi4xODg5IDIxLjg5NzYgNDEuOTcgMjMuNDc1MiA0MS41MzcxIDI1SDM0LjAxNTZDMzQuNDk0OCAyMS44OTM0IDM0LjQ5NDggMTguNzMxNiAzNC4wMTU2IDE1LjYyNUg0MS41MzcxQzQxLjk3IDE3LjE0OTggNDIuMTg4OSAxOC43Mjc0IDQyLjE4NzUgMjAuMzEyNVpNMTkuOTIxOSAyOC4xMjVIMzAuMDc4MUMyOS4wNzc2IDMxLjQwMzUgMjcuMzQwNiAzNC40MDk4IDI1IDM2LjkxNDFDMjIuNjYwMyAzNC40MDkxIDIwLjkyMzUgMzEuNDAzMSAxOS45MjE5IDI4LjEyNVpNMTkuMTYwMiAyNUMxOC42MjM3IDIxLjg5OCAxOC42MjM3IDE4LjcyNyAxOS4xNjAyIDE1LjYyNUgzMC44NTU1QzMxLjM5MTkgMTguNzI3IDMxLjM5MTkgMjEuODk4IDMwLjg1NTUgMjVIMTkuMTYwMlpNNy44MTI1MSAyMC4zMTI1QzcuODExMTUgMTguNzI3NCA4LjAzMDA0IDE3LjE0OTggOC40NjI5IDE1LjYyNUgxNS45ODQ0QzE1LjUwNTIgMTguNzMxNiAxNS41MDUyIDIxLjg5MzQgMTUuOTg0NCAyNUg4LjQ2MjlDOC4wMzAwNCAyMy40NzUyIDcuODExMTUgMjEuODk3NiA3LjgxMjUxIDIwLjMxMjVaTTMwLjA3ODEgMTIuNUgxOS45MjE5QzIwLjkyMjQgOS4yMjE1IDIyLjY1OTQgNi4yMTUyIDI1IDMuNzEwOTRDMjcuMzM5NyA2LjIxNTg2IDI5LjA3NjYgOS4yMjE5NCAzMC4wNzgxIDEyLjVaTTQwLjI5ODggMTIuNUgzMy4zNDE4QzMyLjQ2NSA5LjI4MzAyIDMwLjk4NzEgNi4yNjEwOCAyOC45ODYzIDMuNTkzNzVDMzEuNDAzNyA0LjE3NDQ3IDMzLjY2NyA1LjI3MTA1IDM1LjYyMDkgNi44MDgzMUMzNy41NzQ5IDguMzQ1NTggMzkuMTczMyAxMC4yODcyIDQwLjMwNjYgMTIuNUg0MC4yOTg4Wk0yMS4wMTM3IDMuNTkzNzVDMTkuMDEyOSA2LjI2MTA4IDE3LjUzNTEgOS4yODMwMiAxNi42NTgyIDEyLjVIOS42OTMzN0MxMC44MjY3IDEwLjI4NzIgMTIuNDI1MSA4LjM0NTU4IDE0LjM3OTEgNi44MDgzMUMxNi4zMzMgNS4yNzEwNSAxOC41OTYzIDQuMTc0NDcgMjEuMDEzNyAzLjU5Mzc1Wk05LjY5MzM3IDI4LjEyNUgxNi42NTgyQzE3LjUzNTEgMzEuMzQyIDE5LjAxMjkgMzQuMzYzOSAyMS4wMTM3IDM3LjAzMTJDMTguNTk2MyAzNi40NTA1IDE2LjMzMyAzNS4zNTQgMTQuMzc5MSAzMy44MTY3QzEyLjQyNTEgMzIuMjc5NCAxMC44MjY3IDMwLjMzNzggOS42OTMzNyAyOC4xMjVaTTI4Ljk4NjMgMzcuMDMxMkMzMC45ODcxIDM0LjM2MzkgMzIuNDY1IDMxLjM0MiAzMy4zNDE4IDI4LjEyNUg0MC4zMDY2QzM5LjE3MzMgMzAuMzM3OCAzNy41NzQ5IDMyLjI3OTQgMzUuNjIwOSAzMy44MTY3QzMzLjY2NyAzNS4zNTQgMzEuNDAzNyAzNi40NTA1IDI4Ljk4NjMgMzcuMDMxMloiIGZpbGw9IiM4OTc0NDQiLz4KPC9zdmc+Cg==",
+          "title": "Elite <gold>Network</gold>",
+          "description": "Exclusive off-market listings and a vast portfolio of <semi>premium luxury assets.</semi>"
+        }
+      ]
+    }
+  },
+  "Article": {
+    "title": "<black>Discover the</black><gold>Dubai Lifestyle</gold>",
+    "view_more": "View More",
+    "items": {
+      "item1": [
+        {
+          "id": "a1",
+          "src": "/home/article/article-1.jpg",
+          "title": "🏙️ 2026 City Guide: Must-Visit Landmarks",
+          "description": "Discover the must-visit attractions and world-record sights defining the city skyline."
+        }
+      ],
+      "Item2": [
+        {
+          "id": "a2",
+          "src": "/home/article/article-2.png",
+          "title": "🏖️ The Best of Waterfront Living",
+          "description": "A curated guide to the finest beach clubs, yachting, and dining across Dubai’s coastline."
+        }
+      ],
+      "Item3": [
+        {
+          "id": "a3",
+          "src": "/home/article/article-3.jpg",
+          "title": "✨ Hidden Gems: Old Dubai to Al Quoz",
+          "description": "Explore the authentic culture, local souks, and secret art spots beyond the skyscrapers."
+        }
+      ],
+      "Item4": [
+        {
+          "id": "a4",
+          "src": "/home/article/article-4.png",
+          "title": "🌵 Desert Escapes: Adventure & Heritage",
+          "description": "From high-speed dune bashing to serene starlit dinners, experience the magic of the Arabian sands."
+        }
+      ]
+    }
+  },
+  "Contact": {
+    "contact_info": {
+      "title": "Invest Now <gold>in Dubai!</gold>",
+      "description": "<black>Ready to invest in Dubai?</black> Let's make your real estate investment dreams a <gold>reality</gold>. Contact us today!",
+      "address": "<black>Dubai</black> <gold>Real Estate Pro</gold>, Office No. 98, 3rd Floor, Al Rigga Business Center Dubai, UAE",
+      "email_rich": "<gold>Email</gold> Address",
+      "whatsapp_rich": "<gold>WhatsApp</gold> Number"
+    },
+    "contact_form": {
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email": "Email Address",
+      "whatsapp": "WhatsApp Number",
+      "message": "Message",
+      "send_message": "Send Message"
+    }
+  },
+  "Footer": {
+    "copyright": "2025 Dubai Real Estate Pro. All rights reserved.",
+    "quick_links": "Quick Links",
+    "our_developers": "Our Developers"
+  },
+  "503": {
+    "title": "Coming <gold>Soon!</gold>",
+    "description": "This page is currently <black>under construction</black>. While we build this experience for you, feel free to explore the rest of our site or reach out with any questions.",
+    "button": "Return to Home"
+  },
+  "404": {
+    "title": "<gold>Page </gold>Not Found",
+    "description": "The page you are looking for might have been removed had its name changed or is temporarily unavailable.",
+    "button": "Return to Home"
+  }
+}
