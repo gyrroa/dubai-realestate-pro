@@ -62,7 +62,7 @@ export default function AboutImageCard({ src, location, position }: { src: any; 
                     "cursor-pointer",
                     vertical,
                     horizontal,
-                    "bg-glow/80 backdrop-blur-[1px] rounded-full font-light text-desc-xs border border-glow/80 z-20"
+                    "bg-glow/80 backdrop-blur-[1px] rounded-full font-light text-desc-lg lg:text-desc-xs border border-glow/80 z-20"
                 )}>
                 📍{location}
                 <ChevronRight
