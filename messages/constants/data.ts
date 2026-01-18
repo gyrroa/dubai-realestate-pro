@@ -61,9 +61,9 @@ export const about = [
     // Dugasta
     { id: "p2c1-2", src: "/home/about/dugasta1.webp", position: "top-left" },
     // Azizi
-    { id: "p2c2-1", src: "/home/about/azizi1.webp", position: "top-right" },
+    { id: "p2c2-1", src: "/home/about/dugasta2.webp", position: "top-right" },
     // Dugasta
-    { id: "p2c3-1", src: "/home/about/dugasta2.webp", position: "bottom-left" },
+    { id: "p2c3-1", src: "/home/about/azizi1.webp", position: "bottom-left" },
     // Azizi
     { id: "p2c3-2", src: "/home/about/azizi2.webp", position: "bottom-right" },
     // Damac
@@ -74,9 +74,9 @@ export const about = [
     { id: "p3c3-3", src: "/home/about/binghatti2.webp", position: "bottom-left" },
     // Nakheel
     { id: "p4c1-2", src: "/home/about/nakheel1.webp", position: "top-left" },
-    { id: "p4c2-1", src: "/home/about/nakheel2.webp", position: "bottom-left" },
+    { id: "p4c2-1", src: "/home/about/samana.webp", position: "bottom-left" },
     // Samana
-    { id: "p4c3-1", src: "/home/about/samana.webp", position: "top-right" },
+    { id: "p4c3-1", src: "/home/about/nakheel2.webp", position: "top-right" },
     // Danube
     { id: "p4c3-3", src: "/home/about/danube.webp", position: "bottom-right" }
 ]
