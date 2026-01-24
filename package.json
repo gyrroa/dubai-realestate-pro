@@ -11,6 +11,7 @@
   "dependencies": {
     "@dotlottie/react-player": "^1.6.19",
     "@radix-ui/react-slot": "^1.2.4",
+    "@sanity/assist": "^5.0.4",
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^4.22.0",
     "@vercel/analytics": "^1.6.1",

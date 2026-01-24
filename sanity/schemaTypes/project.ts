@@ -11,7 +11,18 @@ export const projectType = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: "name_ar",
+      title: "Name (Arabic)",
+      type: "string",
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: "description",
+      type: "text",
+    }),
+    defineField({
+      name: "description_ar",
+      title: "Description (Arabic)",
       type: "text",
     }),
     defineField({
@@ -31,12 +42,22 @@ export const projectType = defineType({
       options: { hotspot: true },
     }),
     defineField({
-      name: "address",
+      name: "location",
       type: "string",
     }),
     defineField({
-      name: "ammenities",
-      title: "Amenities",
+      name: "location_ar",
+      title: "Location (Arabic)",
+      type: "string",
+    }),
+    defineField({
+      name: "unit_type",
+      type: "array",
+      of: [{ type: "string" }],
+    }),
+    defineField({
+      name: "unit_type_ar",
+      title: "Unit Type (Arabic)",
       type: "array",
       of: [{ type: "string" }],
     }),

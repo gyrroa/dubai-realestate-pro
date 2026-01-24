@@ -11,6 +11,11 @@ export const developerType = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: "name_ar",
+      type: "string",
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: "slug",
       type: "slug",
       options: { source: "name" },
@@ -18,6 +23,11 @@ export const developerType = defineType({
     }),
     defineField({
       name: "description",
+      type: "text",
+    }),
+    defineField({
+      name: "description_ar",
+      title: "Description (Arabic)",
       type: "text",
     }),
     defineField({

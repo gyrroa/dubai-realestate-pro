@@ -11,7 +11,18 @@ export const communityType = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: "name_ar",
+      title: "Name (Arabic)",
+      type: "string",
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: "description",
+      type: "text",
+    }),
+    defineField({
+      name: "description_ar",
+      title: "Description (Arabic)",
       type: "text",
     }),
     defineField({
