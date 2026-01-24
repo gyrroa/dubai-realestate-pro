@@ -1,0 +1,42 @@
+[33m7be2575[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m HEAD@{0}: reset: moving to 7be2575e8e5a0cc59d2e4de1cc0d6c2761a4cd1e
+[33m853a18a[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: commit: feat(developer): add dynamic routing and specialized page components
+[33m7be2575[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m HEAD@{2}: commit: feat(content): update About and Broker sections with new copy
+[33m179d894[m HEAD@{3}: commit: chore(content): reorder About section items and translations
+[33m23d4487[m HEAD@{4}: commit: feat: improve mobile responsiveness for About section layout
+[33m6fe5e61[m HEAD@{5}: commit: fix(about): remove negative tracking on large screens
+[33m04f736c[m HEAD@{6}: commit: chore: update broker image styles and nav menu descriptions
+[33m2fdab49[m HEAD@{7}: commit: fix(nav): remove unused isDeveloper variable causing lint error
+[33m48b1785[m HEAD@{8}: commit: feat(nav): add responsive developer submenu
+[33m6d5667c[m HEAD@{9}: commit: refactor(ui): redesign contact section and refine
+[33ma54440e[m HEAD@{10}: commit: perf: implement image blur placeholders and optimize loading
+[33m7bb7346[m HEAD@{11}: commit: i18n: add arabic translations for navigation
+[33m39ad381[m HEAD@{12}: commit: refactor: replace google maps iframe with static image
+[33mc95f2d0[m HEAD@{13}: commit: fix: resolve peer dependency conflicts for react 19 compatibility
+[33mf45925f[m HEAD@{14}: commit: feat: implement data-driven navigation mapping across header and footer
+[33m8259ed4[m HEAD@{15}: commit: style: center pagination with fixed gap and restore carousel interaction
+[33mecb4d1b[m HEAD@{16}: commit: style(pagination): change mobile alignment to justify-around
+[33m7f6db1c[m HEAD@{17}: commit: feat: refactor Broker section and modernize home page components
+[33m18da9ad[m HEAD@{18}: commit: fix(hero): prevent button group clipping and fix ribbon alignment on mobile
+[33m2d93be1[m HEAD@{19}: commit: fix(hero): ensure button group visibility and ribbon alignment on mobile
+[33m8043f19[m HEAD@{20}: commit: refactor(about): switch transition mode to popLayout
+[33mf5c4a98[m HEAD@{21}: commit: refactor: optimize broker section mobile layout and refine error page layering
+[33mfe5f342[m HEAD@{22}: commit: perf(hero): optimize hero assets with WebP conversion
+[33md5407d0[m HEAD@{23}: commit: fix(about): resolve page flicker with AnimatePresence and keys
+[33md82773a[m HEAD@{24}: commit: perf(about): optimize image performance and asset formats
+[33m05e64ec[m HEAD@{25}: commit: i18n: add Arabic translations for 404 and 503 page
+[33mf0f4196[m HEAD@{26}: commit: refactor(about): optimize interactive feedback for image cards
+[33m6ecf62e[m HEAD@{27}: commit: refactor(about): fix interaction dead zones and update translations
+[33m43a425d[m HEAD@{28}: commit: feat(home): implement interactive About section with fluid typography and RTL support
+[33m712b46d[m HEAD@{29}: commit: feat: add Vercel analytics and enhance article card interactions
+[33m4ea14d5[m HEAD@{30}: commit: fix: add pointer-events-none to decorative SVGs on error pages
+[33mc56941b[m HEAD@{31}: commit: feat: make article section responsive and remove developers page
+[33m54bd7f1[m HEAD@{32}: commit: fix: resolve NavBar type error and carousel layout responsiveness
+[33mc6dec14[m HEAD@{33}: commit: feat: implement localized error pages and responsi
+[33m0c27afa[m HEAD@{34}: commit: fix: resolve mobile image visibility and carousel centering
+[33m2c81bf0[m HEAD@{35}: commit: feat(home): implement premium broker section and enhance responsive layouts
+[33m16170ed[m HEAD@{36}: commit: fix: resolve mobile rendering issues and implement
+[33mb71fca9[m HEAD@{37}: commit: chore: replace favicon.ico with icon.png
+[33m03a03f8[m HEAD@{38}: commit: refactor: migrate middleware to proxy for Next.js 16 compatibility
+[33m95d8e4a[m HEAD@{39}: commit: feat: implement i18n routing and refactor home page sections
+[33m607ac61[m HEAD@{40}: commit: feat: initialize home page
+[33m1ef875e[m HEAD@{41}: commit (initial): Initial commit from Create Next App
