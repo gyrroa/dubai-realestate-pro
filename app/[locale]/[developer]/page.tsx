@@ -1,19 +1,21 @@
 "use client"
 
 import AboutSection from "@/components/developer/aboutSection";
+import Projects from "@/components/developer/property/projects";
 import ProperySection from "@/components/developer/propertySection";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 
 export default function Developer() {
-    const t = useTranslations('503');
-    const router = useRouter();
+    // const t = useTranslations('503');
+    // const router = useRouter();
+    const params = useParams();
+    const slug = params.developer as string;
     return (
         <>
-            <AboutSection />
-            <ProperySection />
+            <AboutSection slug={slug} />
+            <ProperySection >
+                <Projects devSlug={slug} />
+            </ProperySection>
         </>
     );
 }

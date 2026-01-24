@@ -5,11 +5,9 @@ import { navigation } from "@/messages/constants/data";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { useState } from "react";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
-export default function AboutSection() {
-    const params = useParams();
-    const slug = params.developer as string;
+export default function AboutSection({ slug }: { slug: string }) {
     const config = navigation[slug];
     const developerName = slug?.replaceAll('-', ' ');
 
