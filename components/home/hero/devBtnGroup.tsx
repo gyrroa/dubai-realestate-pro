@@ -3,21 +3,12 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
+import { navigation } from "@/messages/constants/data";
 import { useTranslations } from "next-intl";
 
 export default function DevBtnGroup() {
     const t = useTranslations('Hero');
-    const developerImages = [
-        "/home/hero/buttons/emaar.svg",
-        "/home/hero/buttons/sobha.svg",
-        "/home/hero/buttons/dugasta.svg",
-        "/home/hero/buttons/azizi.svg",
-        "/home/hero/buttons/binghatti.svg",
-        "/home/hero/buttons/damac.svg",
-        "/home/hero/buttons/nakheel.svg",
-        "/home/hero/buttons/samana.svg",
-        "/home/hero/buttons/danube.svg",
-    ]; // tbcgy
+
 
     return (
         <div className="flex flex-col pb-9.5 gap-5.5 justify-center">
@@ -32,25 +23,27 @@ export default function DevBtnGroup() {
                 "gap-2.5 lg:gap-y-5.5 lg:gap-x-8",
                 "flex flex-wrap w-full h-full justify-center"
             )}>
-                {developerImages.map((src, index) => (
-                    <Button asChild variant={"hero_dev"} size={"hero_dev"} key={index} className="w-fit h-fit">
-                        <Link href={"/503"}>
-                            <div
-                                className="w-32 h-12 bg-accent group-hover:bg-glow transition-colors duration-600"
-                                style={{
-                                    maskImage: `url(${src})`,
-                                    maskSize: "contain",
-                                    maskRepeat: "no-repeat",
-                                    maskPosition: "center",
-                                    WebkitMaskImage: `url(${src})`,
-                                    WebkitMaskSize: "contain",
-                                    WebkitMaskRepeat: "no-repeat",
-                                    WebkitMaskPosition: "center",
-                                }}
-                            />
-                        </Link>
-                    </Button>
-                ))}
+                {Object.entries(navigation)
+                    .filter(([_, config]) => config.type === "dev")
+                    .map(([id, config]) => (
+                        <Button asChild variant="hero_dev" size="hero_dev" key={id} className="w-fit h-fit">
+                            <Link href={config.href}>
+                                <div
+                                    className="w-32 h-12 bg-accent group-hover:bg-glow transition-colors duration-600"
+                                    style={{
+                                        maskImage: `url(${config.image})`,
+                                        maskSize: "contain",
+                                        maskRepeat: "no-repeat",
+                                        maskPosition: "center",
+                                        WebkitMaskImage: `url(${config.image})`,
+                                        WebkitMaskSize: "contain",
+                                        WebkitMaskRepeat: "no-repeat",
+                                        WebkitMaskPosition: "center",
+                                    }}
+                                />
+                            </Link>
+                        </Button>
+                    ))}
             </div>
         </div>
 

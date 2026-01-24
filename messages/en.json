@@ -3,56 +3,65 @@
     "logo": "<black>DUBAI</black> <gold>REAL ESTATE <i>PRO</i></gold>",
     "menu": [
       {
-        "id": "n1",
+        "id": "home",
         "title": "Home"
       },
       {
-        "id": "n2",
+        "id": "developers_menu",
         "title": "Developers"
       },
       {
-        "id": "n3",
+        "id": "articles",
         "title": "Articles"
       },
       {
-        "id": "n4",
+        "id": "contact",
         "title": "Contact Us"
       }
     ],
     "devSubMenu": [
       {
+        "id": "Azizi",
         "title": "Azizi",
         "description": "Dubai's leading developer, 150,000+ units under construction"
       },
       {
+        "id": "Binghatti-Developers",
         "title": "Binghatti Developers",
         "description": "Award-winning developer, 79+ projects with signature façades"
       },
       {
+        "id": "Damac-Properties",
         "title": "DAMAC Properties",
         "description": "Luxury real estate excellence since 1982, UAE & beyond"
       },
       {
+        "id": "Danube-Properties",
         "title": "Danube Properties",
         "description": "Top 5 UAE developer, on-time delivery & 50+ awards"
       },
       {
+        "id": "Dugasta",
         "title": "Dugasta",
         "description": "Value-focused developer with 30+ years expertise & flexible plans"
       },
       {
+        "id": "Emaar",
         "title": "Emaar",
         "description": "AED 177.5 Bn net assets, world-class master developer"
       },
       {
+        "id": "Nakheel",
         "title": "Nakheel",
         "description": "Creator of Palm Jumeirah, added 300km+ to Dubai's coastline"
       },
       {
+        "id": "Samana-Developers",
         "title": "Samana Developers",
         "description": "Ranked 5th in Dubai, pioneering resort-style living experiences"
       },
       {
+        "id": "Sobha-Realty",
         "title": "Sobha Realty",
         "description": "Five decades of uncompromising craftsmanship & detailing excellence"
       }

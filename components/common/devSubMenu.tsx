@@ -2,8 +2,10 @@
 
 import { Link } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
+import { navigation } from "@/messages/constants/data";
 
 interface DeveloperItem {
+    id: number;
     title: string;
     description: string;
 }
@@ -31,21 +33,24 @@ export function DeveloperSubMenu({ isOpen, isAtTop, data, onClose }: DeveloperSu
                 )}
             >
                 <div className="grid grid-flow-row xl:grid-flow-col xl:grid-rows-5 gap-x-1">
-                    {data.map((item) => (
-                        <Link
-                            key={item.title}
-                            href="/503"
-                            onClick={onClose}
-                            className="group/sub flex flex-col w-full py-2 px-3 gap-1 cursor-pointer"
-                        >
-                            <h2 className="transition-all duration-500 relative text-desc-3xl xl:text-title-20 xl:font-semibold tracking-[-1.2px] w-full xl:w-fit group-hover/sub:text-accent whitespace-nowrap">
-                                {item.title}
-                            </h2>
-                            <p className="transition-all hidden duration-500 text-label-base font-light tracking-[-0.96px] w-70.5 xl:line-clamp-2 whitespace-break-spaces group-hover/sub:text-accent">
-                                {item.description}
-                            </p>
-                        </Link>
-                    ))}
+                    {data.map((item) => {
+                        const href = navigation[item.id].href
+                        return (
+                            <Link
+                                key={item.title}
+                                href={href}
+                                onClick={onClose}
+                                className="group/sub flex flex-col w-full py-2 px-3 gap-1 cursor-pointer"
+                            >
+                                <h2 className="transition-all duration-500 relative text-desc-3xl xl:text-title-20 xl:font-semibold tracking-[-1.2px] w-full xl:w-fit group-hover/sub:text-accent whitespace-nowrap">
+                                    {item.title}
+                                </h2>
+                                <p className="transition-all hidden duration-500 text-label-base font-light tracking-[-0.96px] w-70.5 xl:line-clamp-2 whitespace-break-spaces group-hover/sub:text-accent">
+                                    {item.description}
+                                </p>
+                            </Link>
+                        )
+                    })}
                 </div>
             </div>
         </div>

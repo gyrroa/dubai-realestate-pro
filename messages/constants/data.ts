@@ -1,9 +1,34 @@
-export const navigation = [
-    { id: "n1", href: "/#home", section: "#home", type: "nav1" },
-    { id: "n2", href: "", section: "", type: "nav2" }, // future work
-    { id: "n3", href: "/#articles", section: "#articles", type: "nav1" },
-    { id: "n4", href: "/#contact", section: "#contact", type: "cta" },
-]
+
+interface NavItem {
+    href: string;
+}
+
+export interface NavConfig {
+    href: string;
+    section?: string;
+    image?: string;
+    type?: "nav1" | "nav2" | "cta" | "dev";
+}
+
+export const navigation: Record<string, NavConfig> = {
+    // Standard Nav
+    home: { href: "/#home", section: "#home", type: "nav1" },
+    developers_menu: { href: "", section: "", type: "nav2" },
+    articles: { href: "/#articles", section: "#articles", type: "nav1" },
+    contact: { href: "/#contact", section: "#contact", type: "cta" },
+    
+    // Developer Submenu
+    "Azizi": { href: "/Azizi", image: "/home/hero/buttons/azizi.svg", type: "dev" },
+    "Binghatti-Developers": { href: "/Binghatti-Developers", image: "/home/hero/buttons/binghatti.svg", type: "dev" },
+    "Damac-Properties": { href: "/Damac-Properties", image: "/home/hero/buttons/damac.svg", type: "dev" },
+    "Danube-Properties": { href: "/Danube-Properties", image: "/home/hero/buttons/danube.svg", type: "dev" },
+    "Dugasta": { href: "/Dugasta", image: "/home/hero/buttons/dugasta.svg", type: "dev" },
+    "Emaar": { href: "/Emaar", image: "/home/hero/buttons/emaar.svg", type: "dev" },
+    "Nakheel": { href: "/Nakheel", image: "/home/hero/buttons/nakheel.svg", type: "dev" },
+    "Samana-Developers": { href: "/Samana-Developers", image: "/home/hero/buttons/samana.svg", type: "dev" },
+    "Sobha-Realty": { href: "/Sobha-Realty", image: "/home/hero/buttons/sobha.svg", type: "dev" }
+};
+
 export const developers = [
     {
         id: "emaar",

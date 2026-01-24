@@ -1,11 +1,11 @@
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { Link } from "@/i18n/routing";
-import { navigation } from "@/messages/constants/data";
+import { NavConfig, navigation } from "@/messages/constants/data";
 
 type NavItemProps = {
     title: string;
-    config: typeof navigation[number];
+    config: NavConfig;
     isActive: boolean;
     isDeveloperOpen?: boolean;
     onClick: (e: React.MouseEvent, config: typeof navigation[number]) => void;
@@ -42,10 +42,8 @@ export const NavItem = ({ title, config, isActive, isDeveloperOpen, onClick, onM
                     {!isContact ? (
                         <hr className={cn(
                             "rounded-full bottom-0 w-0 opacity-0 absolute transition-all duration-500",
-                            // Desktop hover effects (handled by group/nav)
                             "group-active/nav:opacity-100 group-active/nav:h-1",
                             "group-hover/nav:opacity-100 h-0.5 bg-foreground group-hover/nav:bg-accent group-hover/nav:w-full",
-                            // Active states
                             isActive && "h-1 w-full bg-accent opacity-100",
                             isDeveloper && isDeveloperOpen && "h-1 w-full bg-accent opacity-100"
                         )} />

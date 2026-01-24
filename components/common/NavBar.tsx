@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
 import { useSmartScroll } from "@/hooks/useNavScroll";
 import { useNavStore } from "@/store/useNavStore";
 import { Menu, X } from "lucide-react";
-import { usePathname } from "@/i18n/routing";
-import { navigation } from "@/messages/constants/data";
+import { Link, usePathname } from "@/i18n/routing";
+import { NavConfig, navigation } from "@/messages/constants/data";
 import { DeveloperSubMenu } from "./devSubMenu";
 import { NavItem } from "./navMenuItem";
 
@@ -54,7 +54,7 @@ export default function NavBar() {
             { rootMargin: "-25% 0px -70% 0px", threshold: 0 }
         );
 
-        navigation.forEach((nav) => {
+        Object.values(navigation).forEach((nav) => {
             const id = nav.section?.replace("#", "");
             if (id) {
                 const el = document.getElementById(id);
@@ -111,19 +111,22 @@ export default function NavBar() {
 
     // --- Handlers ---
 
-    const handleLogoClick = () => {
-        setActiveSection("#home");
-        scrollTo("#home");
-        window.history.pushState(null, '', `${window.location.pathname}#home`);
+    const handleLogoClick = (e: React.MouseEvent) => {
+        const config = navigation["home"];
+        if (pathname === "/") {
+            e.preventDefault();
+            scrollTo(config.section!);
+            setActiveSection(config.section!);
+        }
     };
 
-    const handleNavClick = (e: React.MouseEvent, config: typeof navigation[number], isMobile: boolean) => {
+    const handleNavClick = (e: React.MouseEvent, config: NavConfig, isMobile: boolean) => {
         const isDeveloper = config.type === "nav2";
 
         if (isDeveloper) {
             e.preventDefault();
             if (isMobile) {
-                setIsMobileMenuOpen(!isMobileMenuOpen); // Keep parent open? usually you want to toggle sub
+                setIsMobileMenuOpen(!isMobileMenuOpen);
                 setIsMobileDeveloperMenuOpen(!isMobileDeveloperMenuOpen);
             } else {
                 setIsDeveloperMenuOpen(!isDeveloperMenuOpen);
@@ -158,22 +161,25 @@ export default function NavBar() {
                     )} />
 
                     {/* Logo Section */}
-                    <Button size="flat" className="flex items-center gap-1.5 select-none" onClick={handleLogoClick}>
-                        <Image width={60} height={90} alt="Logo" src="/logo.png" className="w-10 h-14 xl:w-15 xl:h-22.5" />
-                        <div className="text-start font-bold flex flex-col font-serif gap-0 xl:gap-1 leading-3.75 md:leading-4.75 xl:leading-5.75">
-                            {t.rich('logo', {
-                                black: (chunks) => <span className="text-title-4xl tracking-[-2.16px]">{chunks}</span>,
-                                gold: (chunks) => <span className="text-title-2xl text-accent font-serif tracking-[-1.44px]">{chunks}</span>,
-                                i: (chunks) => <i>{chunks}</i>
-                            })}
-                        </div>
+                    <Button asChild size="flat" onClick={handleLogoClick}>
+                        <Link href={navigation["home"]?.href || "/"} className="flex items-center gap-1.5">
+                            <Image width={60} height={90} alt="Logo" src="/logo.png" className="w-10 h-14 xl:w-15 xl:h-22.5" />
+                            <div className="text-start font-bold flex flex-col font-serif">
+                                {t.rich('logo', {
+                                    black: (chunks) => <span className="text-title-4xl tracking-[-2.16px]">{chunks}</span>,
+                                    gold: (chunks) => <span className="text-title-2xl text-accent font-serif tracking-[-1.44px]">{chunks}</span>,
+                                    i: (chunks) => <i>{chunks}</i>
+                                })}
+                            </div>
+                        </Link>
                     </Button>
 
                     {/* Desktop Menu */}
                     <div className="flex justify-between xl:justify-around items-center transition-all duration-500 gap-12.5">
                         {menuItems.map((menuItem) => {
-                            const config = navigation.find((nav) => nav.id === menuItem.id);
+                            const config = navigation[menuItem.id];
                             if (!config) return null;
+
                             const isDeveloper = config.type === "nav2";
 
                             return (
@@ -225,7 +231,7 @@ export default function NavBar() {
                     !isMobileMenuOpen && "opacity-0 -translate-y-[150%] pointer-events-none"
                 )}>
                     {menuItems.map((menuItem) => {
-                        const config = navigation.find((nav) => nav.id === menuItem.id);
+                        const config = navigation[menuItem.id];
                         if (!config) return null;
 
                         return (

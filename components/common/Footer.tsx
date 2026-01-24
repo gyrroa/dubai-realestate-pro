@@ -13,7 +13,7 @@ export default function Footer() {
     const n = useTranslations('Navigation');
     const scrollTo = useSmartScroll();
     const pathname = usePathname();
-    
+
     return (
         <footer className="w-full flex flex-1 flex-col gap-10 items-center md:items-stretch lg:flex-row justify-between text-glow py-10 px-10 md:px-20 bg-[url(/footer/background.png)] bg-cover bg-no-repeat bg-center bg-accent">
             {/* Start footer */}
@@ -78,8 +78,11 @@ export default function Footer() {
                     {/* Submenu */}
                     <div className="grid grid-cols-1 grid-rows-5 flex-1 text-desc-14">
                         {n.raw('menu').map((menuItem: { id: string; title: string }) => {
-                            const config = navigation.find((nav) => nav.id === menuItem.id);
-                            if (!config) return null;
+                            const config = navigation[menuItem.id];
+                            if (!config) {
+                                console.warn(`Navigation config missing for ID: ${menuItem.id}`);
+                                return null;
+                            }
 
                             return (
                                 <Button
