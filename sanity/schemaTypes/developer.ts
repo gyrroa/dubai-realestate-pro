@@ -1,4 +1,6 @@
 import { defineField, defineType } from "sanity";
+import { localeString } from "./localeString";
+import { localeText } from "./localeText";
 
 export const developerType = defineType({
   name: "developer",
@@ -7,18 +9,18 @@ export const developerType = defineType({
   fields: [
     defineField({
       name: "name",
-      type: "string",
+      type: "localeString",
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "slug",
       type: "slug",
-      options: { source: "name" },
+      options: { source: "name.en" },
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "description",
-      type: "text",
+      type: "localeText",
     }),
     defineField({
       name: "logo",
@@ -41,4 +43,17 @@ export const developerType = defineType({
       initialValue: false,
     }),
   ],
+  preview: {
+    select: {
+      title: "name.en",
+      media: "logo",
+    },
+    prepare(selection) {
+      const { title, media } = selection;
+      return {
+        title: title || "(no English name)",
+        media,
+      };
+    },
+  },
 });

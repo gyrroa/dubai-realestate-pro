@@ -1,4 +1,6 @@
 import { defineField, defineType } from "sanity";
+import { localeString } from "./localeString";
+import { localeText } from "./localeText";
 
 export const communityType = defineType({
   name: "community",
@@ -7,12 +9,12 @@ export const communityType = defineType({
   fields: [
     defineField({
       name: "name",
-      type: "string",
+      type: "localeString",
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "description",
-      type: "text",
+      type: "localeText",
     }),
     defineField({
       name: "developer",
@@ -26,4 +28,17 @@ export const communityType = defineType({
       options: { hotspot: true },
     }),
   ],
+  preview: {
+    select: {
+      title: "name.en",
+      media: "image",
+    },
+    prepare(selection) {
+      const { title, media } = selection;
+      return {
+        title: title || "(no English name)",
+        media,
+      };
+    },
+  },
 });
