@@ -1,4 +1,6 @@
 import { defineField, defineType } from "sanity";
+import { localeString } from "./localeString";
+import { localeText } from "./localeText";
 
 export const projectType = defineType({
   name: "project",
@@ -7,23 +9,12 @@ export const projectType = defineType({
   fields: [
     defineField({
       name: "name",
-      type: "string",
-      validation: (Rule) => Rule.required(),
-    }),
-    defineField({
-      name: "name_ar",
-      title: "Name (Arabic)",
-      type: "string",
+      type: "localeString",
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "description",
-      type: "text",
-    }),
-    defineField({
-      name: "description_ar",
-      title: "Description (Arabic)",
-      type: "text",
+      type: "localeText",
     }),
     defineField({
       name: "developer",
@@ -35,6 +26,15 @@ export const projectType = defineType({
       name: "community",
       type: "reference",
       to: [{ type: "community" }],
+      hidden: ({ parent }) => !(parent as any)?.developer,
+      options: {
+        filter: ({ parent }) => ({
+          filter: "developer._ref == $developerId",
+          params: {
+            developerId: (parent as any)?.developer?._ref,
+          },
+        }),
+      },
     }),
     defineField({
       name: "image",
@@ -43,23 +43,35 @@ export const projectType = defineType({
     }),
     defineField({
       name: "location",
-      type: "string",
-    }),
-    defineField({
-      name: "location_ar",
-      title: "Location (Arabic)",
-      type: "string",
+      type: "localeString",
     }),
     defineField({
       name: "unit_type",
       type: "array",
-      of: [{ type: "string" }],
+      of: [{ type: "localeString" }],
     }),
     defineField({
-      name: "unit_type_ar",
-      title: "Unit Type (Arabic)",
+      name: "startingPrice",
+      title: "Starting Price",
+      type: "localeString",
+    }),
+    defineField({
+      name: "amenities",
       type: "array",
-      of: [{ type: "string" }],
+      of: [{ type: "localeString" }],
     }),
   ],
+  preview: {
+    select: {
+      title: "name.en",
+      media: "image",
+    },
+    prepare(selection) {
+      const { title, media } = selection;
+      return {
+        title: title || "(no English name)",
+        media,
+      };
+    },
+  },
 });

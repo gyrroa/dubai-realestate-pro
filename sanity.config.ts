@@ -39,35 +39,19 @@ export default defineConfig({
             translateFromLanguageId,
             translateToLanguageIds,
           ) => {
+            // For localeString/localeText fields, translate from one language key to another
             if (
-              translateFromLanguageId === "en" &&
-              translateToLanguageIds.includes("ar")
+              (enclosingType.name === "localeString" ||
+                enclosingType.name === "localeText") &&
+              typeof documentMember.name === "string" &&
+              translateFromLanguageId === documentMember.name &&
+              translateToLanguageIds.length > 0
             ) {
-              // Check if the current field is NOT an arabic field (doesn't end in _ar)
-              if (
-                typeof documentMember.name === "string" &&
-                !documentMember.name.endsWith("_ar")
-              ) {
-                // Check if the enclosing type actually HAS the corresponding _ar field
-                const arFieldName = `${documentMember.name}_ar`;
-                const hasArField = (enclosingType as any).fields?.some(
-                  (f: any) => f.name === arFieldName,
-                );
-
-                if (hasArField) {
-                  // Replace the last part of the path (the field name) with the arabic field name
-                  // Path is an array of segments, we need to create a new path array
-                  const newPath = [...documentMember.path];
-                  newPath[newPath.length - 1] = arFieldName;
-
-                  return [
-                    {
-                      id: "ar",
-                      outputPath: newPath,
-                    },
-                  ];
-                }
-              }
+              // Output to all requested language keys
+              return translateToLanguageIds.map((langId) => ({
+                id: langId,
+                outputPath: [...documentMember.path.slice(0, -1), langId],
+              }));
             }
             return undefined;
           },
