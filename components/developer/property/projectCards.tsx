@@ -5,19 +5,6 @@ import { UnitIcon } from "../icons";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
 
-
-// interface FilterDropdownProps {
-//     label: string;
-//     icon: ReactNode;
-//     options: { id: string; label: string }[];
-//     selected: string[];
-//     isOpen: boolean;
-//     onToggleOpen: () => void;
-//     onSelect: (id: string) => void;
-// }
-
-// export function FilterDropdown({ label, icon, options, selected, isOpen, onToggleOpen, onSelect }: FilterDropdownProps) {
-
 interface ProjectCardProps {
     name: string;
     location: string;
