@@ -58,7 +58,7 @@ export default function PropertyFilter() {
     }, [activeDropdown]);
 
     return (
-        <div ref={containerRef} className="gap-x-2.5 flex items-center justify-center">
+        <div ref={containerRef} className="gap-2.5 flex flex-col md:flex-row items-center justify-center">
             <h2 className="text-label-base font-medium text-accent whitespace-nowrap">Filter by:</h2>
 
             <FilterDropdown

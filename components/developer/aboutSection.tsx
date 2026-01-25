@@ -29,7 +29,7 @@ export default function AboutSection({ slug }: { slug: string }) {
     };
 
     return (
-        <section className="relative text-center flex flex-col flex-1 min-h-screen items-center justify-center px-10">
+        <section className="relative text-center flex flex-col flex-1 min-h-screen items-center justify-center px-8 md:px-10">
             {/* Background Image */}
             <div
                 className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat h-[85vh] top-[15vh]"
@@ -67,23 +67,23 @@ export default function AboutSection({ slug }: { slug: string }) {
                     />
                 </div>
 
-                <h1 className="text-title-64 font-bold font-serif italic text-accent mt-1.25 whitespace-nowrap">
+                <h1 className="text-title-64 font-bold font-serif italic text-accent mt-5 leading-14">
                     {developerName}
                 </h1>
 
                 {/* Description */}
                 <motion.div
                     initial={{ maxHeight: "180px" }}
-                    animate={{ maxHeight: isTall ? "1000px" : "185px" }}
+                    className="overflow-hidden [--closed-h:195px] md:[--closed-h:185px]"
+                    animate={{ maxHeight: isTall ? "1000px" : "var(--closed-h)" }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
-                    className="overflow-hidden"
                     onAnimationComplete={() => {
                         if (!isTall && isWide) {
                             setIsWide(false);
                         }
                     }}
                 >
-                    <p className="text-justify font-light text-desc-lg tracking-[-1.2px] line-clamp-none">
+                    <p className="text-justify font-light text-desc-lg tracking-[-1.2px] mt-5  line-clamp-none">
                         At Azizi, we believe in not just crafting beautiful homes, but beyond that, we are here to enrich the lives of people. To date, we have successfully delivered over 45,000+ homes across prime residential and commercial destinations. We currently have around 150,000 units under construction, valued at several tens of billions of US dollars.
                         We are renowned for developing the world's second-tallest skyscraper, Burj Azizi, as well as the master-planned communities of Azizi Riviera, Azizi Venice, and Azizi Milan, among various other world-class projects across MBR City, Palm Jumeirah, Sheikh Zayed Road, Dubai Healthcare City, Dubai South, Dubailand, Al Furjan, Studio City, Sports City, and Downtown Jebel Ali.
                         We have embarked on an extraordinary journey into hospitality, launching 50 stunning 5-star hotels and an iconic 7-star masterpiece, alongside other awe-inspiring tourist and leisurely attractions.

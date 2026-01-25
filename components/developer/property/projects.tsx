@@ -6,7 +6,7 @@ import ProjectCard from "./projectCards";
 export default function Projects({ devSlug }: { devSlug: string }) {
     return (
         <section className={cn(
-            "grid grid-cols-3 gap-5 relative items-center pt-6"
+            "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 relative items-center pt-6"
         )}>
 
             <ProjectCard
