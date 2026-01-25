@@ -1,18 +1,22 @@
 "use client"
+import dynamic from 'next/dynamic';
 
-import { DotLottiePlayer } from "@dotlottie/react-player";
+const DotLottieReact = dynamic(
+    () => import('@lottiefiles/dotlottie-react').then((mod) => mod.DotLottieReact),
+    { ssr: false }
+);
 
 export default function Loading() {
     return (
-        <div className="fixed inset-0 z-200 flex items-center justify-center backdrop-blur-[10px]">
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,#FBFBF2_0%,#959590_100%)] opacity-80" aria-hidden="true" />
-            <div className="relative z-10 w-150 h-auto items-center flex justify-center">
-                <DotLottiePlayer
+        <div className="fixed inset-0 z-200 flex items-center justify-center backdrop-blur-md">
+            <div className="absolute inset-0 bg-[#FBFBF2] opacity-80" />
+            <div className="relative z-10 w-150">
+                <DotLottieReact
                     src="/loading.lottie"
                     autoplay
                     loop
                 />
             </div>
-        </div >
+        </div>
     );
 }

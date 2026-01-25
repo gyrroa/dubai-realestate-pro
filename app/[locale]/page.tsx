@@ -7,6 +7,7 @@ import WhyBlock from "@/components/home/whyBlock";
 import FadeUp from "@/components/ui/fadeUp";
 import { setRequestLocale } from "next-intl/server";
 import { Suspense } from "react";
+import Loading from "./loading";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -18,7 +19,7 @@ export default async function Home({ params }: Props) {
   setRequestLocale(locale);
   return (
     <>
-      <Suspense>
+      <Suspense fallback={<Loading />}>
         <HeroSection />
       </Suspense>
 
