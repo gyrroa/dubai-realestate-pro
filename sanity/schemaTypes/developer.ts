@@ -13,9 +13,26 @@ export const developerType = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: "order",
+      title: "Order",
+      type: "number",
+      validation: (Rule) => Rule.min(0),
+    }),
+    defineField({
       name: "slug",
       type: "slug",
-      options: { source: "name.en" },
+      title: "Slug",
+      options: {
+        source: (doc: any) => doc.name?.en || "",
+        slugify: (input) => {
+          return (input || "")
+            .toLowerCase()
+            .replace(/[^a-z0-9\s-]/g, "")
+            .split(/\s+/)
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join("-");
+        },
+      },
       validation: (Rule) => Rule.required(),
     }),
     defineField({
