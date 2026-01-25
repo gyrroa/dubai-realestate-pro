@@ -21,8 +21,8 @@
     ],
     "devSubMenu": [
       {
-        "id": "Azizi",
-        "title": "Azizi",
+        "id": "Azizi-Developments",
+        "title": "Azizi Developments",
         "description": "Dubai's leading developer, 150,000+ units under construction"
       },
       {
@@ -71,36 +71,7 @@
     "title": "<gold>Dubai’s Top</gold><br></br> Real Estate Developers",
     "description": "Curating the best of <black>Dubai’s</black> <gold>skyline</gold>, just for you.",
     "ribbon": "DUBAI REAL ESTATE PRO",
-    "dev_title": "Discover <black>properties</black> by <gold>developer:</gold>",
-    "carousel": {
-      "emaar": {
-        "developer": "EMAAR"
-      },
-      "sobha": {
-        "developer": "SOBHA"
-      },
-      "dugasta": {
-        "developer": "DUGASTA"
-      },
-      "azizi": {
-        "developer": "AZIZI"
-      },
-      "binghatti": {
-        "developer": "BINGHATTI"
-      },
-      "damac": {
-        "developer": "DAMAC"
-      },
-      "nakheel": {
-        "developer": "NAKHEEL"
-      },
-      "samana": {
-        "developer": "SAMANA"
-      },
-      "danube": {
-        "developer": "DANUBE"
-      }
-    }
+    "dev_title": "Discover <black>properties</black> by <gold>developer:</gold>"
   },
   "About": {
     "title": "<gold>Why Invest </gold><black>In Dubai?</black>",

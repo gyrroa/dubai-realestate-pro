@@ -20,7 +20,7 @@ export default async function Home({ params }: Props) {
   setRequestLocale(locale);
   return (
     <>
-      <Suspense fallback={<Skeleton />}>
+      <Suspense>
         <HeroSection />
       </Suspense>
 

@@ -27,7 +27,7 @@ export const navigation: Record<string, NavConfig> = {
     // "Nakheel": { href: "/Nakheel", image: "/home/hero/buttons/nakheel.svg", type: "dev" },
     // "Samana-Developers": { href: "/Samana-Developers", image: "/home/hero/buttons/samana.svg", type: "dev" },
     // "Sobha-Realty": { href: "/Sobha-Realty", image: "/home/hero/buttons/sobha.svg", type: "dev" }
-    "Azizi": { href: "/503", image: "/home/hero/buttons/azizi.svg", type: "dev" },
+    "Azizi-Developments": { href: "/503", image: "/home/hero/buttons/azizi.svg", type: "dev" },
     "Binghatti-Developers": { href: "/503", image: "/home/hero/buttons/binghatti.svg", type: "dev" },
     "Damac-Properties": { href: "/503", image: "/home/hero/buttons/damac.svg", type: "dev" },
     "Danube-Properties": { href: "/503", image: "/home/hero/buttons/danube.svg", type: "dev" },

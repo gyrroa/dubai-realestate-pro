@@ -21,8 +21,8 @@
     ],
     "devSubMenu": [
       {
-        "id": "Azizi",
-        "title": "عزيزي",
+        "id": "Azizi-Developments",
+        "title": "عزيزي للتطوير العقاري",
         "description": "المطور الرائد في دبي، مع أكثر من 150,000 وحدة قيد الإنشاء"
       },
       {
@@ -71,36 +71,7 @@
     "title": "<gold>أفضل مطوري</gold><br></br> العقارات في دبي",
     "description": "ننتقي لكم الأفضل من <gold>أفق</gold> <black>دبي</black>، خصيصاً لكم.",
     "ribbon": "دبي ريل إستيت برو",
-    "dev_title": "اكتشف <black>العقارات</black> حسب <gold>المطور:</gold>",
-    "carousel": {
-      "emaar": {
-        "developer": "إعمار"
-      },
-      "sobha": {
-        "developer": "شوبا"
-      },
-      "dugasta": {
-        "developer": "دوغاستا"
-      },
-      "azizi": {
-        "developer": "عزيزي"
-      },
-      "binghatti": {
-        "developer": "بن غاطي"
-      },
-      "damac": {
-        "developer": "داماك"
-      },
-      "nakheel": {
-        "developer": "نخيل"
-      },
-      "samana": {
-        "developer": "سامانا"
-      },
-      "danube": {
-        "developer": "دانوب"
-      }
-    }
+    "dev_title": "اكتشف <black>العقارات</black> حسب <gold>المطور:</gold>"
   },
   "About": {
     "title": "<gold>لماذا تستثمر </gold><black>في دبي؟</black>",
