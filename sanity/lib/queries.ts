@@ -1,6 +1,7 @@
 import { groq } from "next-sanity";
 
 export const DEVELOPERS_HERO_QUERY = groq`*[_type == "developer"]{
+  _id,
   name,
   logo,
   hero_image

@@ -10,17 +10,16 @@ import {
     animate,
     PanInfo,
 } from "framer-motion";
-import { developers } from "@/messages/constants/data";
 import { Link } from "@/i18n/routing";
+import { urlFor } from "@/sanity/lib/image"; // <--- NEW
+import { getLocalized } from "@/lib/utils";
 
 const AUTO_DELAY = 3000;
 const DRAG_BUFFER = 50;
 
-export default function PanoramaCarousel() {
+export default function PanoramaCarousel({ developers }: { developers: any[] }) {
     const locale = useLocale();
     const isArabic = locale === 'ar';
-    const t = useTranslations("Hero.carousel");
-
     const carouselItems = [...developers, ...developers, ...developers];
     const baseCount = developers.length;
 
@@ -157,8 +156,8 @@ export default function PanoramaCarousel() {
             >
                 {carouselItems.map((item, index) => (
                     <Link
-                        href="/503"
-                        key={index}
+                        href={`/${item.slug?.current || '#'}`}
+                        key={`${item._id}-${index}`}
                         className={cn(
                             "group px-3 lg:px-7 shrink-0",
                             "h-full w-auto aspect-2/3 lg:aspect-3/3",
@@ -172,21 +171,21 @@ export default function PanoramaCarousel() {
                                 "absolute inset-0 z-10 flex items-center justify-center"
                             )}>
                                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.6)_0%,transparent_20%)]" />
-                                <h2 className="relative z-20 font-semibold text-desc-xl md:text-title-32 drop-shadow-[0_4px_4px_rgba(0,0,0,0.80)] tracking-[11.84px]">
-                                    {t(`${item.id}.developer`)}
+                                <h2 className="uppercase relative z-20 font-semibold text-desc-xl md:text-title-32 drop-shadow-[0_4px_4px_rgba(0,0,0,0.80)] tracking-[11.84px]">
+                                    {getLocalized(item.name, locale)}
                                 </h2>
                             </div>
-                            <Image
-                                src={item.imgSrc}
-                                alt={t(`${item.id}.developer`)}
-                                placeholder="blur"
-                                blurDataURL={item.blur}
-                                fill
-                                quality={75}
-                                sizes="(max-width: 768px) 80vw, 50vw"
-                                className="object-cover object-top group-hover:scale-110 transition-all duration-700"
-                                draggable={false}
-                            />
+                            {item.hero_image && (
+                                <Image
+                                    src={urlFor(item.hero_image).width(800).height(1200).url()}
+                                    alt={getLocalized(item.name, locale)}
+                                    fill
+                                    quality={75}
+                                    sizes="(max-width: 768px) 80vw, 50vw"
+                                    className="object-cover object-top group-hover:scale-110 transition-all duration-700"
+                                    draggable={false}
+                                />
+                            )}
                         </div>
                     </Link>
                 ))}

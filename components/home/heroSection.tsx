@@ -1,11 +1,15 @@
-import { useTranslations } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
+import { client } from "@/sanity/lib/client";
+import { DEVELOPERS_HERO_QUERY } from "@/sanity/lib/queries";
 import PanoramaCarousel from "./hero/carousel";
 import TextRibbon from "./hero/textRibbon";
 import DevBtnGroup from "./hero/devBtnGroup";
 import { cn } from "@/lib/utils";
 
-export default function HeroSection() {
-    const t = useTranslations('Hero');
+export default async function HeroSection() {
+    const t = await getTranslations('Hero');
+    const developers = await client.fetch(DEVELOPERS_HERO_QUERY);
+
     return (
         <section id="home" className="relative text-center flex flex-col flex-1 min-h-screen pt-30 md:pt-45">
             {/* Section title */}
@@ -32,7 +36,7 @@ export default function HeroSection() {
                 )}>
                     {/* Carousel */}
                     <div className="absolute inset-0 z-0">
-                        <PanoramaCarousel />
+                        <PanoramaCarousel developers={developers} />
                     </div>
                     {/* Ribbon */}
                     <div className="relative z-10 w-full mb-4 md:mb-6 lg:mb-10  pointer-events-none">
@@ -41,7 +45,7 @@ export default function HeroSection() {
                 </div>
             </div>
             {/* Developer Button Group */}
-            <DevBtnGroup />
+            <DevBtnGroup developers={developers} />
         </section>
     );
 }

@@ -3,6 +3,7 @@ import ArticleSection from "@/components/home/articleSection";
 import BrokerSection from "@/components/home/brokerSection";
 import ContactSection from "@/components/home/contactSection";
 import HeroSection from "@/components/home/heroSection";
+import TestSection from "@/components/home/test";
 import WhyBlock from "@/components/home/whyBlock";
 import FadeUp from "@/components/ui/fadeUp";
 import { setRequestLocale } from "next-intl/server";
@@ -19,7 +20,7 @@ export default async function Home({ params }: Props) {
   return (
     <>
       <HeroSection />
-
+      
       <hr className="border-0 h-px bg-accent opacity-20 mx-10 md:mx-20 lg:mx-30" />
 
       <FadeUp>

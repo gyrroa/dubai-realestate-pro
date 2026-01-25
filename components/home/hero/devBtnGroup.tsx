@@ -3,13 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
-import { navigation } from "@/messages/constants/data";
 import { useTranslations } from "next-intl";
+import { urlFor } from "@/sanity/lib/image";
 
-export default function DevBtnGroup() {
+export default function DevBtnGroup({ developers }: { developers: any[] }) {
     const t = useTranslations('Hero');
-
-
     return (
         <div className="flex flex-col pb-9.5 gap-5.5 justify-center">
             {/* Title */}
@@ -23,19 +21,21 @@ export default function DevBtnGroup() {
                 "gap-2.5 lg:gap-y-5.5 lg:gap-x-8",
                 "flex flex-wrap w-full h-full justify-center"
             )}>
-                {Object.entries(navigation)
-                    .filter(([_, config]) => config.type === "dev")
-                    .map(([id, config]) => (
-                        <Button asChild variant="hero_dev" size="hero_dev" key={id} className="w-fit h-fit">
-                            <Link href={config.href}>
+                {developers?.map((dev) => {
+                    const logoUrl = dev.logo ? urlFor(dev.logo).url() : "";
+                    const slug = dev.slug?.current || "#";
+
+                    return (
+                        <Button asChild variant="hero_dev" size="hero_dev" key={dev._id} className="w-fit h-fit">
+                            <Link href={`/${slug}`}>
                                 <div
                                     className="w-32 h-12 bg-accent group-hover:bg-glow transition-colors duration-600"
                                     style={{
-                                        maskImage: `url(${config.image})`,
+                                        maskImage: `url(${logoUrl})`,
                                         maskSize: "contain",
                                         maskRepeat: "no-repeat",
                                         maskPosition: "center",
-                                        WebkitMaskImage: `url(${config.image})`,
+                                        WebkitMaskImage: `url(${logoUrl})`,
                                         WebkitMaskSize: "contain",
                                         WebkitMaskRepeat: "no-repeat",
                                         WebkitMaskPosition: "center",
@@ -43,7 +43,8 @@ export default function DevBtnGroup() {
                                 />
                             </Link>
                         </Button>
-                    ))}
+                    );
+                })}
             </div>
         </div>
 
