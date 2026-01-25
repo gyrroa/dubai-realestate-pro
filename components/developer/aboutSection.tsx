@@ -1,6 +1,5 @@
 "use client";
 
-import { useParams } from "next/navigation";
 import { navigation } from "@/messages/constants/data";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
