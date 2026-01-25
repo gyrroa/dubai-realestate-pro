@@ -177,7 +177,7 @@ export default function PanoramaCarousel({ developers }: { developers: any[] }) 
                             </div>
                             {item.hero_image && (
                                 <Image
-                                    src={urlFor(item.hero_image).width(800).height(1200).url()}
+                                    src={urlFor(item.hero_image).url()}
                                     alt={getLocalized(item.name, locale)}
                                     fill
                                     quality={75}

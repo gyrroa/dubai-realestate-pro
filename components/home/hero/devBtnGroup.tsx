@@ -22,7 +22,7 @@ export default function DevBtnGroup({ developers }: { developers: any[] }) {
                 "flex flex-wrap w-full h-full justify-center"
             )}>
                 {developers?.map((dev) => {
-                    const logoUrl = dev.logo ? urlFor(dev.logo).url() : "";
+                    const logoUrl = dev.logo ? urlFor(dev.logo).width(128).url() : "";
                     const slug = dev.slug?.current || "#";
 
                     return (
