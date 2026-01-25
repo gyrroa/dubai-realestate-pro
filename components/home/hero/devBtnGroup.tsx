@@ -27,7 +27,8 @@ export default function DevBtnGroup({ developers }: { developers: any[] }) {
 
                     return (
                         <Button asChild variant="hero_dev" size="hero_dev" key={dev._id} className="w-fit h-fit">
-                            <Link href={`/${slug}`}>
+                            {/* <Link href={`/${slug}`}> */}
+                            <Link href={`/503`}>
                                 <div
                                     className="w-32 h-12 bg-accent group-hover:bg-glow transition-colors duration-600"
                                     style={{

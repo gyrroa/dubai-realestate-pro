@@ -156,7 +156,8 @@ export default function PanoramaCarousel({ developers }: { developers: any[] }) 
             >
                 {carouselItems.map((item, index) => (
                     <Link
-                        href={`/${item.slug?.current || '#'}`}
+                        // href={`/${item.slug?.current || '#'}`}
+                        href={`/503`}
                         key={`${item._id}-${index}`}
                         className={cn(
                             "group px-3 lg:px-7 shrink-0",
